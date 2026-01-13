@@ -1,0 +1,157 @@
+
+<!-- Section: Campaign Section -->
+<section id="campaign-section" class="campaign-section" style="padding: 50px 0; text-align: center;">
+  <div class="container">
+    <div class="campaign-content" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+      
+      <!-- Image -->
+      <div class="campaign-image" style="flex: 1;">
+        {% if section.settings.campaign_image != blank %}
+          <img  class="banner" src="{{ section.settings.campaign_image | img_url: 'master' }}" alt="Campaign Image" style="max-width: 100%; height: auto;">
+        {% endif %}
+      </div>
+
+      <!-- Text and Button -->
+      <div class="campaign-text" style="flex: 1; padding: 10px;">
+        <p>Campaigns</p>
+        <div class="text-content">
+        <h2 style="color: {{ section.settings.text_color }}; font-size: {{ section.settings.heading_font_size }}px;">
+          {{ section.settings.heading_text }}
+        </h2>
+        <p style="color: {{ section.settings.text_color }}; font-size: {{ section.settings.body_font_size }}px;">
+          {{ section.settings.body_text }}
+        </p>
+        {% if section.settings.button_text != blank %}
+          
+          <a href="{{ section.settings.button_link }}" class="btn" style="display: inline-block; padding: 1px 20px; background-color: {{ section.settings.button_color }}; color: {{ section.settings.button_text_color }}; text-decoration: none;">
+            {{ section.settings.button_text }}<svg  class="right-arrow" width="10" height="40" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.129 8.24999L8.106 4.22699L9.1665 3.16649L15 8.99999L9.1665 14.8335L8.106 13.773L12.129 9.74999H3V8.24999H12.129Z" fill="#ffffff"></path>
+        </svg>
+          </a>
+        {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .campaign-text{
+    display: flex;
+    flex-direction: column;
+        align-items: baseline;
+    justify-content: space-between;
+    height: 90vh;
+    
+  }
+  .text-content{
+    padding-bottom: 40%;
+  }
+  .banner{
+    height: 85vh !important;
+  }
+  section{
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+  }
+  @media(max-width: 551px){
+    section{
+    padding: 0 !important;
+  }
+  }
+
+.text-content{
+    font-family: 'MCM Favorit Variable';
+    text-align: left;
+    line-height: 40px;
+}
+    svg.right-arrow{
+    margin-left: 10px;
+  }
+
+.btn:hover{
+  background-color: #333;
+}
+
+</style>
+
+<!-- Schema Settings -->
+{% schema %}
+{
+  "name": "Campaign Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "campaign_image",
+      "label": "Campaign Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "AW24: FROM MÜNCHEN TO MARS"
+    },
+    {
+      "type": "textarea",
+      "id": "body_text",
+      "label": "Body Text",
+      "default": "Starring Matt Dillon, Zelda Adams, and Steph Shiu, the campaign takes MCM style intergalactic with fearless new envisionings of our house codes and motifs."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Discover the Campaign"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading Font Size",
+      "min": 16,
+      "max": 60,
+      "default": 36,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "body_font_size",
+      "label": "Body Font Size",
+      "min": 12,
+      "max": 24,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

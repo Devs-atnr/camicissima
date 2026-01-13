@@ -1,0 +1,188 @@
+{% schema %}
+{
+  "name": "Banner Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "banner_text",
+      "label": "Banner Text",
+      "default": "Welcome to Our Store"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Banner Text Font Size (px)",
+      "min": 16,
+      "max": 100,
+      "default": 48
+    },
+    {
+      "type": "url",
+      "id": "banner_link",
+      "label": "Banner Link",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "range",
+      "id": "link_font_size",
+      "label": "Link Font Size (px)",
+      "min": 12,
+      "max": 40,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "vertical_position",
+      "label": "Vertical Position (%)",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "horizontal_position",
+      "label": "Horizontal Position (%)",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "banner_text_color",
+      "label": "Banner Text Color",
+      "default": "#ffffff" // Default to white
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="banner-section" style="background-image: url({{ section.settings.banner_background_image | img_url: 'master' }});">
+  <div class="banner-content" style="top: {{ section.settings.vertical_position }}%; left: {{ section.settings.horizontal_position }}%;">
+    <h1 style="font-size: {{ section.settings.font_size }}px; color: {{ section.settings.banner_text_color }};">
+      {{ section.settings.banner_text }}
+    </h1>
+    <a href="{{ section.settings.banner_link }}" class="banner-link" style="font-size: {{ section.settings.link_font_size }}px;">
+      <span class="arrow">→</span>
+      <span class="link-text">{{ section.settings.link_text }}</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .banner-section {
+    height: 150vh !important;
+    background-size: cover;
+    background-position: 0 75px;
+    background-attachment: url({{ section.settings.banner_background_image | img_url: 'master' }});;
+    position: relative;
+    background-size: cover;
+    padding: 2px;
+    max-width: 100vw;
+    color: #fff; /* General text color */
+  }
+
+  .banner-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%; /* Ensure content stays within bounds */
+    padding: 0 20px; /* Add some padding */
+  }
+
+  .banner-section h1 {
+    margin: 0;
+    white-space: nowrap;
+    color: {{ section.settings.banner_text_color }}; /* Use theme color */
+    max-width: 100%; /* Limit width to avoid overflow */
+  }
+
+  .banner-link {
+    display: inline-flex;
+    align-items: center;
+    color: #fff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: none; /* No transition for the link itself */
+  }
+
+  .banner-link .arrow {
+    margin-right: 8px; /* Space between arrow and text */
+    color: #fff;
+  }
+
+  .arrow {
+    font-weight: 800;
+  }
+
+  .banner-link .link-text {
+    transition: transform 0.3s ease; /* Only the text moves on hover */
+  }
+
+  .banner-link:hover .link-text {
+    transform: translateX(10px); /* Only text moves */
+    color: #fff;
+  }
+
+  /* Tablet screens */
+  @media (max-width: 768px) {
+   .banner-section {
+        height: 90vh; /* Further adjust the height for smaller screens */
+        background-size: 200%; /* Zoom out further for small screens */
+        background-position: center center; /* Keep the image centered */
+        background-repeat: no-repeat; /* Ensure no repeat */
+        padding: 10px; /* Add some padding for small devices */
+    }
+    .banner-content {
+      margin-left: 50px; /* Adjust margin as needed */
+      top: 70% !important;
+      padding-bottom: 150px;
+      padding-left: 70px;
+    }
+
+    .banner-section h1 {
+      font-size: calc({{ section.settings.font_size }}px * 0.7) !important; /* Adjust font size */
+    }
+
+    .banner-link {
+      font-size: calc({{ section.settings.link_font_size }}px * 0.7)!important; /* Adjust link size */
+    }
+  }
+
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .banner-section {
+        height: 90vh; /* Further adjust the height for smaller screens */
+        background-size: 400%; /* Zoom out further for small screens */
+        background-position: center center; /* Keep the image centered */
+        background-repeat: no-repeat; /* Ensure no repeat */
+        padding: 10px; /* Add some padding for small devices */
+    }
+    .banner-section h1 {
+      font-size: calc({{ section.settings.font_size }}px * 0.5)!important;
+      color: {{ section.settings.banner_text_color }}; /* Use theme color */
+    }
+
+    .banner-link {
+      font-size: calc({{ section.settings.link_font_size }}px * 0.5) !important;
+    }
+  }
+</style>

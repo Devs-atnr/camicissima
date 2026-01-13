@@ -1,0 +1,33 @@
+.header-mobile {
+    background-color: #fff; /* Change this color as needed */
+    padding: 10px;
+    position: relative;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mobile-nav {
+    display: none; /* Initially hide the menu */
+    background-color: #f8f8f8; /* Background color for the menu */
+    position: absolute;
+    top: 100%; /* Position the menu below the toggle */
+    left: 0;
+    width: 100%;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav ul li {
+    padding: 10px;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: #333; /* Change link color */
+}

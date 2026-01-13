@@ -1,0 +1,73 @@
+<style>
+  li.sitemap-page__item:nth-child(1),
+li.sitemap-page__item:nth-child(3) {
+    display: none;
+}
+.sitemap-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 40px;
+}
+h1.sitemap-page__header {
+    width: 100%;
+}
+ul.sitemap-page__menu-level-1 > li.sitemap-page__item {
+    list-style: none;
+}
+</style>
+
+<div class="sitemap-page">
+  <h1 class="sitemap-page__header">Sitemap</h1>
+
+  <!-- Pages Section -->
+  <div class="sitemap-page__section">
+    <h2 class="sitemap-page__title">Pages</h2>
+    <ul class="sitemap-page__list">
+      {% for page in pages %}
+        <li class="sitemap-page__item">
+          <a href="{{ page.url }}" class="sitemap-page__link">{{ page.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Collections Section -->
+  <div class="sitemap-page__section">
+    <h2 class="sitemap-page__title">Collections</h2>
+    <ul class="sitemap-page__menu-level-1">
+      {% assign main_menu = linklists.main-menu.links %}
+      {% for link in main_menu %}
+        <li class="sitemap-page__item">
+          {% if link.links.size > 0 %}
+            <h3 class="sitemap-page__subtitle">
+              <a href="{{ link.url }}" class="sitemap-page__link">{{ link.title }}</a>
+            </h3>
+            <ul class="sitemap-page__menu-level-2">
+              {% for child_link in link.links %}
+                <li class="sitemap-page__item {% if child_link.links.size > 0 %}has-submenu{% endif %}">
+                  {% if child_link.links.size > 0 %}
+                    <h4 class="sitemap-page__subtitle">
+                      <a href="{{ child_link.url }}" class="sitemap-page__link">{{ child_link.title }}</a>
+                    </h4>
+                    <ul class="sitemap-page__menu-level-3">
+                      {% for sub_child_link in child_link.links %}
+                        <li class="sitemap-page__item">
+                          <a href="{{ sub_child_link.url }}" class="sitemap-page__link">{{ sub_child_link.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    <a href="{{ child_link.url }}" class="sitemap-page__link">{{ child_link.title }}</a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <a href="{{ link.url }}" class="sitemap-page__link">{{ link.title }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

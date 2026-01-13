@@ -1,0 +1,74 @@
+{% comment %} Receive block, type_footer_link_font_size {% endcomment %}
+{% liquid
+  assign footer_bottom_bg = block.settings.footer_bottom_bg
+  assign footer_bottom_bg_gradient = block.settings.footer_bottom_bg_gradient
+  assign footer_bottom_color = block.settings.footer_bottom_color
+  assign show_payment = block.settings.show_payment
+%}
+
+<style>
+  {%- if footer_bottom_bg != 'rgba(0,0,0,0)' and footer_bottom_bg != blank -%}
+      .footer__content-bottom {
+        background: {% if footer_bottom_bg_gradient != blank %}
+          {{ footer_bottom_bg_gradient }}
+        {% else %}
+          {{ footer_bottom_bg }}
+        {% endif %}
+      }
+  {%- endif -%}
+
+  .footer__content-bottom {
+    padding-top: {{ block.settings.pdtop_footer_bottom | append: 'px' }};
+    padding-bottom: {{ block.settings.pdbottom_footer_bottom | append: 'px' }};
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 30px;
+
+    {%- if block.settings.border_top -%}
+      border-top: 1px solid {{ block.settings.border_top_color }};
+    {%- endif -%}
+  }
+
+  .footer__right-text {
+    text-align: right; /* Align text to the right */
+    font-size: 12px; /* Adjust the font size */
+  }
+
+  {%- if footer_bottom_color != 'rgba(0,0,0,0)' and footer_bottom_color != blank -%}
+      .copyright__content {
+        color: {{ footer_bottom_color }};
+        font-size: 12px; /* Adjust the font size for copyright */
+      }
+      .footer__right-text {
+        color: {{ footer_bottom_color }};
+      }
+  {%- endif -%}
+</style>
+
+<div class="footer__content-bottom">
+  <img class="butteryfly-mark-mob" src="https://cdn.shopify.com/s/files/1/0888/3594/8829/files/butterfly-mark.svg?v=1728562446" alt="">
+  <div class="container container-{{ container }}">
+    <div class="footer-block__bottom {% unless block.settings.enable_layout_grid %}not_flex{% endunless %} {% if show_payment == false %}not_payment{% endif %}">
+      
+      <!-- Right side: US/EN, Store Locator, and Copyright text -->
+      <div class="footer__right-text">
+        <div></div>
+        <div>
+            <a href="https://mcmworldwide.sa/pages/store-locator" >STORE LOCATOR</a>
+        </div>
+        
+        <!-- Copyright text -->
+        {%- if block.settings.show_copyright -%}
+        <div class="footer__column-item footer__copyright">
+          <div class="copyright__content" style="--font-size: {{ type_footer_link_font_size }}px; --text-color: {{ block.settings.copyright_content_color }}">
+            {{ block.settings.copyright_content | default: 'Copyright © 2024 Fenicia Spa. All rights reserved.' }}
+          </div>
+        </div>
+        {%- endif -%}
+      </div>
+
+    </div>
+  </div>
+</div>

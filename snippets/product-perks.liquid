@@ -1,0 +1,70 @@
+ <!-- Ahmed Yasir edited for help and wishlist button  -->
+
+ {% comment %}
+   
+
+<div class="productView-perks">
+   <div class="productView-wishlist clearfix{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+                               <a data-wishlist href="#" data-wishlist-handle="{{ product.handle }}" data-product-id="{{ product.id }}" class="wishlist-link">
+  <span class="visually-hidden">{{ 'wishlist.general.add' | t }}</span>
+  
+  {% if settings.show_wishlist_full_icon %}
+    <span>
+      <!-- Add the Wishlist Svg Here -->
+    <svg class="icon icon-wishlist icon-wishlist-add" viewBox="0 0 500 500" style="padding: 2px">
+<g clip-path="url(#clip0_3520_280)">
+<path d="M108.516 28C48.6625 28 0 77.2277 0 136.516C0 157.201 9.38209 175.118 18.0859 188.061C26.7898 201.003 35.7197 209.312 35.7197 209.312L192.163 366.207L202.562 376.606L212.962 366.207L369.405 209.312C369.405 209.312 405.125 177.831 405.125 136.516C405.125 77.2277 356.463 28 296.609 28C246.93 28 214.94 57.8983 202.562 70.502C190.185 57.8983 158.195 28 108.516 28Z"/>
+</g>
+</svg>
+    </span>
+  {% else %}
+    <svg class="icon icon-wishlist icon-wishlist-add" viewBox="0 0 500 500" style="padding: 2px">
+<g clip-path="url(#clip0_3520_280)">
+<path d="M108.516 28C48.6625 28 0 77.2277 0 136.516C0 157.201 9.38209 175.118 18.0859 188.061C26.7898 201.003 35.7197 209.312 35.7197 209.312L192.163 366.207L202.562 376.606L212.962 366.207L369.405 209.312C369.405 209.312 405.125 177.831 405.125 136.516C405.125 77.2277 356.463 28 296.609 28C246.93 28 214.94 57.8983 202.562 70.502C190.185 57.8983 158.195 28 108.516 28Z"/>
+</g>
+</svg>
+  {% endif %}
+  
+</a>
+
+                            </div>
+  
+    {%- if show_size_chart and has_size_chart -%}
+        <div class="productView-sizeChart">
+            <a class="link link-underline" href="javascript:void(0)" data-open-size-chart-popup>
+                {% render 'icon-size-chart-2' %}
+                <span class="text">
+                    {{ 'size_chart.general.text' | t }}
+                </span>
+            </a>
+        </div>
+    {%- endif -%}
+    {%- if show_compare_color and isColor and compare_layout == '1' -%}
+        <div class="productView-compareColor style-{{ compare_layout }}">
+            <button type="button" class="link link-underline" aria-label="{{ 'compare_color.general.title' | t }}" data-open-compare-color-popup>
+                {% render 'icon-compare-color-2' %}
+                <span class="text">
+                    {{ 'compare_color.general.title' | t }}
+                </span>
+            </button>
+        </div>
+    {%- endif -%}
+    {%- if settings.show_ask_an_expert -%}
+        <div class="productView-askAnExpert">
+            <a class="link link-underline" href="javascript:void(0)" data-open-ask-an-expert>
+                {%- if settings.ask_an_expert_icon != blank -%}
+                    {{ settings.ask_an_expert_icon }}
+                {%- endif -%}
+                <span class="text" style="
+    font-size: 14px;
+    font-family: 'MCM Favorit Variable';
+">
+                    Need Help?
+                </span>
+            </a>
+        </div>
+    {%- endif -%}
+</div>
+
+
+ {% endcomment %}

@@ -1,0 +1,160 @@
+<!-- measurement-section.liquid -->
+<section class="measurement-section">
+  <div class="unit-toggle">
+    <label>
+      Please show me measurements in:
+      <input type="radio" name="unit" value="cm" checked> Cm
+      <input type="radio" name="unit" value="inch"> Inch
+    </label>
+  </div>
+  <div class="tabs">
+    <button class="tab-button active" data-tab="shirts">Shirts</button>
+    <button class="tab-button" data-tab="trendy-shirts">Trendy Shirts</button>
+    <button class="tab-button" data-tab="maglieria">Maglieria</button>
+    <button class="tab-button" data-tab="trousers">Trousers</button>
+    <button class="tab-button" data-tab="jackets">Jackets</button>
+  </div>
+  <div class="tab-content active" id="shirts">
+    <table>
+      <thead>
+        <tr>
+          <th>Collar</th>
+          <th>Shoulder</th>
+          <th>Body Length Back</th>
+          <th>Chest</th>
+          <th>Waist</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-cm="37" data-inch="14.6">37</td>
+          <td data-cm="47" data-inch="18.5">47</td>
+          <td data-cm="82" data-inch="32.3">82</td>
+          <td data-cm="112" data-inch="44.1">112</td>
+          <td data-cm="106" data-inch="41.7">106</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+  <!-- Add the rest of the tab-content sections here -->
+</section>
+
+<style>
+  .measurement-section {
+    font-family: Arial, sans-serif;
+  }
+  .unit-toggle {
+    margin-bottom: 20px;
+  }
+  .tabs {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .tab-button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #f9f9f9;
+  }
+  .tab-button.active {
+    background-color: #ddd;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".tab-content");
+    const unitToggle = document.querySelectorAll('input[name="unit"]');
+    
+    // Tab Switching
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelector(".tab-button.active").classList.remove("active");
+        tab.classList.add("active");
+        document.querySelector(".tab-content.active").classList.remove("active");
+        document.getElementById(tab.dataset.tab).classList.add("active");
+      });
+    });
+    
+    // Unit Switching
+    unitToggle.forEach(toggle => {
+      toggle.addEventListener("change", () => {
+        const unit = document.querySelector('input[name="unit"]:checked').value;
+        document.querySelectorAll("td").forEach(cell => {
+          if (cell.dataset[unit]) {
+            cell.textContent = cell.dataset[unit];
+          }
+        });
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Measurement Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Measurement Section"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_shirts",
+      "label": "Enable Shirts Tab",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_trendy_shirts",
+      "label": "Enable Trendy Shirts Tab",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_maglieria",
+      "label": "Enable Maglieria Tab",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_trousers",
+      "label": "Enable Trousers Tab",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_jackets",
+      "label": "Enable Jackets Tab",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

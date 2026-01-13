@@ -1,0 +1,127 @@
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <h2>{{ section.settings.sidebar_title }}</h2>
+    <button onclick="closeSidebar()">X</button>
+  </div>
+  <div class="sidebar-content">
+    <form method="post" action="/account" id="create_customer" accept-charset="UTF-8" data-login-with-shop-sign-up="true" class="create-customer-form" data-cptcha="true" data-hcaptcha-bound="true">
+      <input type="hidden" name="form_type" value="create_customer">
+      <input type="hidden" name="utf8" value="✓">
+      <div class="form-field">
+        <label class="form-label" for="RegisterForm-FirstName">
+          First name
+        </label>
+        <input class="form-input form-input-placeholder" type="text" name="customer[first_name]" id="RegisterForm-FirstName" autocomplete="given-name" placeholder="">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="RegisterForm-LastName">
+          Last name
+        </label>      
+        <input class="form-input form-input-placeholder" type="text" name="customer[last_name]" id="RegisterForm-LastName" autocomplete="family-name" placeholder="">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="RegisterForm-email">
+          Your Email Address
+          <em>*</em>
+        </label>      
+        <input class="form-input form-input-placeholder" type="email" name="customer[email]" id="RegisterForm-email" spellcheck="false" autocapitalize="off" autocomplete="email" aria-required="true" placeholder="" required="">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="password">
+          Your Password
+          <em>*</em>
+        </label>      
+        <input class="form-input form-input-placeholder" type="password" name="customer[password]" id="RegisterForm-password" aria-required="true" placeholder="" required="">
+      </div>
+      <div class="accepts-marketing">
+        <input type="hidden" name="customer[accepts_marketing]" value="false">
+        <input type="checkbox" name="customer[accepts_marketing]" id="accepts-marketing">
+        <label class="form-label--checkbox" for="accepts-marketing">Subscribe to email marketing</label>
+      </div>
+      <div class="form-actions">
+        <input type="submit" value="Create An Account" class="button button--primary">
+      </div>
+      <div class="h-captcha" data-sitekey="f06e6c50-85a8-45c8-87d0-21a2b65856fe" data-size="invisible">
+        <iframe aria-hidden="true" data-hcaptcha-widget-id="0tf3jdoh62wr" data-hcaptcha-response="" src="https://newassets.hcaptcha.com/captcha/v1/05c78a4/static/hcaptcha.html#frame=checkbox-invisible" style="display: none;"></iframe>
+        <textarea id="h-captcha-response-0tf3jdoh62wr" name="h-captcha-response" style="display: none;"></textarea>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style>
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-content {
+    margin-top: 20px;
+  }
+
+
+
+
+
+{% schema %}
+{
+  "name": "Login/Signup Sidebar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sidebar_title",
+      "label": "Sidebar Title",
+      "default": "Account"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_login_link",
+      "label": "Show Login Link",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_signup_link",
+      "label": "Show Sign Up Link",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "sidebar_background_color",
+      "label": "Sidebar Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link Color",
+      "default": "#333333"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

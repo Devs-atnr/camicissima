@@ -1,0 +1,23 @@
+
+<!-- Ahmed 12:40 Commenting this code enables the sidebar --!>
+{% comment %} {%- if settings.show_customer_login and shop.customer_accounts_enabled -%} {% endcomment %}
+	{% render 'halo-customer-login-sidebar' %}
+{% comment %} {%- endif -%} {% endcomment %}
+
+{%- if settings.show_quick_cart -%}
+	{% unless template contains 'cart' %}
+		{% render 'halo-cart-sidebar' %}
+	{% endunless %}
+{%- endif -%}
+
+{% if settings.show_before_you_leave %}
+	{% render 'halo-before-you-leave' %}
+{% endif %}
+
+{% render 'halo-sidebar-search' %}
+
+{% if settings.mobile_menu == 'vertical' %}
+	{% render 'halo-sidebar-menu-vertical' %}
+{% else %}
+	{% render 'halo-sidebar-menu' %}
+{% endif %}

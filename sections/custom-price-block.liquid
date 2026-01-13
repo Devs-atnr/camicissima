@@ -1,0 +1,780 @@
+<style>
+          .custom-price-block {
+                display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      /* max-width: calc(360px* 3 + 40px); */
+            /* Walaa changed */
+    max-width: calc(360px* 4 + 40px);
+      margin: 0 auto;
+      padding: 10px;
+          }
+
+         .content-custom-price-block {
+                background-color: #182a46;
+      color: white;
+      text-align: center;
+      width: 360px;
+      height: 330px;
+      display: flex
+  ;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border: 2px solid white;
+      box-sizing: border-box;
+        }
+
+
+          .square-shape-content-custom-price-block {
+          border: double 4px #fff;
+          border-radius: 100%;
+          width: 92%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          /* justify-content: space-between; */
+          padding-top: 50px;
+          gap: 19%;
+          padding: 64px 0;
+
+          }
+
+          .container-promo{
+            display: flex;
+            justify-content: center;
+            width: 95vw;
+            margin: auto;
+        }
+
+          .descriptions {
+            display: flex;
+            gap: 10px;
+                justify-content: center;
+            margin-top: 20px;
+        }
+          .description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+          .promo {
+            display: flex;
+            justify-content: center;
+        }
+          h1.promo-price {
+            color: white;
+            font-family: 'Archivo-Regular';
+            font-size: 66px;
+        }
+    h1.promo-heading {
+      color: white;
+      font-family: 'Prata-Regular', serif;
+      text-align: center;
+      word-wrap: break-word; /* Ensures long text breaks into lines */
+      overflow: hidden; /* Prevents text overflow */
+      text-overflow: ellipsis; /* Adds "..." for overflow text (if needed) */
+      display: block;
+      max-width: 150px; /* Adjust this value to fit your layout */
+      line-height: 1.2; /* Space between lines for better readability */
+          margin-left: 5px;
+        margin-right: -10px;
+          font-weight: 500;
+    }
+
+
+
+          .price {
+               align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+          /* .price {
+            display: flex;
+            height: 80px;
+            gap: 5px;
+        } */
+        h1.price-tag {
+                color: white;
+            font-family: 'Prata-Regular';
+            font-size: 12px;
+        }h1.price-number {
+            color: white;
+            font-family: 'Archivo-Regular';
+            font-size: 70px;
+            margin-top: 26px;
+        }
+
+        h1.description-text {
+          font-size: 8px;
+          color: white;
+          font-family: 'Prata-Regular';
+      }
+
+        .promo-image {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+        h1.promo-image-text {
+              font-family: 'Prata-Regular';
+      FONT-WEIGHT: 400;
+      color: white;
+      font-size: 6px;
+      }
+        h1.promo-image-text {
+          font-family: 'Prata-Regular';
+          color: white;
+          font-size: 8px;
+        }.promo-images {
+          display: flex;
+          gap: 10px;
+          margin-left: 10px;
+      }
+
+          .devider-blocks {
+          border-top: 1px solid;
+          border-bottom: 2px solid;
+          height: 7px;
+          width: 211px;
+      }
+
+      .text-container{
+            height: 91%;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+      }
+
+        h1.block-normal-text-one {
+          color: #e5e0e0;
+          font-family: 'Prata-Regular';
+          font-size: 15px;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+      }
+
+        h1.block-normal-text-two {
+          color: white;
+          font-family: 'Archivo-Regular';
+          font-size: 35px;
+          margin-bottom: 10px;
+      }
+        h1.block-normal-text-three {
+             color: #e5e0e0;
+          font-family: 'Archivo-Regular';
+          font-size: 44px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+      }
+        h1.block-normal-text-four {
+          color: #e5e0e0;
+          font-family: 'Archivo-Regular';
+          font-size: 55px;
+          margin-top: 15px;
+      }
+        h1.block-normal-text-five {
+              color: white;
+          font-family: 'Prata-Regular';
+          font-size: 55px;
+          margin-top: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: normal;
+      }
+
+
+         .title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+          }
+
+          .line-through {
+            text-decoration: line-through;
+            color: #ccc;
+            font-size: 24px;
+          }
+
+          .price-large {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+          }
+
+          .small-text {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 5px;
+          }
+
+        sub {
+          font-size: 10px;
+      }
+      .title {
+          font-size: 23px;
+          margin-bottom: 10px;
+          color: white;
+          font-family: 'Archivo-Regular';
+          letter-spacing: 1px;
+          font-weight: 400;
+      }
+
+        .price-small {
+          color: white;
+          font-family: 'Archivo-Regular';
+          font-size: 24px;
+          font-weight: bolder;
+          display: flex;
+          gap: 5px;
+          justify-content: center;
+          margin-top: 23%;
+      }
+
+        .line-through {
+          text-decoration: line-through;
+          color: #fff;
+          font-size: 34px;
+          font-family: 'Archivo-Regular';
+          font-weight: bolder;
+          display: flex;
+          gap: 5px;
+          justify-content: center;
+          margin-top: 6px;
+      }
+
+        .price-large {
+          font-size: 60px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          color: #fff;
+          font-family: 'Archivo-Regular';
+          font-weight: bolder;
+          display: flex;
+          gap: 5px;
+          justify-content: center;
+          margin-top: 14px;
+      }
+
+        .small-text {
+          font-size: 16px;
+          color: #ccc;
+          margin-top: 5px;
+          font-family: 'Archivo-Regular';
+          margin-top: 6px;
+      }
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.promo-section {
+        text-align: center;
+    max-width: 80%;
+    margin-bottom: 51px;
+    margin-top: 46px;
+}
+
+.promo-heading-main {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.promo-container {
+    position: relative;
+    overflow: hidden;
+  width: 100vw;
+}
+
+.promo-image-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-image-banner img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.promo-text {
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    background-color: rgba(255, 255, 255, 78.9);
+    padding: 20px;
+    width: 32vw;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-text h2 {
+        text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    color: #333;
+}
+
+.promo-text p {
+        text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    color: #333;
+}
+
+
+  /*tablet*/
+  @media (max-width:1024px){
+    .promo-image-banner img{
+      width: 90%;
+    }
+    .promo-text{
+      width: 70vw;
+      margin: 0 5%;
+      left: 0%;
+    }
+  }
+
+  /*mobile*/
+  @media (max-width:550px){
+    .promo-text{
+      width: 90vw;
+      margin: 0 5%;
+      left: 0%;
+    }
+  }
+ 
+
+  
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const promoHeadings = document.querySelectorAll('h1.promo-heading');
+
+    promoHeadings.forEach((heading) => {
+      const textLength = heading.textContent.length;
+
+      // Adjust font size dynamically based on the text length
+      if (textLength > 20) {
+        heading.style.fontSize = '12px'; // Reduce font size for longer text
+      } else if (textLength <= 10) {
+        heading.style.fontSize = '24px'; // Increase font size for shorter text
+      } else {
+        heading.style.fontSize = '16px'; // Default size for medium-length text
+      }
+
+      // Ensure proper alignment and line spacing
+      heading.style.lineHeight = '1.2'; // Adjust line height
+      heading.style.textAlign = 'center'; // Center align text
+    });
+  });
+</script>
+ <section class="promo-section">
+        <h1 class="promo-heading-main">our promos</h1>
+        <div class="promo-container">
+            <div class="promo-image-banner">
+                <img src="https://cdn.shopify.com/s/files/1/0912/8522/5748/files/bg.webp?v=1731845254" alt="Promotional Shirts">
+               
+            </div>
+           <div class="promo-text">
+                    <h2>MULTIBUY or MIX&MATCH?</h2>
+                    <p>Shop our special promotions on your favorite Camicissima items.</p>
+                    <p>The more you buy, the more you save.</p>
+                </div>
+        </div>
+    </section>
+
+<div class="container-promo">
+  <div class="custom-price-block">
+    {% for block in section.blocks %}
+      {% if block.type == 'price-item' %}
+        <div class="content-custom-price-block"> 
+
+          <div class="square-shape-content-custom-price-block">
+
+            <div class="promo">
+
+              <h1 class="promo-price">{{ block.settings['promo-number'] }}<span class="promo-for">For</span></h1>
+              <h1 class="promo-heading"><a href="{{ block.settings['collection-link'] }}">{{ block.settings['promo-title'] }}</a></h1>
+            </div>
+            <div class="price">
+              <h1 class="price-tag">{{ block.settings['promo-price-title'] }}</h1>
+              <h1 class="price-number">{{ block.settings['promo-price'] }}</h1>
+            </div>
+            <div class="descriptions">
+              <div class="description">
+                <div class="description-icon">
+                  {% if block.settings.description_icon != blank %}
+                    {{ block.settings.description_icon | image_url: width: 15, height: 15 | image_tag }}
+                  {% endif %}
+                </div>
+                <h1 class="description-text">{{ block.settings['promo-description'] }}</h1>
+              </div>
+              <div class="description">
+                {% if block.settings.description_icon_2 != blank %}
+                  {{ block.settings.description_icon_2 | image_url: width: 15, height: 15 | image_tag }}
+                {% endif %}
+
+                <h1 class="description-text">{{ block.settings['promo-description_2'] }}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.type == 'price-item-image' %}
+        <div class="content-custom-price-block">
+          <div class="square-shape-content-custom-price-block">
+            <div class="promo">
+              <h1 class="promo-price">{{ block.settings['promo-number'] }}</h1>
+              <div class="promo-image-container">
+                <h1></h1>
+                <div class="promo-images">
+                  <div class="promo-image">
+                    {{ block.settings['promo-image'] | image_url: width: 15, height: 15 | image_tag }}
+                    <h1 class="promo-image-text">{{ block.settings['promo-image-text'] }}</h1>
+                  </div>
+                  <div class="promo-image">
+                    {{ block.settings['promo-image-2'] | image_url: width: 15, height: 15 | image_tag }}
+                    <h1 class="promo-image-text">{{ block.settings['promo-image-text-2'] }}</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price">
+              <h1 class="price-tag">{{ block.settings['promo-price-title'] }}</h1>
+              <h1 class="price-number">{{ block.settings['promo-price'] }}</h1>
+            </div>
+            <div class="descriptions">
+              <div class="description">
+                <div class="description-icon">
+                  {% if block.settings.description_icon != blank %}
+                    {{ block.settings.description_icon | image_url: width: 15, height: 15 | image_tag }}
+                  {% endif %}
+                </div>
+                <h1 class="description-text">{{ block.settings['promo-description'] }}</h1>
+              </div>
+              <div class="description">
+                {% if block.settings.description_icon_2 != blank %}
+                  {{ block.settings.description_icon_2 | image_url: width: 15, height: 15 | image_tag }}
+                {% endif %}
+
+                <h1 class="description-text">{{ block.settings['promo-description_2'] }}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.type == 'additional-texts' %}
+        <div class="content-custom-price-block no-border">
+          <div class="text-container">
+            <h1 class="block-normal-text-one">{{ block.settings['promo-normal-text-one'] }}</h1>
+            <h1 class="block-normal-text-two">{{ block.settings['promo-normal-text-two'] }}</h1>
+            <h1 class="block-normal-text-three">
+              <sub
+                style="
+                  margin-top: -8px;
+                  margin-right: 5px;
+                "
+                >SAR</sub
+              >
+              {{- block.settings['promo-normal-text-three'] }}
+            </h1>
+            <div class="devider-blocks">.</div>
+            <h1 class="block-normal-text-four">{{ block.settings['promo-normal-text-four'] }}</h1>
+            <h1 class="block-normal-text-five">
+              <sub
+                style="
+                  margin-top: -18px;
+                  margin-right: 5px;
+                "
+                >SAR</sub
+              >
+              {{ block.settings['promo-normal-text-five'] }}
+            </h1>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.type == 'additional-texts-black' %}
+        <div
+          class="content-custom-price-block no-border"
+          style="    background-color: #222 !important;!i;!;"
+        >
+          <div class="text-container">
+            <div class="title">{{ block.settings['promo-black-title'] }}</div>
+            <div class="price-small">
+              {{ block.settings['promo-black-small-multiply'] }} x
+              <sub>SAR</sub>
+              {{- block.settings['promo-black-small-number'] }}
+            </div>
+            <div class="line-through">
+              {{ block.settings['promo-black-line-multiply'] }} x
+              <sub style="margin-top: -5px;">SAR</sub>
+              {{ block.settings['promo-black-line-number'] }}
+            </div>
+            <div class="price-large">
+              {{ block.settings['promo-black-large-multiply'] }} x
+              <sub style="margin-top: -13px;">SAR</sub>
+              {{ block.settings['promo-black-large-number'] }}
+            </div>
+            <div class="small-text">{{ block.settings['promo-black-text'] }}</div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Price Block",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "price-item",
+      "name": "Price Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "promo-number",
+          "label": "Promo number",
+          "default": "2x"
+        },
+        {
+          "type": "text",
+          "id": "promo-title",
+          "label": "Promo Title",
+          "default": "Shirts"
+        },
+        {
+          "type": "text",
+          "id": "promo-price-title",
+          "label": "Promo Price Title",
+          "default": "SAR"
+        },
+        {
+          "type": "text",
+          "id": "promo-price",
+          "label": "Promo Price",
+          "default": "199,90"
+        },
+        {
+          "type": "text",
+          "id": "promo-description",
+          "label": "Promo Description",
+          "default": "100% Cotton"
+        },
+        {
+          "type": "text",
+          "id": "promo-description_2",
+          "label": "Promo Description",
+          "default": "100% Cotton"
+        },
+         {
+          "type": "image_picker",
+          "id": "description_icon",
+          "label": "icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "description_icon_2",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "collection-link",
+          "label": "Collection Link",
+          "default": "/collections/all"
+        }
+      ]
+    },
+    {
+      "type": "price-item-image",
+      "name": "Price Item image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "promo-number",
+          "label": "Promo number",
+          "default": "2x"
+        },
+        {
+          "type": "text",
+          "id": "promo-image-text",
+          "label": "Promo Title",
+          "default": "Shirts"
+        },
+         {
+          "type": "image_picker",
+          "id": "promo-image",
+          "label": "icon"
+        },
+        {
+          "type": "text",
+          "id": "promo-image-text-2",
+          "label": "Promo Title",
+          "default": "Shirts"
+        },
+         {
+          "type": "image_picker",
+          "id": "promo-image-2",
+          "label": "icon"
+        },
+        {
+          "type": "text",
+          "id": "promo-price-title",
+          "label": "Promo Price Title",
+          "default": "SAR"
+        },
+        {
+          "type": "text",
+          "id": "promo-price",
+          "label": "Promo Price",
+          "default": "199,90"
+        },
+        {
+          "type": "text",
+          "id": "promo-description",
+          "label": "Promo Description",
+          "default": "100% Cotton"
+        },
+        {
+          "type": "text",
+          "id": "promo-description_2",
+          "label": "Promo Description",
+          "default": "100% Cotton"
+        },
+         {
+          "type": "image_picker",
+          "id": "description_icon",
+          "label": "icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "description_icon_2",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "additional-texts",
+      "name": "Additional Texts",
+      "settings": [
+        {
+          "type": "text",
+          "id": "promo-normal-text-one",
+          "label": "Promo text one",
+          "default": "Text Example One"
+        },
+        {
+          "type": "text",
+          "id": "promo-normal-text-two",
+          "label": "Promo text two",
+          "default": "Text Example Two"
+        },
+                {
+          "type": "text",
+          "id": "promo-normal-text-three",
+          "label": "Promo text one",
+          "default": "Text Example One"
+        },
+                {
+          "type": "text",
+          "id": "promo-normal-text-four",
+          "label": "Promo text one",
+          "default": "Text Example One"
+        },
+         {
+          "type": "text",
+          "id": "promo-normal-text-five",
+          "label": "Promo text one",
+          "default": "Text Example One"
+        }
+      ]
+    },
+  {
+      "type": "additional-texts-black",
+      "name": "Additional Texts Black",
+      "settings": [
+        {
+      "type": "text",
+      "id": "promo-black-title",
+      "label": "Title",
+      "default": "TRENDY LINEN SHIRTS"
+    },
+    {
+      "type": "number",
+      "id": "promo-black-small-multiply",
+      "label": "Small Price Multiplier",
+      "default": 1
+    },
+    {
+      "type": "text",
+      "id": "promo-black-small-number",
+      "label": "Small Price",
+      "default": "89,90"
+    },
+    {
+      "type": "number",
+      "id": "promo-black-line-multiply",
+      "label": "Line-Through Price Multiplier",
+      "default": 2
+    },
+    {
+      "type": "text",
+      "id": "promo-black-line-number",
+      "label": "Line-Through Price",
+      "default": "179,80"
+    },
+    {
+      "type": "number",
+      "id": "promo-black-large-multiply",
+      "label": "Large Price Multiplier",
+      "default": 2
+    },
+    {
+      "type": "text",
+      "id": "promo-black-large-number",
+      "label": "Large Price",
+      "default": "149,90"
+    },
+    {
+      "type": "text",
+      "id": "promo-black-text",
+      "label": "Additional Text",
+      "default": "dalla 3ª camicia €64,95"
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Price Block",
+      "category": "Custom"
+    }
+  ],
+  "max_blocks": 100
+}
+{% endschema %}

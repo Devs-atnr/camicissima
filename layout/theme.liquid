@@ -1,0 +1,258 @@
+<!doctype html>
+{%- liquid
+    if settings.list_iso_rtl != blank
+        assign locale_iso_code = request.locale.iso_code
+        assign arr_list_rtl = settings.list_iso_rtl | remove:' ' | split:',' 
+        if arr_list_rtl contains locale_iso_code
+            assign enable_iso_rtl = true
+        else
+            assign enable_iso_rtl = false
+        endif
+    else
+        assign enable_iso_rtl = false 
+    endif
+-%}
+
+<html class="no-js {{ collection.title }}" lang="{{ request.locale.iso_code }}"{% if settings.enable_layout_rtl and enable_iso_rtl %} dir="rtl"{% endif %}>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+        <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "t5juplzb2j");
+</script>
+      <meta name="google-site-verification" content="8yOGTxvCwxvSlr6xYJSNpyzjwIBg2XV_88lEPCVIMmc" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="">
+        <link rel="canonical" href="{{ canonical_url }}" canonical-shop-url="{{ shop.url }}/">
+        {%- if settings.favicon != blank -%}
+            <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+        {%- endif -%}
+        <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+        <title>{{ page_title }} {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%} {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%} {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}</title>
+
+        {%- if page_description -%}
+            <meta name="description" content="{{ page_description | escape }}">
+        {%- endif -%}
+        {% render 'meta-tags' %}
+        {{ content_for_header }}
+        {% render 'variable' %}
+        {% render 'global-style' %}
+        {% render 'global-script' %}
+
+        <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+      <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.querySelector('input[name="q"]');
+    const resultsWrapper = document.createElement('div');
+    resultsWrapper.classList.add('search-results');
+    searchInput.parentNode.appendChild(resultsWrapper);
+
+    let timeout;
+    searchInput.addEventListener('input', function () {
+        clearTimeout(timeout);
+        const query = this.value;
+
+        
+
+        timeout = setTimeout(() => {
+            fetch(`/search/suggest.json?q=${query}&resources[type]=product`)
+                .then(response => response.json())
+                .then(data => {                    
+                });
+        }, 300);
+    });
+});
+
+
+
+
+
+        
+window.addEventListener('scroll', function() {
+  const containers = document.querySelectorAll('.shopify-section-banner .container-box');
+
+  containers.forEach(function(container) {
+    const contentBox = container.querySelector('.content-box');
+    const containerRect = container.getBoundingClientRect();
+    const containerTop = containerRect.top;
+    const containerBottom = containerRect.bottom;
+    const windowHeight = window.innerHeight;
+
+    // Adjust behavior for smaller screens
+    if (window.innerWidth > 768) {
+      // Stick the content box to the bottom of the viewport when the container is partially visible
+      if (containerTop < windowHeight && containerBottom > windowHeight) {
+        contentBox.style.position = 'fixed';
+        contentBox.style.bottom = '0';
+        contentBox.style.top = 'unset';
+      } 
+      // Stop at the bottom of the container
+      else if (containerBottom <= windowHeight) {
+        contentBox.style.position = 'absolute';
+        contentBox.style.bottom = '0';
+        contentBox.style.top = 'unset';
+      } 
+      // Stick to the top of the container when scrolling up past the container's top
+      else if (containerTop >= 0) {
+        contentBox.style.position = 'absolute';
+        contentBox.style.top = '0';
+        contentBox.style.bottom = 'unset';
+      }
+    } else {
+      // For smaller screens, ensure content stays in view without fixing
+      contentBox.style.position = 'absolute';
+      contentBox.style.bottom = '0';
+      contentBox.style.top = 'unset';
+    }
+  });
+});
+
+
+
+
+
+      
+
+</script>
+
+
+        {%- liquid
+            if settings.layout_body == 'full'
+                assign layout_body = 'body-full-width'
+            elsif settings.layout_body == 'boxed'
+                assign layout_body = 'body-boxed'
+            elsif settings.layout_body == 'custom_width'
+                assign layout_body = 'body-custom-width'
+            endif
+        
+            if settings.style_dots == '02'
+                assign style_dots = 'style-dots-2'
+            endif
+        
+            if settings.style_arrows == '02'
+                assign style_arrows = 'style-arrows-2'
+            elsif settings.style_arrows == '05'
+                assign style_arrows = 'style-arrows-5'
+            elsif settings.style_arrows == '06'
+                assign style_arrows = 'style-arrows-6'
+            elsif settings.style_arrows == '07'
+                assign style_arrows = 'style-arrows-7'
+            endif
+        
+            if settings.product_card_layout == '02'
+                assign product_card_layout = 'product-card-layout-02'
+            elsif settings.product_card_layout == '03'
+                assign product_card_layout = 'product-card-layout-03'
+            elsif settings.product_card_layout == '04'
+                assign product_card_layout = 'product-card-layout-04'
+            elsif settings.product_card_layout == '05'
+                assign product_card_layout = 'product-card-layout-05'
+            elsif settings.product_card_layout == '06'
+                assign product_card_layout = 'product-card-layout-06'
+            elsif settings.product_card_layout == '07'
+                assign product_card_layout = 'product-card-layout-07'
+            elsif settings.product_card_layout == '08'
+                assign product_card_layout = 'product-card-layout-08'
+            else
+                assign product_card_layout = 'product-card-layout-01'
+            endif
+        
+            case settings.quick_shop_type
+                when '1'
+                    assign quick_shop_type = 'quick_shop_option_1'
+                when '2'
+                    assign quick_shop_type = 'quick_shop_option_2'
+                when '3'
+                    assign quick_shop_type = 'quick_shop_option_3'
+                when '4'
+                    assign quick_shop_type = 'quick_shop_bulk'
+            endcase
+        
+            if settings.style_text_size_varriant == '02'
+                assign style_text_size_varriant = 'size_varriant_style_2'
+            endif
+        -%}
+
+
+{% if request.locale.iso_code == 'en' %}
+	{{ 'layout_ltl.css' | asset_url | stylesheet_tag }}
+{% else %}
+{%- if settings.enable_layout_rtl -%}
+	{{ 'ar-fonts.css' | asset_url | stylesheet_tag }}
+	{{ 'layout_rtl.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+{% endif %}
+    </head>
+    
+
+  
+    {% comment %}ly_liquid_scripts_begin{% endcomment %}{% capture ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}<body class="template-{{ request.page_type }} {{layout_body}} {{style_dots}} {{style_text_size_varriant}} {{style_arrows}} {{product_card_layout}} {% if settings.enable_button_disable_arrows %} enable_button_disable_arrows{% endif %}{% if settings.display_text_color_title %} enable_text_color_title{% if settings.style_text_color_varriant == '02' %} style_2_text_color_varriant{% endif %}{% endif %}{% if settings.hide_compare_homepage %} hide_compare_homepage{% endif %} {{ quick_shop_type }}{% if settings.show_image_loading %} show_image_loading{% endif %}{% if settings.show_effect_close %} show_effect_close{% endif %}{% if settings.enable_layout_rtl and enable_iso_rtl %} layout_rtl{% endif %}{% if request.design_mode %} shopify-design-mode{% endif %}{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if settings.enable_following_cursor and settings.following_cursor_style == 'default' %} cursor-fixed__show{% endif %}{% unless settings.enable_currencies %} disable_currencies{% endunless %}{% if settings.enable_button_1_border_outside %} btn_1_br_outside{% endif %}{% if settings.enable_button_2_border_outside %} btn_2_br_outside{% endif %}{% if settings.enable_button_3_border_outside %} btn_3_br_outside{% endif %}{% if settings.show_price_percent %} show_price_percent{% endif %}{% if settings.show_wishlist_full_icon %} icon_wishlist_full{% endif %}" allow-transparency>
+        <div class="body-content-wrapper">
+            <a class="skip-to-content-link button visually-hidden" href="#MainContent">{{ "accessibility.skip_to_text" | t }}</a>
+            {% render 'preload-screen' %}
+            {% sections 'header-group' %}
+            {% render 'wrapper-header' %}
+            
+            {%- if settings.layout_body == 'boxed' -%}
+                <div class="wrapper-hasbanner-adv">
+            {%- endif -%}
+                {% render 'halo-banner-adv-left' %}
+                {% render 'halo-banner-adv-right' %}
+                <main id="MainContent" class="wrapper-body content-for-layout focus-none" role="main" tabindex="-1">
+                    {{ content_for_layout }}
+                </main>
+            {%- if settings.layout_body == 'boxed' -%}        
+                </div>
+            {%- endif -%}
+            
+            <div class="wrapper-footer">{% sections 'footer-group' %}</div>
+
+            {% section 'halo-toolbar-mobile' %}
+
+            <ul hidden><li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li></ul>
+            
+            {% render 'global-script-2' %}
+        </div>
+        {% render 'halo-popup' %}
+
+        {%- if settings.enable_view_documentation -%}
+            {% render 'theme-editor-notification' %}
+        {%- endif -%}
+        
+        {%- if settings.use_custom_js -%}
+            {{ 'custom.js' | asset_url | script_tag }}
+        {%- endif -%}
+        
+        <div class="background-overlay">
+            {%- if settings.show_effect_close -%}
+            <div class="background-cursor-wrapper">
+                <div class="background-cursor-wrapper_outer">
+                    <div class="background-cursor-wrapper_inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20"><g class="nc-icon-wrapper" fill="#ffffff" transform="translate(0.5, 0.5)"><line fill="none" stroke-width="6" x1="46" y1="2" x2="2" y2="46"/> <line fill="none" stroke-width="6" x1="46" y1="46" x2="2" y2="2"/></g></svg></div>
+                </div>
+            </div>
+            {%- endif -%}
+        </div>
+        
+        {% render 'halo-sidebar' %}
+
+        {%- if settings.enable_following_cursor -%}
+          {% render 'cursor-fixed', style_cursor: settings.following_cursor_style %}
+        {%- endif -%}
+
+
+                      
+
+
+
+
+
+    </body>{% comment %}ly_liquid_scripts_begin{% endcomment %}{% endcapture %}{%- comment -%}Version 1.1{%- endcomment -%}{%- if shop.metafields.app--168501--ly_plans.current_plan != "free" -%}{%- if request.locale.primary == true -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '<ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '</ly' -%}{%- assign ly_string = each_string | split: '</ly' | first -%}{%- assign ly_tag = ly_string | split: '>' | first -%}{%- assign ly_open_tag = '<ly-' | append: ly_tag | append: '>' -%}{%- assign ly_close_tag = '</ly-' | append: ly_tag | append: '>' -%}{%- assign delim = ly_tag | append: '>' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endfor -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '&lt;ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '&lt;/ly' -%}{%- assign ly_string = each_string | split: '&lt;/ly' | first -%}{%- assign ly_tag = ly_string | split: '&gt;' | first -%}{%- assign ly_open_tag = '&lt;ly-' | append: ly_tag | append: '&gt;' -%}{%- assign ly_close_tag = '&lt;/ly-' | append: ly_tag | append: '&gt;' -%}{%- assign delim = ly_tag | append: '&gt;' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endfor -%}{{- ly_liquid_content -}}{%- else -%}{%- assign current_language_num = 0 -%}{%- for language in shop.metafields.language_codes -%}{%- if language.last == request.locale.iso_code -%}{%- assign language_id_num = language.first | replace: "ly", "" | plus: 0 %}{%- if current_language_num < language_id_num -%}{%- assign current_language = language.first -%}{%- assign current_language_num = language_id_num -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- assign language = current_language -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '<ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '</ly' -%}{%- assign ly_string = each_string | split: '</ly' | first -%}{%- assign ly_tag = ly_string | split: '>' | first -%}{%- assign ly_open_tag = '<ly-' | append: ly_tag | append: '>' -%}{%- assign ly_close_tag = '</ly-' | append: ly_tag | append: '>' -%}{%- assign ly_complete_tag = ly_open_tag | append: ly_close_tag -%}{%- assign delim = ly_tag | append: '>' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign tag_parts = ly_tag | split: '-' -%}{%- assign type = tag_parts | first -%}{%- assign id = tag_parts | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign used_translation = nil -%}{%- assign namespace = language | append: 'as' -%}{%- assign key = 'tid' | append: theme.id -%}{%- if shop.metafields[namespace][key] -%}{%- assign data = shop.metafields[namespace][key] -%}{%- assign splitter = '[ly' | append: id | append: ']' -%}{%- if data contains splitter -%}{%- assign used_translation = data | split: splitter | last | split: '[ly]' | first -%}{%- endif -%}{%- endif -%}{%- if used_translation -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, used_translation -%}{%- else -%}{%- assign namespace = language | append: type -%}{%- assign key = 'id' | append: id -%}{%- if shop.metafields[namespace][key] -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, shop.metafields[namespace][key] -%}{%- else -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '&lt;ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '&lt;/ly' -%}{%- assign ly_string = each_string | split: '&lt;/ly' | first -%}{%- assign ly_tag = ly_string | split: '&gt;' | first -%}{%- assign ly_open_tag = '&lt;ly-' | append: ly_tag | append: '&gt;' -%}{%- assign ly_close_tag = '&lt;/ly-' | append: ly_tag | append: '&gt;' -%}{%- assign ly_complete_tag = ly_open_tag | append: ly_close_tag -%}{%- assign delim = ly_tag | append: '&gt;' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign tag_parts = ly_tag | split: '-' -%}{%- assign type = tag_parts | first -%}{%- assign id = tag_parts | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign used_translation = nil -%}{%- assign namespace = language | append: 'as' -%}{%- assign key = 'tid' | append: theme.id -%}{%- if shop.metafields[namespace][key] -%}{%- assign data = shop.metafields[namespace][key] -%}{%- assign splitter = '[ly' | append: id | append: ']' -%}{%- if data contains splitter -%}{%- assign used_translation = data | split: splitter | last | split: '[ly]' | first -%}{%- endif -%}{%- endif -%}{%- if used_translation -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, used_translation -%}{%- else -%}{%- assign namespace = language | append: type -%}{%- assign key = 'id' | append: id -%}{%- if shop.metafields[namespace][key] -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, shop.metafields[namespace][key] -%}{%- else -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- capture customs -%}{%- for custom in shop.metafields.custom -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "cu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{{- src -}}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- for custom in shop.metafields.ly_global_cu -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "ncu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{%- if src.type == 'json' -%}{{- src.value.text -}}{%- else -%}{{- src.text -}}{%- endif -%}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- if global_strict_mode -%}{%- for custom in shop.metafields.ly_global_strict_mode_cu -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "ncu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{{- src.value.text -}}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- endif -%}{%- case request.page_type -%}{%- when 'index' -%}{%- assign used_scope = 'ly_frontpage_cu' -%}{%- when 'product' -%}{%- assign used_scope = 'ly_products_cu' -%}{%- assign used_object = product -%}{%- when 'collection' -%}{%- assign used_scope = 'ly_collections_cu' -%}{%- assign used_object = collection -%}{%- when 'list-collections' -%}{% assign used_scope = 'ly_collections_cu' -%}{%- when 'blog' -%}{%- assign used_scope = 'ly_blogs_cu' -%}{%- assign used_object = blog -%}{%- when 'article' -%}{%- assign used_scope = 'ly_articles_cu' -%}{%- assign used_object = article -%}{%- when 'page' -%}{% assign used_scope = 'ly_pages_cu' -%}{%- assign used_object = page -%}{%- else -%}{%- assign used_scope = 'ly_system_cu' -%}{%- endcase -%}{%- for custom in shop.metafields[used_scope] -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "ncu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{%- if src.type == 'json' -%}{{- src.value.text -}}{%- else -%}{{- src.text -}}{%- endif -%}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- if used_object -%}{%- for custom in used_object.metafields.custom -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "cu" -%}{%- assign translation_key = "id" | append: key -%}{%- if used_object.metafields[translation_namespace][translation_key] -%}{%- assign translation = used_object.metafields[translation_namespace][translation_key] -%} [ly_custom]{%- if src.type == 'json' -%}{{- src.value.text -}}{%- else -%}{{- src.text -}}{%- endif -%}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- endif -%}{%- endcapture -%}{%- assign customs = customs | split : '[ly_custom]' -%}{%- for custom in customs -%}{%- assign used_custom = custom | split: '[ly_custom_split]' -%}{%- assign src = used_custom | first -%}{%- assign dst = used_custom | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: dst | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: dst | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: dst | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- assign tag_translation_namespace = "ta" | append: language -%}{%- for tag_translation in shop.metafields[tag_translation_namespace] -%}{%- assign src = tag_translation | first -%}{%- if src contains 'ly_tag_' -%}{%- assign tmp_tag_namespace = 'l_ta' | append: language -%}{%- if shop.metafields[tmp_tag_namespace][src] -%}{%- assign src = shop.metafields[tmp_tag_namespace][src] -%}{%- endif -%}{%- endif -%}{%- assign translation = tag_translation | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: translation | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: translation | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: translation | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- assign translation_mode_key = 'ly' | append: theme.id -%}{%- if shop.metafields.translation_mode[translation_mode_key] == 'non-strict' -%}{%- assign vendor_translation_namespace = 've' | append: language -%}{%- for vendor_translation in shop.metafields[vendor_translation_namespace] -%}{%- assign src = vendor_translation | first -%}{%- if src contains 'ly_vendor_' -%}{%- assign tmp_vendor_namespace = 'l_ve' | append: language -%}{%- if shop.metafields[tmp_vendor_namespace][src] -%}{%- assign src = shop.metafields[tmp_vendor_namespace][src] -%}{%- endif -%}{%- endif -%}{%- assign translation = vendor_translation | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: translation | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: translation | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: translation | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- assign type_translation_namespace = "ty" | append: language -%}{%- for type_translation in shop.metafields[type_translation_namespace] -%}{%- assign src = type_translation | first -%}{%- if src contains 'ly_type_' -%}{%- assign tmp_type_namespace = 'l_ty' | append: language -%}{%- if shop.metafields[tmp_type_namespace][src] -%}{%- assign src = shop.metafields[tmp_type_namespace][src] -%}{%- endif -%}{%- endif -%}{%- assign translation = type_translation | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: translation | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: translation | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: translation | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- endif -%}{%- assign ly_liquid_content = ly_liquid_content | replace: '#ly_cu', '' -%}{{- ly_liquid_content -}}{%- endif -%}{%- else -%}{{ ly_liquid_content }}{%- endif -%}{% comment %}ly_liquid_scripts_end{% endcomment %}
+</html>

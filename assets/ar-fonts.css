@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Tajawal';
+  src: url('{{ "Tajawal-Light.woff2" | file_url }}') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('{{ "Tajawal-ExtraBold.woff2" | file_url }}') format('woff2');
+  font-weight: 800; /* use numeric instead of bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('{{ "Tajawal-Medium.woff2" | file_url }}') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('{{ "Tajawal-Bold.woff2" | file_url }}') format('woff2');
+  font-weight: 700; /* numeric is safer */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('{{ "Tajawal-ExtraLight.woff2" | file_url }}') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('{{ "Tajawal-Black.woff2" | file_url }}') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('{{ "Tajawal-Regular.woff2" | file_url }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

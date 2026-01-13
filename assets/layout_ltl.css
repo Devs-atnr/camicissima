@@ -1,0 +1,13 @@
+@media (min-width: 1200px){
+    .content-box--left{
+        left: -moz-calc((100% - 1170px)/ 2);
+        left: -webkit-calc((100% - 1170px)/ 2);
+        left: -ms-calc((100% - 1170px)/ 2);
+        left: calc((100% - 1170px)/ 2);
+    }
+}
+  @media screen and (min-width: 1025px) {
+	.newsletter-section {
+  padding-left: 10%;
+}
+}

@@ -1,0 +1,126 @@
+<div class="newsletter-section">
+  <div class="bg">&nbsp;</div>
+  <h2>{{ section.settings.title }}</h2>
+  <p>{{ section.settings.description }}</p>
+  {%- form 'customer', id: 'NewsletterSection', class: 'newsletter-form' -%}
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <input type="email" name="contact[email]" placeholder="{{ section.settings.input_placeholder }}" required>
+    <button type="submit">{{ section.settings.button_text }}</button>
+    {%- if form.errors -%}
+      <div class="error-message">{{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}</div>
+    {%- endif -%}
+    {%- if form.posted_successfully? -%}
+      <div class="success-message">Thank you for subscribing to our newsletter!</div>
+    {%- endif -%}
+  {%- endform -%}
+</div>
+
+{% comment %} <div class="newsletter-section">
+  <h2>{{ section.settings.title }}</h2>
+  <p>{{ section.settings.description }}</p>
+  <form method="post" action="/contact#contact_form" id="NewsletterSection">
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <input type="email" name="contact[email]" placeholder="{{ section.settings.input_placeholder }}" required>
+    <button type="submit">{{ section.settings.button_text }}</button>
+  </form>
+</div> 
+{% endcomment %}
+
+<style>
+@media (min-width: 1025px) {
+      form#NewsletterSection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+  .newsletter-form {
+    align-items: flex-start;
+}
+  .success-message {
+    font-family: "Archivo-Regular";
+    font-size: 14px;
+    margin: 2% 0;
+}
+  /* Add your custom styles here */
+  .newsletter-section {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  .newsletter-section input[type="email"] {
+      padding: 10px;
+      width: 70%;
+      margin-right: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  .newsletter-section button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .newsletter-section button:hover {
+      background-color: #0056b3;
+  }
+</style>
+
+<style>
+    .newsletter-section input[type="email"] {
+        padding: 10px;
+        width: 70%;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .newsletter-section button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .newsletter-section button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Newsletter Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Subscribe to Our Newsletter"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Stay updated with our latest news and offers!"
+    },
+    {
+      "type": "text",
+      "id": "input_placeholder",
+      "label": "Input Placeholder",
+      "default": "Enter your email"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Send"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter Section"
+    }
+  ]
+}
+{% endschema %}

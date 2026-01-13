@@ -1,0 +1,181 @@
+{% schema %}
+{
+  "name": "Planning Our Future",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "PLANNING OUR FUTURE, WITH THE PLANET"
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro Text",
+      "default": "Crafting a more sustainable future is our highest priority at MCM. Using innovation, smart design and future thinking we are proud to have set ourselves an ambitious path to meet the climate goals our planet needs. Our targets are grounded in climate science, guided by the Science Based Targets initiative, SBTi."
+    },
+    {
+      "type": "textarea",
+      "id": "commitment_text",
+      "label": "Commitment Text",
+      "default": "At MCM we are committed to combating climate change and driving rapid emission reductions..."
+    },
+    {
+      "type": "text",
+      "id": "target_1",
+      "label": "Target 1",
+      "default": "Reduce absolute scope 1 and 2 greenhouse gas (GHG) emissions 42% by 2030 from a 2021 base year."
+    },
+    {
+      "type": "text",
+      "id": "target_2",
+      "label": "Target 2",
+      "default": "Increase active annual sourcing of renewable electricity from 19% in 2021 to 100% by 2030."
+    },
+    {
+      "type": "text",
+      "id": "target_3",
+      "label": "Target 3",
+      "default": "Reduce scope 3 GHG emissions 25% by 2030 from a 2021 base year."
+    },
+    {
+      "type": "textarea",
+      "id": "closing_text",
+      "label": "Closing Text",
+      "default": "For all our SBTi goals, our ambition is not only to meet, but better these targets: to accelerate change, lower our impact, drive transparency and lead with best practice."
+    }
+  ]
+}
+{% endschema %}
+
+<section class="sustainability-section">
+  <div class="container-sustainability">
+    <!-- Title -->
+    <h2 class="sustainability-title">{{ section.settings.title }}</h2>
+    
+    <!-- Intro Text -->
+    <p class="sustainability-intro" >{{ section.settings.intro_text }}</p>
+    
+    <!-- Image with Overlay Text -->
+    <img class="sustainability-image" src="{{ section.settings.background_image | img_url: '1600x' }}" />
+    
+    <!-- Commitment Text -->
+    <p class="sustainability-commitment" >{{ section.settings.commitment_text }}</p>
+    
+    <!-- Target List -->
+    <div class="sustainability-targets">
+      <p class="target-heading">Validated by the SBTi, we have committed to:</p>
+      <ul>
+        {% if section.settings.target_1 %}<li>{{ section.settings.target_1 }}</li>{% endif %}
+        {% if section.settings.target_2 %}<li>{{ section.settings.target_2 }}</li>{% endif %}
+        {% if section.settings.target_3 %}<li>{{ section.settings.target_3 }}</li>{% endif %}
+      </ul>
+    </div>
+    
+    <!-- Closing Text -->
+    <p class="sustainability-closing">{{ section.settings.closing_text }}</p>
+  </div>
+</section>
+
+<style>
+  .sustainability-section {
+    padding: 40px 0;
+    color: #000;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sustainability-title {
+    font-size: 36px;
+    font-family: 'MCM Favorit Bold Extended';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 48px;
+    width: 40vw;
+    text-align: start;
+}
+  
+  .sustainability-intro {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: start;
+    font-family: 'MCM Favorit Variable';
+    line-height: 40px;
+        padding-bottom: 50px;
+    padding-top: 130px;
+}
+  
+  .sustainability-image {
+   position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 60vw;
+  }
+  
+  .sustainability-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sustainability-commitment, .sustainability-closing, .target-heading {
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'MCM Favorit Variable';
+
+}
+  
+  .sustainability-targets {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .sustainability-targets ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .sustainability-targets ul li {
+    margin: 5px 0;
+  }
+  .container-sustainability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .sustainability-commitment{
+    margin-top: 100px;
+  }
+  p.target-heading {
+    margin-left: -30px;
+}
+</style>

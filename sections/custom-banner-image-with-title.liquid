@@ -1,0 +1,135 @@
+{% comment %}
+Custom Banner Section with up to 6 images, each with a title and description
+{% endcomment %}
+
+<div class="main div img-title-desc custom-banner image">
+  {% for block in section.blocks %}
+    <div class="banner-item image">
+      {% if block.settings.link_url %}
+        <a href="{{ block.settings.link_url }}" class="banner-link">
+      {% endif %}
+
+      {% if block.settings.image %}
+        <img src="{{ block.settings.image | img_url: 'large' }}" alt="{{ block.settings.title }}" class="banner-image">
+      {% endif %}
+
+      {% if block.settings.link_url %}
+        </a>
+      {% endif %}
+      
+      <h3 class="custom-banner-image-title">{{ block.settings.title }}</h3>
+      <p class="custom-banner-image-description">{{ block.settings.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+/* Desktop Styles */
+.custom-banner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.banner-item {
+  width: 100%; 
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom-banner-image-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.custom-banner-image-description {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+  .custom-banner {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 0 12px;
+  }
+
+  .banner-item {
+    flex: 0 0 auto;
+    width: 80%;
+    scroll-snap-align: start;
+  }
+
+  .custom-banner-image-title {
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+
+  .custom-banner-image-description {
+    font-size: 12px !important;
+    margin-top: 0 !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* Optional: Hide scrollbars */
+.custom-banner::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-banner {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
+
+{% schema %}
+{
+  "name": "custom banner image",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom banner image",
+      "category": "Custom"
+    }
+  ],
+  "max_blocks": 6
+}
+{% endschema %}

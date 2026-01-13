@@ -1,0 +1,235 @@
+{% comment %}
+Section: Top Seller Menu (with arrow image + slide animation)
+Author: Ali Murtaza
+{% endcomment %}
+
+<section class="top-seller-section">
+  <div class="page-width">
+
+    <!-- Header -->
+    <div class="top-seller-header">
+      <h2 class="top-seller-title">Top Seller</h2>
+      <button class="top-seller-toggle" aria-label="Toggle Menu">
+        <img 
+          src="https://cdn.shopify.com/s/files/1/0912/8522/5748/files/arrow-up.png?v=1762433783" 
+          alt="Toggle Arrow" 
+          class="toggle-arrow"
+        >
+      </button>
+    </div>
+
+    <!-- Links -->
+    <ul class="top-seller-list">
+      {% for block in section.blocks %}
+        <li class="top-seller-item">
+          <a href="{{ block.settings.link }}" class="top-seller-link">{{ block.settings.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+  {% stylesheet %}
+  /* --- Base Section --- */
+  .top-seller-toggle { display: none;   }
+  .top-seller-section {
+    padding: 100px 40px 40px 40px;
+    background: #fff;
+   border-top: 1px solid #cecece;
+    font-family: 'Outfit', "Archivo-Regular";
+  }
+
+  .top-seller-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    position: relative;
+  }
+
+  .top-seller-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .top-seller-title::before,
+  .top-seller-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 140px;
+    height: 1px;
+    background: #000;
+  }
+  .top-seller-title::before { right: 100%; margin-right: 15px; }
+  .top-seller-title::after { left: 100%; margin-left: 15px; }
+
+  /* --- Desktop Layout --- */
+  .top-seller-list {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px auto 0;
+    padding: 0;
+    list-style: none;
+    
+  }
+
+  .top-seller-item {
+    margin: 5px 10px;
+    position: relative;
+  }
+
+  .top-seller-item:not(:last-child)::after {
+    content: "|";
+    color: #ccc;
+    margin-left: 10px;
+  }
+
+  .top-seller-link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #111;
+    text-decoration: none;
+    padding: 13px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+
+  .top-seller-link:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  /* --- Mobile Layout --- */
+  @media (max-width: 767px) {
+
+    .top-seller-section {
+    padding: 20px 40px 40px;
+    margin-top: 50px;
+  
+  }
+ .top-seller-header { padding-bottom: 10px; }
+ .top-seller-title { font-size: 2rem; margin-bottom: 0px;}
+    .top-seller-title::before,
+    .top-seller-title::after {
+      display: none;
+    }
+
+    .top-seller-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .toggle-arrow {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.3s ease;
+      transform: rotate(0deg);
+    }
+
+    .top-seller-section.active .toggle-arrow {
+      transform: rotate(180deg);
+    }
+
+    .top-seller-list {
+        gap: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 0;
+      border-top: 1px solid #eee;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    .top-seller-section.active .top-seller-list {
+      max-height: 1000px; /* smooth slide effect */
+      opacity: 1;
+      padding-top: 10px;
+    }
+
+    .top-seller-item {
+      width: 100%;
+      margin: 0;
+    }
+
+    .top-seller-item:not(:last-child)::after {
+      display: none;
+    }
+
+    .top-seller-link {
+      display: block;
+      width: 100%;
+      padding: 05px 0;
+      border-bottom: none;
+      color: #000;
+    }
+
+    .top-seller-link:hover {
+      background: #333;
+      color: #fff;
+    }
+  }
+  {% endstylesheet %}
+
+  {% javascript %}
+  document.addEventListener('DOMContentLoaded', function () {
+    const section = document.querySelector('.top-seller-section');
+    const toggleBtn = section.querySelector('.top-seller-toggle');
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        section.classList.toggle('active');
+      });
+    }
+  });
+  {% endjavascript %}
+</section>
+
+{% schema %}
+{
+  "name": "Top Seller Menu",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "link_item",
+      "name": "Link Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Link Text",
+          "default": "LINEN SHIRTS"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 30,
+  "presets": [
+    {
+      "name": "Top Seller Menu"
+    }
+  ]
+}
+{% endschema %}

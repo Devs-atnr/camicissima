@@ -1,0 +1,93 @@
+<div class="newsletter-signup">
+  <h2>{{ section.settings.heading_text }}</h2>
+  
+  <form method="post" action="/contact" accept-charset="UTF-8" class="contact-form">
+    <input type="hidden" name="form_type" value="customer" />
+    <input type="hidden" name="utf8" value="✓" />
+    
+    <label for="email">{{ section.settings.email_label }}</label>
+    <input type="email" name="contact[email]" id="email" placeholder="{{ section.settings.email_placeholder }}" required />
+    
+    <button type="submit">{{ section.settings.button_text }}</button>
+  </form>
+</div>
+
+<style>
+  .newsletter-signup {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .newsletter-signup h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-signup form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+  }
+
+  .newsletter-signup label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .newsletter-signup input[type="email"]:focus {
+    outline: none;
+  }
+
+  .newsletter-signup button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .newsletter-signup button:hover {
+    text-decoration: underline;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Newsletter Signup",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading_text",
+        "label": "Heading Text",
+        "default": "SIGN UP FOR NEWS & SALES"
+      },
+      {
+        "type": "text",
+        "id": "email_label",
+        "label": "Email Label",
+        "default": "E-MAIL"
+      },
+      {
+        "type": "text",
+        "id": "email_placeholder",
+        "label": "Email Placeholder",
+        "default": "Enter your email"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "SEND"
+      }
+    ]
+  }
+{% endschema %}
+

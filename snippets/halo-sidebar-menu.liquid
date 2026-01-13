@@ -1,0 +1,419 @@
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/* Mobile-specific adjustments */
+@media (max-width: 1025px) {
+    .halo-sidebar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1000;
+        transition: left 0.3s ease; /* Smooth sidebar open */
+    }
+div#navigation-mobile .halo-sidebar-wrapper.custom-scrollbar nav.main-nav {
+    margin-bottom: 50px !important;
+}
+
+    /* Show sidebar when class 'show-sidebar' is added */
+    .halo-sidebar.show-sidebar {
+        left: 0;
+    }
+
+    /* Close button styling */
+    .halo-sidebar-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+        cursor: pointer;
+    }
+
+    /* Menu styling for mobile */
+    .menu-level-1 {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-level-1 > li {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: 'MCM Favorit Bold Extended'
+    }
+  .sidebar-bottom-links a{
+    font-size: 12px;
+    font-family: 'MCM Favorit Variable'
+    font-weight: 700 !important;
+  }
+
+    /* Hide level 2 and 3 menus by default */
+    .menu-level-2, .menu-level-3 {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Show submenus when 'show' class is added */
+    .menu-level-2.show, .menu-level-3.show {
+                display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin: 10px 0 10px 0;
+    }
+
+    /* Icon for dropdowns */
+    .menu-level-1 > li > a::after, .menu-level-2 > li.has-submenu > a::after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 407.436 407.436'%3E%3Cpolygon points='112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718'/%3E%3C/svg%3E")!important;      
+        width: 10px;
+        display: inline-block;
+        float: right;
+        font-size: 12px;
+    }
+
+    /* Rotate icon when submenu is opened */
+    .menu-level-1 > li > a.is-clicked::after, .menu-level-2 > li > a.is-clicked::after {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease; /* Smooth transition */
+
+    }
+
+    .menu-level-2 > li {
+        padding: 0px 10px;
+    }
+
+    .menu-level-3 > li {
+        padding: 5px 30px;
+    }
+    .menu-level-2 > li {
+               padding: 5px 30px;
+    }
+    /* Adjust level 3 submenu */
+    .menu-level-3.show {
+        display: block;
+    }
+      .halo-sidebar.halo-sidebar-left.halo-sidebar_menu .halo-sidebar-close svg {
+        fill: #000 !important;
+    }
+
+
+  .sidebar-bottom-links {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10%;
+}
+  .sidebar-bottom-links a {
+    width: 100% !important;
+    border-bottom: 1px solid #000;
+    margin: 5% 0%;
+}
+  .menu_open .halo-sidebar.halo-sidebar_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateZ(0);
+    width: 100vw !important;
+}
+}
+  @media (max-width: 1025px) {
+    .sidebar-bottom-links.half-width {
+        width: 45% !important;
+        border-bottom: 1px solid #000 !important;
+        display: flex;
+        align-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
+  @media (max-width: 1025px) {
+    .sidebar-bottom-links.full-width {
+        display: flex!important;
+        width: 90%!important;
+        margin-top: 0!important;
+        flex-wrap: wrap!important;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5%;
+
+    }
+    a.sidebar-bottom-links.half-width svg,a.sidebar-bottom-links.half-width .fa{
+      width:10%;
+      font-size: 20px;
+
+    }
+    .sidebar-bottom-links.full-width .fa {
+        width: 5%;
+        font-size: 20px;
+}
+@media (max-width: 1025px) {
+    .sidebar-bottom-links.full-width.login a {
+        display: flex!important;
+        justify-content: space-between!important;
+    }
+}
+
+}
+
+</style>
+
+
+
+  <div class="halo-sidebar halo-sidebar-left halo-sidebar_menu custom-mobile-menu" id="navigation-mobile">
+    <div class="halo-sidebar-wrapper custom-scrollbar">
+      <button type="button" class="halo-sidebar-close" data-close-sidebar="" role="button"><span class="visually-hidden">Close</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"></path></svg></button>
+
+
+<!-- Ahmed (Mobile Menu rebuilt from scratch) 3:00 5/11 -->
+      
+          {% comment %}
+            
+        <nav class="main-nav">
+            <ul class="menu-level-1">
+                {% assign main_menu = linklists.main-menu.links %}
+                {% for link in main_menu %}
+                <li>
+                    {% if link.links.size > 0 %}
+                        <a href="#" class="toggle-submenu">{{ link.title }}</a>
+                        <ul class="menu-level-2">
+                            {% for child_link in link.links %}
+                            <li class="{% if child_link.links.size > 0 %}has-submenu{% endif %}">
+                                {% if child_link.links.size > 0 %}
+                                    <a href="#" class="toggle-submenu">{{ child_link.title }}</a>
+                                    <ul class="menu-level-3">
+                                        {% for sub_child_link in child_link.links %}
+                                        <li><a href="{{ sub_child_link.url }}">{{ sub_child_link.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        {% endcomment %}
+<ul class="nav-level-1">
+  <li class="level-1-item">
+    <a href="/collections/mens-shirts" class="menu-toggle-mob" data-menu="1">MENS ITALIAN SHIRTS<span class="menu-toggle-mob-btn" data-menu="1">{% render 'icon-right-arrow' %}</span> </a>
+
+    <div class="sidebar-2" data-sidebar="1">
+      <button class="close-btn" data-close="1">{% render 'icon-left-arrow' %}</button>
+      <ul class="level-2-menu-mob">
+        <div class="level-2-Links-mob">
+          {% assign level2Menu = linklists['new-menu'] %}
+          {% if level2Menu and level2Menu.links.size > 0 %}
+            {% for level2Item in level2Menu.links %}
+              <li class="level-2-item-mob">
+                <a href="{{ level2Item.url }}" class="level-2-link-mob">{{ level2Item.title }}</a>
+                {% assign level3Menu = linklists[level2Item.handle] %}
+                {% if level3Menu and level3Menu.links.size > 0 %}
+                  <ul class="level-3-menu-mob">
+                    {% for level3Item in level3Menu.links %}
+                      <li class="level-3-item">
+                        <a href="{{ level3Item.url }}" class="level-3-link">{{ level3Item.title }}</a>
+                        {% assign level4Menu = linklists[level3Item.handle] %}
+                        {% if level4Menu and level4Menu.links.size > 0 %}
+                          <ul class="level-4-menu-mob">
+                            {% for level4Item in level4Menu.links %}
+                              <li class="level-4-item">
+                                <a href="{{ level4Item.url }}" class="level-4-link">{{ level4Item.title }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          {% else %}
+            <p>No Level 2 items found. Please check your menu setup in the Shopify admin.</p>
+          {% endif %}
+        </div>
+      </ul>
+    </div>
+    <!-- <div class="menu-overlay" data-overlay="1"></div> -->
+  </li>
+</ul>
+
+
+      
+<ul class="nav-level-1">
+  <li class="level-1-item">
+    <a href="/collections/clothing" class="menu-toggle-mob" data-menu="2">CLOTHING<span class="menu-toggle-mob-btn" data-menu="2">{% render 'icon-right-arrow' %}</span></a>
+
+    <div class="sidebar-2" data-sidebar="2">
+      <button class="close-btn" data-close="2">{% render 'icon-left-arrow' %}</button>
+      <ul class="level-2-menu-mob">
+        <div class="level-2-Links-mob">
+          {% assign level2Menu = linklists['clothing'] %}
+          {% if level2Menu and level2Menu.links.size > 0 %}
+            {% for level2Item in level2Menu.links %}
+              <li class="level-2-item-mob">
+                <a href="{{ level2Item.url }}" class="level-2-link-mob">{{ level2Item.title }}</a>
+                {% assign level3Menu = linklists[level2Item.handle] %}
+                {% if level3Menu and level3Menu.links.size > 0 %}
+                  <ul class="level-3-menu-mob">
+                    {% for level3Item in level3Menu.links %}
+                      <li class="level-3-item">
+                        <a href="{{ level3Item.url }}" class="level-3-link">{{ level3Item.title }}</a>
+                        {% assign level4Menu = linklists[level3Item.handle] %}
+                        {% if level4Menu and level4Menu.links.size > 0 %}
+                          <ul class="level-4-menu-mob">
+                            {% for level4Item in level4Menu.links %}
+                              <li class="level-4-item">
+                                <a href="{{ level4Item.url }}" class="level-4-link">{{ level4Item.title }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          {% else %}
+            <p>No Level 2 items found. Please check your menu setup in the Shopify admin.</p>
+          {% endif %}
+        </div>
+      </ul>
+    </div>
+    <!-- <div class="menu-overlay" data-overlay="2"></div> -->
+  </li>
+</ul>
+
+
+      <!-- //Bilal -->
+      <ul class="nav-level-1">
+  <li class="level-1-item">
+    <a href="/pages/bundle-products" class="menu-toggle-mob" data-menu="2">BUNDLES<span class="menu-toggle-mob-btn" data-menu="2"></span></a>    
+  </li>
+</ul>
+
+<ul class="nav-level-1">
+  <li class="level-1-item">
+              {% assign level2Menu = linklists['womens-shirts'] %}
+
+    <a href="/collections/women-shirts" class="menu-toggle-mob" >WOMENS SHIRTS {% if level2Menu and level2Menu.links.size > 0 %}<span class="menu-toggle-mob-btn" data-menu="3">{% render 'icon-right-arrow' %}</span> {% endif %}</a>
+
+    <div class="sidebar-2" data-sidebar="3">
+      <button class="close-btn" data-close="3">{% render 'icon-left-arrow' %}</button>
+      <ul class="level-2-menu-mob">
+        <div class="level-2-Links-mob">
+          {% assign level2Menu = linklists['womens-shirts'] %}
+          {% if level2Menu and level2Menu.links.size > 0 %}
+            {% for level2Item in level2Menu.links %}
+              <li class="level-2-item-mob">
+                <a href="{{ level2Item.url }}" class="level-2-link-mob">{{ level2Item.title }}</a>
+                {% assign level3Menu = linklists[level2Item.handle] %}
+                {% if level3Menu and level3Menu.links.size > 0 %}
+                  <ul class="level-3-menu-mob">
+                    {% for level3Item in level3Menu.links %}
+                      <li class="level-3-item">
+                        <a href="{{ level3Item.url }}" class="level-3-link">{{ level3Item.title }}</a>
+                        {% assign level4Menu = linklists[level3Item.handle] %}
+                        {% if level4Menu and level4Menu.links.size > 0 %}
+                          <ul class="level-4-menu-mob">
+                            {% for level4Item in level4Menu.links %}
+                              <li class="level-4-item">
+                                <a href="{{ level4Item.url }}" class="level-4-link">{{ level4Item.title }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          {% else %}
+            <p>No Level 2 items found. Please check your menu setup in the Shopify admin.</p>
+          {% endif %}
+        </div>
+      </ul>
+    </div>
+    <!-- <div class="menu-overlay" data-overlay="2"></div> -->
+  </li>
+</ul>      
+
+
+
+
+
+
+      
+    
+
+    </div>
+</div>
+
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('navigation-mobile');
+    const hamburger = document.querySelector('.header__hamburger');
+    const closeBtn = document.querySelector('.halo-sidebar-close');
+
+    // Open sidebar when hamburger is clicked
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            sidebar.classList.add('show-sidebar');
+        });
+    }
+
+    // Close sidebar when close button is clicked
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            sidebar.classList.remove('show-sidebar');
+        });
+    }
+
+    // Delegate click events from the sidebar to toggle submenus
+    if (sidebar) {
+        sidebar.addEventListener('click', function(e) {
+            const toggle = e.target.closest('.toggle-submenu');
+            if (toggle) {
+                e.preventDefault();
+                e.stopPropagation();
+                const submenu = toggle.nextElementSibling;
+                if (submenu) {
+                    submenu.classList.toggle('show');
+                    toggle.classList.toggle('is-clicked');
+                }
+            }
+        });
+    }
+
+    // Close the sidebar when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!sidebar.contains(event.target)) {
+            sidebar.classList.remove('show-sidebar');
+        }
+    });
+
+    // Prevent closing when clicking inside the sidebar
+    sidebar.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
+
+</script>
+

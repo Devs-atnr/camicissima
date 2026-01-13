@@ -1,0 +1,62 @@
+
+{% comment %}
+  
+
+
+{%- if predictive_search.performed -%}
+    <div id="predictive-search-results" class="quickSearchResults quickSearchResultsBlock custom-scrollbar" >
+        <div class="container">
+          
+            <h2 id="predictive-search-products" class="predictive-search__heading text-body caption-with-letter-spacing search-block-title text-left">
+                <span class="text">{{ 'general.search.search_result_title' | t }}</span>
+                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+            </h2> 
+            <div id="predictive-search-results-list" class="predictive-search__results-list list-unstyled" role="listbox" aria-labelledby="predictive-search-products">
+                {%- if predictive_search.resources.products.size > 0 -%} 
+                    
+  
+                    <div class="productEmpty text-center animate-arrow" style="margin-top: 40px;">
+                        <a class="icon-arrow search-more" href="{{ routes.search_url }}?q={{ predictive_search.terms }}&type=product" >
+                            <span class="text result">Best Match <strong>   {% render 'icon-link-arrow-right' %}"{{ predictive_search.terms }}"</strong></span>
+
+                        </a>
+                        {% comment %} <span class="keyword"><strong>{{ predictive_search.terms }}</strong></span> {% endcomment %}
+                         {% comment %}
+                    </div>
+                  {% else %}
+              <div class="search-result">
+                  <div class="productEmpty text-center animate-arrow">
+                        <div class="icon-arrow search-more" href="{{ routes.search_url }}?q={{ predictive_search.terms }}&type=product" >
+                            <span class="text result">NO RESULTS FOUND FOR<strong>"{{ predictive_search.terms }}"</strong></span>
+                        </div>
+                    
+</div>
+                <div class="search-suggestions">
+    <p class="title">SEARCH SUGGESTIONS:</p>
+    <ul class="suggestions-list">
+        <li><span class="arrow">→</span> BABY BAGS</li>
+        <li><span class="arrow">→</span> PINK BAG</li>
+        <li><span class="arrow">→</span> PINK</li>
+        <li><a href="https://mcmworldwide.sa/collections/accessories-all-accessories-belts"><span class="arrow">→</span> BELT</a></li>
+        <li><a href="https://mcmworldwide.sa/collections/women-travel-backpacks"><span class="arrow">→</span> BACKPACK</a></li>
+    </ul>
+</div>
+              </div>{% endcomment %}
+                        {% comment %} <span class="keyword"><strong>{{ predictive_search.terms }}</strong></span> {% endcomment %} {% comment %}
+                    </div>
+                {%- endif -%}
+            </div>  
+            <span class="hidden" data-predictive-search-live-region-count-value>
+                {%- if search.results_count == 0 -%}
+                    {{ 'templates.search.no_results' | t: terms: predictive_search.terms }}
+                {%- else -%}
+                    {{ 'general.search.view_all' | t: count: predictive_search.resources.products.size }}
+                {%- endif -%}
+            </span>
+        </div>
+    </div>
+{%- endif -%}
+
+{% endcomment %}{% endcomment %}

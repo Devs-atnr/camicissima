@@ -1,0 +1,221 @@
+<section class="promo-grid-section" dir="{{ settings.enable_rtl | default: false | eq: true | default: 'ltr' }}">
+  <div class="promo-grid">
+
+    {% for block in section.blocks %}
+    <div class="promo-grid-item {{ block.settings.custom_class }}" style="--bg:url('{{ block.settings.bg_image | image_url: width: 1600 }}'); ">    
+      <a class="promo-grid-title" href="{{ block.settings.main_link }}">
+        {{ block.settings.title }}
+      </a>
+
+      {% if block.settings.sub_links != blank %}
+      <div class="promo-grid-sub-links desktop-only">
+        {% assign links = block.settings.sub_links | split: ',' %}
+        {% for link in links %}
+          {% assign pair = link | split: '|' %}
+          <a href="{{ pair[1] | strip }}">{{ pair[0] | strip }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+    
+  </div>
+</section>
+
+<style>
+
+{% if request.locale.iso_code == 'en' %}
+    // ENGLISH CODE HERE ...
+    .promo-grid-item {padding-left: 0rem; } 
+{% else %}
+   .promo-grid-item {padding-right: 3rem; } 
+{% endif %}
+
+ .promo-grid-section { font-family: 'Poppins', sans-serif !important; }
+.promo-grid {
+  display:grid;
+  gap: 1px;
+}
+
+/* Desktop 1024+ */
+@media(min-width:1025px){
+  .promo-grid{
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:auto;
+  }
+}
+
+/* Small Mobile 350-560px */
+@media(min-width:350px) and (max-width:560px){
+.three {background-position:top !important;  }
+  .four { background-position:top !important; }
+  }
+
+/* Tablet 768-1024px */
+@media(min-width:768px) and (max-width:1024px){
+  .promo-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .one {justify-content: flex-end !important;  padding-bottom: 3rem;}
+  .two {justify-content: flex-end !important;  padding-bottom: 3rem;}
+.promo-grid-item {height:55vh !important;} 
+  .promo-grid-title{  font-size: 2.2rem !important; }
+}
+
+/* Mobile <768 */
+@media(max-width:767px){
+  {% comment %} .one {height:55vh !important;} {% endcomment %}
+  {% comment %} .two {height:55vh !important;} {% endcomment %}
+   .one { height:auto !important; } 
+  .two { height:auto !important; } 
+  .promo-grid{ grid-template-columns: repeat(2, 1fr); }
+  .promo-grid-item:nth-child(3),
+  .promo-grid-item:nth-child(4){
+    grid-column: 1 / -1; /* full width */
+  }
+  .one {justify-content: flex-end !important; padding-bottom: 3rem;}
+  .two {justify-content: flex-end !important; padding-bottom: 3rem;}
+  .promo-grid-title{  font-size: 2rem !important; }
+  .three { height:auto !important; }
+  .four { height:auto !important; }
+}
+
+.promo-grid-item:hover {
+ background-size:110%;
+}
+.promo-grid-item {
+  overflow: hidden;  
+  position:relative;
+  background-size:100%;
+  background-position:center;
+  height:100vh;
+  min-height:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  transition: transform 0.3s ease !important;
+}
+
+/* Dedicated background layer */
+.promo-grid-item::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform .45s ease;   /* smooth, no jerk */
+  will-change: transform;            /* hint GPU */
+}
+
+/* Hover zoom */
+.promo-grid-item:hover::before{
+  transform: scale(1.06);            /* subtle zoom-in */
+}
+
+.three {justify-content: flex-end; align-items: flex-end; padding-right: 3rem; padding-bottom: 3rem; }
+.four {justify-content: flex-end; align-items: flex-end; padding-right: 3rem; padding-bottom: 3rem; }
+
+
+.promo-grid-title:hover { color: white;}
+/* Title styling */
+.promo-grid-title{
+   position: relative;
+  z-index: 1;
+  color:#fff;
+
+  {% comment %} padding:12px 18px; {% endcomment %}
+  font-size: 3.7rem;
+  margin-bottom: 10px;
+  font-weight:600;
+  text-decoration:none;
+  display:inline-block;
+  border-radius:6px;
+  {% comment %} backdrop-filter:blur(3px); {% endcomment %}
+}
+
+/* Sub links under title */
+.promo-grid-sub-links{
+  margin-top:8px;
+   position: relative;
+  z-index: 1;
+}
+
+.promo-grid-sub-links a{
+  color:#fff;
+  display:block;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-top:20px;
+  margin-bottom: 20px;
+  text-decoration:none;
+  
+  {% comment %} padding:5px 10px; {% endcomment %}
+  border-radius:3px;
+}
+
+/* Show sublinks only on desktop */
+.desktop-only{display:block;}
+@media(max-width:1024px){ .desktop-only{display:none;} }
+
+/* RTL support */
+[dir="rtl"] .promo-grid-title,
+[dir="rtl"] .promo-grid-sub-links a{
+  direction:rtl;
+  text-align:right;
+}
+{% if request.locale.iso_code == 'en' %}
+   .three .promo-grid-sub-links {
+    margin-right: 17px;
+}
+.four .promo-grid-sub-links {
+    right: 150px;
+}
+{% endif %}
+</style>
+
+{% schema %}
+{
+  "name": "Home Collection Grid",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_rtl",
+      "label": "Enable RTL for Arabic",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "promo",
+      "name": "Grid Item",
+      "settings": [
+        { "type": "image_picker", "id": "bg_image", "label": "Background Image" },
+        { "type": "text", "id": "title", "label": "Heading Text", "default": "Mens Italian Shirts" },
+        { "type": "url", "id": "main_link", "label": "Heading Link" },
+        {
+          "type": "textarea",
+          "id": "sub_links",
+          "label": "Sub Links (Desktop Only)",
+          "info": "Format: Link Text|URL, Link Text|URL"
+        },
+            {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom CSS Class (optional)"
+           }
+
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Home Promo Grid",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

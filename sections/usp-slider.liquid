@@ -1,0 +1,267 @@
+{% comment %}
+Section: Responsive Feature Icons
+Author: Ali Murtaza
+{% endcomment %}
+
+<section class="feature-icons-section">
+  <div class="page-width">
+    <div class="feature-icons-wrapper">
+
+      <div class="feature-icons-grid" id="featureIconsGrid">
+        {% for block in section.blocks %}
+          <div class="feature-icon-item">
+            {% if block.settings.icon_image != blank %}
+              <img src="{{ block.settings.icon_image | image_url: width: 200 }}" alt="{{ block.settings.title | escape }}" class="feature-icon-img" loading="lazy">
+            {% endif %}
+            <h3 class="feature-icon-title">{{ block.settings.title }}</h3>
+            <p class="feature-icon-desc">{{ block.settings.desc }}</p>
+          </div>
+        {% endfor %}
+      </div>
+
+      <button class="feature-arrow feature-prev">&#10094;</button>
+<button class="feature-arrow feature-next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "USP Slider",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Feature Icons with Responsive Layout"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_item",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "desc",
+          "label": "Description",
+          "default": "Short feature description here."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "USP Slider",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+/* Fix horizontal scroll and alignment issues */
+.feature-icons-section {
+  font-family: 'Outfit';  
+  overflow-x: hidden; /* prevents right scroll bar */
+  background: #f5f5f5;
+  padding: 15px 0;
+  margin-bottom: 50px;
+
+}
+
+.feature-icons-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.feature-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 30px;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.feature-icon-item {
+ padding: 4rem 1rem;
+}
+
+.feature-icon-img {
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.feature-icon-title {
+
+  color: #1a1a1a;
+  font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.feature-icon-desc {
+  margin: 0;
+  color: #555;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    line-height: 1.4;
+}
+
+/* ✅ Mobile: 1-column slider layout without scroll overflow */
+@media (max-width: 767px) {
+
+  .feature-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 22px;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+            border: none;
+        background: transparent;
+  }
+
+  .feature-prev {
+    left: 10px;
+  }
+
+  .feature-next {
+    right: 10px;
+  }
+
+
+  .feature-icons-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature-icon-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  /* hide default scrollbar for cleaner look */
+  .feature-icons-grid::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+  /* Hide arrows on desktop */
+  @media (min-width: 768px) {
+    .feature-arrow {
+      display: none !important;
+    }
+  }
+
+{% endstylesheet %}
+
+{% javascript %}
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('#featureIconsGrid');
+  const prev = document.querySelector('.feature-prev');
+  const next = document.querySelector('.feature-next');
+
+  // Run only on mobile screens
+  if (!slider || window.innerWidth >= 768) return;
+
+  // ====== DRAG / SWIPE SCROLL ======
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  // Mouse drag start
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('dragging');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  // Mouse leave or release
+  ['mouseleave', 'mouseup'].forEach(evt => {
+    slider.addEventListener(evt, () => {
+      isDown = false;
+      slider.classList.remove('dragging');
+    });
+  });
+
+  // Mouse move
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.3; // scroll speed
+    slider.scrollLeft = scrollLeft - walk;
+  });
+
+  // Touch events (for mobile)
+  let touchStartX = 0;
+  let touchScrollLeft = 0;
+  slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].pageX;
+    touchScrollLeft = slider.scrollLeft;
+  });
+  slider.addEventListener('touchmove', (e) => {
+    const x = e.touches[0].pageX;
+    const walk = (x - touchStartX) * 1.3;
+    slider.scrollLeft = touchScrollLeft - walk;
+  });
+
+  // ====== ARROW BUTTON SCROLL ======
+  const scrollAmount = slider.offsetWidth * 0.9; // scroll by 90% visible width
+
+  function scrollLeftBy() {
+    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  }
+
+  function scrollRightBy() {
+    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+
+  if (prev) prev.addEventListener('click', scrollLeftBy);
+  if (next) next.addEventListener('click', scrollRightBy);
+
+  // ====== Prevent drag selecting text/images ======
+  slider.addEventListener('dragstart', (e) => e.preventDefault());
+
+  // ====== Hide arrows if only 1 slide ======
+  if (slider.children.length <= 1) {
+    if (prev) prev.style.display = 'none';
+    if (next) next.style.display = 'none';
+  }
+});
+
+
+{% endjavascript %}
+
+
+

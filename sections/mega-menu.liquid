@@ -1,0 +1,106 @@
+
+<div class="mega-menu-block">
+  <style>
+    .mega-menu-block {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mega-menu-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mega-menu-column {
+  margin-right: 20px;
+}
+
+.mega-menu-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Show mega menu on hover */
+.menu-item:hover .mega-menu-block {
+  display: block;
+}
+
+  </style>
+  <div class="mega-menu-content">
+    <!-- Column 1 -->
+    <div class="mega-menu-column">
+      <h3>{{ block.settings.column_1_title }}</h3>
+      <ul>
+        {% for link in block.settings.column_1_links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="mega-menu-column">
+      <h3>{{ block.settings.column_2_title }}</h3>
+      <ul>
+        {% for link in block.settings.column_2_links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Mega Menu Image -->
+    <div class="mega-menu-image">
+      <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Mega Menu",
+  "settings": [
+    {
+      "type": "text",
+      "id": "column_1_title",
+      "label": "Column 1 Title",
+      "default": "New Arrivals"
+    },
+    {
+      "type": "link_list",
+      "id": "column_1_links",
+      "label": "Column 1 Links"
+    },
+    {
+      "type": "text",
+      "id": "column_2_title",
+      "label": "Column 2 Title",
+      "default": "Accessories"
+    },
+    {
+      "type": "link_list",
+      "id": "column_2_links",
+      "label": "Column 2 Links"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Mega Menu Image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image Alt Text",
+      "default": "Mega Menu Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mega Menu",
+      "category": "Navigation"
+    }
+  ]
+}
+{% endschema %}

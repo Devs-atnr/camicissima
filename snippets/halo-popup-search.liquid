@@ -1,0 +1,57 @@
+<div class="container">
+    <button type="button" class="header-search-close" aria-label="{{ 'general.common.close' | t }}">
+        {% render 'icon-close' %}
+    </button>
+    <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+        <div class="field">
+            <input 
+                class="search__input field__input form-input-placeholder" 
+                id="Search-In-Modal" 
+                type="search" 
+                name="q" 
+                value="{{ search.terms | escape }}"
+                placeholder="{{ 'general.search.search_product' | t }}" 
+                autocomplete="off"
+                {%- if settings.show_quick_search -%}
+                    role="combobox"
+                    aria-expanded="false"
+                    aria-owns="predictive-search-results-list"
+                    aria-controls="predictive-search-results-list"
+                    aria-haspopup="listbox"
+                    aria-autocomplete="list"
+                    autocorrect="off"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                {%- endif -%}
+            >
+          <form action="/search" method="get" role="search">
+<input type="search" name="q" placeholder="Search products" aria-label="Search" autocomplete="off">
+             <div class="search-suggestions">
+    <p class="title">SEARCH SUGGESTIONS:</p>
+    <ul class="suggestions-list">
+        <li><span class="arrow">→</span> BABY BAGS</li>
+        <li><span class="arrow">→</span> PINK BAG</li>
+        <li><span class="arrow">→</span> PINK</li>
+        <li><a href="https://mcmworldwide.sa/collections/accessories-all-accessories-belts"><span class="arrow">→</span> BELT</a></li>
+        <li><a href="https://mcmworldwide.sa/collections/women-travel-backpacks"><span class="arrow">→</span> BACKPACK</a></li>
+    </ul>
+</div>
+</form>
+
+            <input type="hidden" name="options[prefix]" value="last">
+            <label class="field__label hiddenLabels" for="Search-In-Modal">
+                {{ 'general.search.search' | t }}
+            </label>
+            <button class="button search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">
+                {% render 'icon-search' %}
+            </button>
+        </div>  
+    </form> 
+    {%- if settings.show_search_trending or settings.show_search_product -%}
+        {%- render 'quick-searching-trending-products', sectionId: 'popup-search-list-result' -%}
+    {%- endif -%}
+    {%- if settings.show_quick_search -%}
+         {%- render 'predictive-search-results' -%}
+    {%- endif -%}
+</div>
