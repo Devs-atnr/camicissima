@@ -1,0 +1,554 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "انتقل إلى المحتوى" [ref=e3] [cursor=pointer]:
+      - /url: "#MainContent"
+    - generic [ref=e7]:
+      - group [ref=e10]:
+        - generic "بحث" [ref=e11] [cursor=pointer]:
+          - img [ref=e13]
+      - link "قائمة أمنياتي" [ref=e17] [cursor=pointer]:
+        - /url: /ar/pages/wishlist
+        - img [ref=e18]
+        - generic [ref=e22]: قائمة أمنياتي
+      - link "camicissima-ksa" [ref=e25] [cursor=pointer]:
+        - /url: /ar
+        - img "camicissima-ksa" [ref=e26]
+      - link "العربة 0 منتجات" [ref=e29] [cursor=pointer]:
+        - /url: /ar/cart
+        - img [ref=e30]
+        - generic [ref=e33]: العربة
+        - generic [ref=e34]:
+          - generic [ref=e35]: "0"
+          - generic [ref=e36]: 0 منتجات
+      - button "menu" [ref=e39] [cursor=pointer]
+    - main [ref=e41]:
+      - generic [ref=e44]:
+        - heading "4 results found for “bag”" [level=1] [ref=e45]
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - button "إغلاق":
+              - generic: إغلاق
+              - img
+            - generic [ref=e49]:
+              - generic [ref=e50]:
+                - heading "Categories" [level=2] [ref=e52] [cursor=pointer]
+                - menu [ref=e55]:
+                  - menuitem "link" [ref=e56]:
+                    - link "link" [ref=e57] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts
+                      - text: قمصان رجالية
+                  - menuitem "link" [ref=e58]:
+                    - link "link" [ref=e59] [cursor=pointer]:
+                      - /url: /ar/collections/clothing
+                      - text: ملابس
+                  - menuitem "link" [ref=e60]:
+                    - link "link" [ref=e61] [cursor=pointer]:
+                      - /url: /ar/pages/bundle-products
+                      - text: مجموعات
+                  - menuitem "link" [ref=e62]:
+                    - link "link" [ref=e63] [cursor=pointer]:
+                      - /url: /ar/collections/women-shirts
+                      - text: قمصان للنساء
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - heading "اللون" [level=2] [ref=e70] [cursor=pointer]
+                  - list [ref=e73]:
+                    - listitem [ref=e74]:
+                      - generic [ref=e75] [cursor=pointer]: أزرق(1)
+                - generic [ref=e76]:
+                  - heading "المقاس" [level=2] [ref=e78] [cursor=pointer]
+                  - list [ref=e81]:
+                    - listitem [ref=e82]:
+                      - generic [ref=e83] [cursor=pointer]: 38(1)
+                    - listitem [ref=e84]:
+                      - generic [ref=e85] [cursor=pointer]: 39(1)
+                    - listitem [ref=e86]:
+                      - generic [ref=e87] [cursor=pointer]: 40(1)
+                    - listitem [ref=e88]:
+                      - generic [ref=e89] [cursor=pointer]: 41(1)
+                    - listitem [ref=e90]:
+                      - generic [ref=e91] [cursor=pointer]: 42(1)
+                    - listitem [ref=e92]:
+                      - generic [ref=e93] [cursor=pointer]: 43(1)
+          - list [ref=e99]:
+            - listitem [ref=e100]:
+              - generic [ref=e102]:
+                - generic [ref=e104]:
+                  - generic [ref=e105]:
+                    - img "Customization-letter" [ref=e106] [cursor=pointer]
+                    - img "Customization-letter" [ref=e107] [cursor=pointer]
+                    - link "Customization-letter" [ref=e108] [cursor=pointer]:
+                      - /url: /ar/products/customization-letter?_pos=1&_sid=0c3767b87&_ss=r
+                  - button "إضافة إلى قائمة الأمنيات" [ref=e111] [cursor=pointer]:
+                    - img [ref=e112]
+                - generic [ref=e117]:
+                  - heading "Customization-letter" [level=3] [ref=e118]:
+                    - link "Customization-letter" [ref=e119] [cursor=pointer]:
+                      - /url: /ar/products/customization-letter?_pos=1&_sid=0c3767b87&_ss=r
+                  - definition [ref=e124]:
+                    - text: 1x
+                    - generic [ref=e125]:
+                      - generic [ref=e126]: من
+                      - img [ref=e128]
+                      - text: "25.00"
+            - listitem [ref=e131]:
+              - generic [ref=e133]:
+                - generic [ref=e135]:
+                  - generic [ref=e136]:
+                    - img "AGRIGENTO002790AZURE" [ref=e137] [cursor=pointer]
+                    - img "AGRIGENTO002790AZURE" [ref=e138] [cursor=pointer]
+                    - link "*******Test Item-not for purchase*****" [ref=e139] [cursor=pointer]:
+                      - /url: /ar/products/test-item-not-for-purchase?_pos=4&_sid=0c3767b87&_ss=r
+                  - button "إضافة إلى قائمة الأمنيات" [ref=e142] [cursor=pointer]:
+                    - img [ref=e143]
+                - generic [ref=e148]:
+                  - heading "*******Test Item-not for purchase*****" [level=3] [ref=e149]:
+                    - link "*******Test Item-not for purchase*****" [ref=e150] [cursor=pointer]:
+                      - /url: /ar/products/test-item-not-for-purchase?_pos=4&_sid=0c3767b87&_ss=r
+                  - definition [ref=e155]:
+                    - text: 1x
+                    - generic [ref=e156]:
+                      - img [ref=e158]
+                      - text: "1.00"
+    - generic [ref=e161]:
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - heading "الأكثر مبيعاً" [level=2] [ref=e166]
+          - button "Toggle Menu" [ref=e167] [cursor=pointer]:
+            - img "Toggle Arrow" [ref=e168]
+        - list [ref=e169]:
+          - listitem [ref=e170]:
+            - link "اكسسوارات" [ref=e171] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e172]:
+            - link "الكل" [ref=e173] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e174]:
+            - link "قمصان الخريف" [ref=e175] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e176]:
+            - link "قمصان بولو أساسية" [ref=e177] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e178]:
+            - link "بولينج" [ref=e179] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e180]:
+            - link "مجموعة قمصان دائمة من القطن" [ref=e181] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e182]:
+            - link "مجموعة كنزات كشمير" [ref=e183] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e184]:
+            - link "مجموعة قمصان كلاسيكية من القطن" [ref=e185] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e186]:
+            - link "مجموعة كنزات من القطن" [ref=e187] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - img "استرجاع سهل" [ref=e194]
+            - heading "استرجاع سهل" [level=3] [ref=e195]
+            - paragraph [ref=e196]: قم باسترجاع المنتجات الخاصة بك بسرعة وسهولة.
+          - generic [ref=e197]:
+            - img "شحن سريع" [ref=e198]
+            - heading "شحن سريع" [level=3] [ref=e199]
+            - paragraph [ref=e200]: استمتع بشحن سريع على جميع الطلبات!
+          - generic [ref=e201]:
+            - img "مدفوعات آمنة" [ref=e202]
+            - heading "مدفوعات آمنة" [level=3] [ref=e203]
+            - paragraph [ref=e204]: تسوق آمن مع كميشيسِّما. نقبل الدفع عبر بطاقات الائتمان
+          - generic [ref=e205]:
+            - img "خدمة العملاء" [ref=e206]
+            - heading "خدمة العملاء" [level=3] [ref=e207]
+            - paragraph [ref=e208]: تواصل مع خدمة العملاء لدينا
+        - button "❮" [ref=e209] [cursor=pointer]
+        - button "❯" [ref=e210] [cursor=pointer]
+      - generic [ref=e212]:
+        - img "مرحباً!" [ref=e215]
+        - generic [ref=e216]:
+          - heading "مرحباً!" [level=2] [ref=e217]
+          - paragraph [ref=e218]: اشترك في النشرة الإخبارية لدينا للحصول على خصم 10% على عملية الشراء التالية وابق على اطلاع دائم بالأخبار والمعلومات والموضة والعروض.
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - textbox "أدخل بريدك الالكتروني" [ref=e221]
+              - button "اشتراك" [ref=e222] [cursor=pointer]
+            - generic [ref=e223]:
+              - checkbox "أوافق على استخدام بياناتي الشخصية لاستلام التحديثات والاشتراك بالنشرة البريدية." [ref=e224]
+              - text: أوافق على استخدام بياناتي الشخصية لاستلام التحديثات والاشتراك بالنشرة البريدية.
+      - contentinfo [ref=e226]:
+        - generic [ref=e229]:
+          - generic [ref=e230]:
+            - heading "الشركة" [level=2] [ref=e233]
+            - heading "الملف الشخصي" [level=2] [ref=e236]
+            - heading "الخدمات" [level=2] [ref=e239]
+          - generic [ref=e240]:
+            - generic [ref=e241]:
+              - heading "شروط الدفع" [level=2] [ref=e242]
+              - generic [ref=e243]:
+                - img "visa" [ref=e244]
+                - img "master" [ref=e245]
+                - img "mada" [ref=e246]
+                - img "stc_pay" [ref=e247]
+                - img "apple_pay" [ref=e248]
+                - img "tabby" [ref=e249]
+            - generic [ref=e250]:
+              - heading "تجربة تسوّق مميزة" [level=2] [ref=e251]
+              - text: 30 يوم للإرجاع أونلاين
+            - generic [ref=e252]:
+              - heading "التواصل الاجتماعي" [level=2] [ref=e253]
+              - generic [ref=e254]:
+                - link [ref=e255] [cursor=pointer]:
+                  - /url: https://www.instagram.com/camicissima.ksa/
+                  - img [ref=e256]
+                - link "Tiktok" [ref=e258] [cursor=pointer]:
+                  - /url: http://www.tiktok.com/@camicissima.ksa
+                  - img [ref=e259]
+                - link "Snapchat" [ref=e261] [cursor=pointer]:
+                  - /url: https://www.snapchat.com/@camicissimaksa
+                  - img [ref=e262]
+                - link "Facebook" [ref=e264] [cursor=pointer]:
+                  - /url: https://www.facebook.com/profile.php?id=61572241232089
+                  - img [ref=e265]
+      - paragraph [ref=e269]:
+        - text: © 2026 Camicissima | Al Moallim United Co, KSA
+        - text: "CR: 4030031627 , VAT# 301329371900003"
+  - generic [ref=e271]:
+    - button "Close":
+      - generic: Close
+      - img
+    - list [ref=e272]:
+      - listitem [ref=e273]:
+        - link "قمصان إيطالية رجالية" [ref=e274] [cursor=pointer]:
+          - /url: /ar/collections/mens-shirts
+          - text: قمصان إيطالية رجالية
+          - img [ref=e276]
+        - generic [ref=e279]:
+          - button [ref=e280] [cursor=pointer]:
+            - img [ref=e281]
+          - list [ref=e284]:
+            - generic [ref=e285]:
+              - listitem [ref=e286]:
+                - link "قمصان" [ref=e287] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts
+                - list [ref=e288]:
+                  - listitem [ref=e289]:
+                    - link "دائمة" [ref=e290] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-permanent
+                  - listitem [ref=e291]:
+                    - link "فاخرة" [ref=e292] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-fancy
+                    - list [ref=e293]:
+                      - listitem [ref=e294]:
+                        - link "كم طويل" [ref=e295] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-fancy-longsleeve
+                      - listitem [ref=e296]:
+                        - link "كم قصير" [ref=e297] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-fancy-shortsleeve
+                  - listitem [ref=e298]:
+                    - link "عصرية" [ref=e299] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-trendy
+                    - list [ref=e300]:
+                      - listitem [ref=e301]:
+                        - link "قطن" [ref=e302] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-cotton
+                      - listitem [ref=e303]:
+                        - link "خط القمصان الإنجليزية" [ref=e304] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-englishtour
+                      - listitem [ref=e305]:
+                        - link "جينز" [ref=e306] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-jeansshirt
+                      - listitem [ref=e307]:
+                        - link "بولنغ" [ref=e308] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-bowling
+                  - listitem [ref=e309]:
+                    - link "كلاسيكية" [ref=e310] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-classic
+                  - listitem [ref=e311]:
+                    - link "غير قابلة للكي" [ref=e312] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-noniron
+                  - listitem [ref=e313]:
+                    - link "كتان" [ref=e314] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-linen
+                    - list [ref=e315]:
+                      - listitem [ref=e316]:
+                        - link "عصرية" [ref=e317] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-linen-trendy
+                      - listitem [ref=e318]:
+                        - link "فاخرة" [ref=e319] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-linen-fancy
+                      - listitem [ref=e320]:
+                        - link "سيرافينو كتان عصري" [ref=e321] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-linen-trendylinenserafino
+                  - listitem [ref=e322]:
+                    - link "قمصان بتفاصيل" [ref=e323] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-details
+              - listitem [ref=e324]:
+                - link "الياقة" [ref=e325] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-neck
+                - list [ref=e326]:
+                  - listitem [ref=e327]:
+                    - link "إيطالية" [ref=e328] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-italian
+                  - listitem [ref=e329]:
+                    - link "بأزرار" [ref=e330] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-buttondown
+                  - listitem [ref=e331]:
+                    - link "فرنسية" [ref=e332] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-french
+                  - listitem [ref=e333]:
+                    - link "كورية" [ref=e334] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-korean
+              - listitem [ref=e335]:
+                - link "تسوق حسب المقاس" [ref=e336] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-shopbyfit
+                - list [ref=e337]:
+                  - listitem [ref=e338]:
+                    - link "قَصّة مفصلة على الجسم" [ref=e339] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-shopbyfit-extraslimfit
+                  - listitem [ref=e340]:
+                    - link "قَصّة ضيقة" [ref=e341] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-shopbyfit-slimfit
+                  - listitem [ref=e342]:
+                    - link "قَصّة عادية" [ref=e343] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-shopbyfit-regularfit
+              - listitem [ref=e344]:
+                - link "تشكيلات" [ref=e345] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-collections
+                - list [ref=e346]:
+                  - listitem [ref=e347]:
+                    - link "قمصان الخريف" [ref=e348] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-autumn
+                  - listitem [ref=e349]:
+                    - link "قمصان الربيع" [ref=e350] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-spring
+                  - listitem [ref=e351]:
+                    - link "قمصان الصيف" [ref=e352] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-summer
+                  - listitem [ref=e353]:
+                    - link "قمصان الشتاء" [ref=e354] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-winter
+              - listitem [ref=e355]:
+                - link "النقشة" [ref=e356] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-pattern
+                - list [ref=e357]:
+                  - listitem [ref=e358]:
+                    - link "مطبوع" [ref=e359] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-paintings
+                  - listitem [ref=e360]:
+                    - link "مخطط" [ref=e361] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-lines
+                  - listitem [ref=e362]:
+                    - link "سادة" [ref=e363] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-solidcolor
+                  - listitem [ref=e364]:
+                    - link "نقشة ناعمة" [ref=e365] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-dobby
+              - listitem [ref=e366]:
+                - link "اللون" [ref=e367] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-color
+                - list [ref=e368]:
+                  - listitem [ref=e369]:
+                    - link "أبيض" [ref=e370] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-white
+                  - listitem [ref=e371]:
+                    - link "أسود" [ref=e372] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-black
+                  - listitem [ref=e373]:
+                    - link "أزرق" [ref=e374] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-blue
+                  - listitem [ref=e375]:
+                    - link "أزرق سماوي" [ref=e376] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-skyblue
+    - list [ref=e377]:
+      - listitem [ref=e378]:
+        - link "ملابس" [ref=e379] [cursor=pointer]:
+          - /url: /ar/collections/clothing
+          - text: ملابس
+          - img [ref=e381]
+        - generic [ref=e384]:
+          - button [ref=e385] [cursor=pointer]:
+            - img [ref=e386]
+          - list [ref=e389]:
+            - generic [ref=e390]:
+              - listitem [ref=e391]:
+                - link "سترات للرجال" [ref=e392] [cursor=pointer]:
+                  - /url: /ar/collections/mens-sweater
+                - list [ref=e393]:
+                  - listitem [ref=e394]:
+                    - link "سترة بفتحة رقبة دائرية" [ref=e395] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-crewneck
+                    - list [ref=e396]:
+                      - listitem [ref=e397]:
+                        - link "قطن" [ref=e398] [cursor=pointer]:
+                          - /url: /ar/collections/mens-sweater-crewneck-cotton
+                      - listitem [ref=e399]:
+                        - link "كشمير" [ref=e400] [cursor=pointer]:
+                          - /url: /ar/collections/mens-sweater-crewneck-cashmere
+                  - listitem [ref=e401]:
+                    - link "سترة بفتحة رقبة V" [ref=e402] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-vneck
+                  - listitem [ref=e403]:
+                    - link "سترة بسحاب" [ref=e404] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-zipup
+                  - listitem [ref=e405]:
+                    - link "سترة برقبة عالية" [ref=e406] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-highneck
+                  - listitem [ref=e407]:
+                    - link "سترة فاخرة" [ref=e408] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-luxury
+              - listitem [ref=e409]:
+                - link "بولو" [ref=e410] [cursor=pointer]:
+                  - /url: /ar/collections/polo
+                - list [ref=e411]:
+                  - listitem [ref=e412]:
+                    - link "بولو أساسي" [ref=e413] [cursor=pointer]:
+                      - /url: /ar/collections/polo-basic
+              - listitem [ref=e414]:
+                - link "بنطال" [ref=e415] [cursor=pointer]:
+                  - /url: /ar/collections/pants
+                - list [ref=e416]:
+                  - listitem [ref=e417]:
+                    - link "برمودا" [ref=e418] [cursor=pointer]:
+                      - /url: /ar/collections/pants-bermuda
+                  - listitem [ref=e419]:
+                    - link "شينو" [ref=e420] [cursor=pointer]:
+                      - /url: /ar/collections/pants-chinos
+                    - list [ref=e421]:
+                      - listitem [ref=e422]:
+                        - link "قطن" [ref=e423] [cursor=pointer]:
+                          - /url: /ar/collections/pants-chinos-cotton
+                      - listitem [ref=e424]:
+                        - link "مخمل" [ref=e425] [cursor=pointer]:
+                          - /url: /ar/collections/pants-chinos-velvet
+                      - listitem [ref=e426]:
+                        - link "كتان" [ref=e427] [cursor=pointer]:
+                          - /url: /ar/collections/pants-chinos-linen
+                  - listitem [ref=e428]:
+                    - link "جينز" [ref=e429] [cursor=pointer]:
+                      - /url: /ar/collections/pants-jeans
+                  - listitem [ref=e430]:
+                    - link "5 جيوب" [ref=e431] [cursor=pointer]:
+                      - /url: /ar/collections/pants-5pockets
+                  - listitem [ref=e432]:
+                    - link "كارغو" [ref=e433] [cursor=pointer]:
+                      - /url: /ar#
+              - listitem [ref=e434]:
+                - link "فيست" [ref=e435] [cursor=pointer]:
+                  - /url: /ar/collections/vest
+                - list [ref=e436]:
+                  - listitem [ref=e437]:
+                    - link "فيست مفصلة" [ref=e438] [cursor=pointer]:
+                      - /url: /ar/collections/vest-tailored
+                  - listitem [ref=e439]:
+                    - link "فيست صوفية" [ref=e440] [cursor=pointer]:
+                      - /url: /ar/collections/vest-sweater
+                    - list [ref=e441]:
+                      - listitem [ref=e442]:
+                        - link "قطن" [ref=e443] [cursor=pointer]:
+                          - /url: /ar/collections/vest-sweater-cotton
+                      - listitem [ref=e444]:
+                        - link "كشمير" [ref=e445] [cursor=pointer]:
+                          - /url: /ar/collections/vest-sweater-cashmere
+                  - listitem [ref=e446]:
+                    - link "فيست مبطنة" [ref=e447] [cursor=pointer]:
+                      - /url: /ar/collections/vest-padded
+              - listitem [ref=e448]:
+                - link "ملابس خارجية للرجال" [ref=e449] [cursor=pointer]:
+                  - /url: /ar/collections/mens-outerwear
+                - list [ref=e450]:
+                  - listitem [ref=e451]:
+                    - link "بومبر" [ref=e452] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-bomber
+                  - listitem [ref=e453]:
+                    - link "جاكيتات وبليزرات" [ref=e454] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-jacketsandblazers
+                  - listitem [ref=e455]:
+                    - link "باركا" [ref=e456] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-parka
+                  - listitem [ref=e457]:
+                    - link "جاكيت فيلد" [ref=e458] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-fieldjacket
+                  - listitem [ref=e459]:
+                    - link "معطف" [ref=e460] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-coat
+                  - listitem [ref=e461]:
+                    - link "جاكيتات مبطنة" [ref=e462] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-paddedjackets
+                  - listitem [ref=e463]:
+                    - link "قميص مبطن" [ref=e464] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-paddedshirt
+              - listitem [ref=e465]:
+                - link "تي شيرت" [ref=e466] [cursor=pointer]:
+                  - /url: /ar/collections/tshirt
+              - listitem [ref=e467]:
+                - link "إكسسوارات" [ref=e468] [cursor=pointer]:
+                  - /url: /ar/collections/accessories
+                - list [ref=e469]:
+                  - listitem [ref=e470]:
+                    - link "ربطات عنق" [ref=e471] [cursor=pointer]:
+                      - /url: /ar/collections/accessories-ties
+                  - listitem [ref=e472]:
+                    - link "جوارب" [ref=e473] [cursor=pointer]:
+                      - /url: /ar/collections/accessories-socks
+    - list [ref=e474]:
+      - listitem [ref=e475]:
+        - link "مجموعات" [ref=e476] [cursor=pointer]:
+          - /url: /ar/pages/bundle-products
+          - text: مجموعات
+  - 'button "Selected language: العربية" [ref=e480] [cursor=pointer]':
+    - generic [ref=e482]: العربية
+    - img [ref=e484]
+  - dialog "POPUP Form" [ref=e486]:
+    - generic [ref=e491]:
+      - button "Close dialog" [ref=e492] [cursor=pointer]:
+        - img [ref=e493]
+      - generic [ref=e497]:
+        - generic [ref=e499]:
+          - generic:
+            - generic:
+              - img "Camicissima"
+        - paragraph [ref=e503]: احصل على خصم 10% عند التسجيل باستخدام بريدك الإلكتروني.
+        - paragraph [ref=e507]:
+          - generic [ref=e508]:
+            - text: من خلال إدخال عنوان بريدك الإلكتروني، فإنك توافق على استلام رسائل تسويقية من كميشيسِّما. قد نستخدم المعلومات التي نجمعها عنك على موقعنا لاقتراح منتجات وعروض أخرى. يمكنك إلغاء الاشتراك في أي وقت. عرض
+            - link "الشروط و سياسة الخصوصية" [ref=e509] [cursor=pointer]:
+              - /url: /ar/pages/privacy-and-cookie-policy
+        - generic [ref=e512]:
+          - generic [ref=e513]: Email
+          - textbox "Email" [active] [ref=e514]:
+            - /placeholder: البريد الالكتروني
+        - paragraph [ref=e518]: أخبرنا بتاريخ ميلادك لنُرسل لك شيئًا مميزًا في يومك المميز
+        - generic [ref=e521]:
+          - generic [ref=e522]: DOB
+          - textbox "DOB" [ref=e523]:
+            - /placeholder: شهر/يوم/سنة
+        - generic [ref=e527]: "ساعدنا في تخصيص رسائل كميشيسِّما الإلكترونية لك من خلال اختيار الخيارات أدناه:"
+        - group "Gender" [ref=e531]:
+          - generic [ref=e532]: Gender
+          - radiogroup [ref=e533]:
+            - generic [ref=e534] [cursor=pointer]:
+              - img [ref=e535]
+              - generic [ref=e539]: الرجال
+            - generic [ref=e540] [cursor=pointer]:
+              - img [ref=e541]
+              - generic [ref=e545]: النساء
+        - paragraph [ref=e549]: "نود معرفة اللغة المفضّلة لديك للتواصل:"
+        - group "Preferred Language" [ref=e553]:
+          - generic [ref=e554]: Preferred Language
+          - radiogroup [ref=e555]:
+            - generic [ref=e556] [cursor=pointer]:
+              - img [ref=e557]
+              - generic [ref=e561]: English
+            - generic [ref=e562] [cursor=pointer]:
+              - img [ref=e563]
+              - generic [ref=e567]: العربية
+        - button "استمرار" [ref=e570] [cursor=pointer]
+        - paragraph [ref=e574]:
+          - text: من خلال التسجيل، أوافق على استلام رسائل إلكترونية من كميشيسِّما وأوافق على
+          - link "سياسة الخصوصية." [ref=e575] [cursor=pointer]:
+            - /url: /ar/pages/privacy-and-cookie-policy
+```

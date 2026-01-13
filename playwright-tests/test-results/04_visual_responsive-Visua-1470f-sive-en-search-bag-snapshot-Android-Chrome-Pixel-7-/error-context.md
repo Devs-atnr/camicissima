@@ -1,0 +1,577 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#MainContent"
+    - generic [ref=e7]:
+      - group [ref=e10]:
+        - generic "Search" [ref=e11] [cursor=pointer]:
+          - img [ref=e13]
+      - link "My Wish List" [ref=e17] [cursor=pointer]:
+        - /url: /pages/wishlist
+        - img [ref=e18]
+        - generic [ref=e22]: My Wish List
+      - link "camicissima-ksa" [ref=e25] [cursor=pointer]:
+        - /url: /
+        - img "camicissima-ksa" [ref=e26]
+      - link "Cart 0 items" [ref=e29] [cursor=pointer]:
+        - /url: /cart
+        - img [ref=e30]
+        - generic [ref=e33]: Cart
+        - generic [ref=e34]:
+          - generic [ref=e35]: "0"
+          - generic [ref=e36]: 0 items
+      - button "menu" [ref=e39] [cursor=pointer]
+    - main [ref=e41]:
+      - generic [ref=e44]:
+        - heading "4 results found for “bag”" [level=1] [ref=e45]
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - button "Close":
+              - generic: Close
+              - img
+            - generic [ref=e49]:
+              - generic [ref=e50]:
+                - heading "Categories" [level=2] [ref=e52] [cursor=pointer]
+                - menu [ref=e55]:
+                  - menuitem "link" [ref=e56]:
+                    - link "link" [ref=e57] [cursor=pointer]:
+                      - /url: /collections/mens-shirts
+                      - text: MEN'S SHIRTS
+                  - menuitem "link" [ref=e58]:
+                    - link "link" [ref=e59] [cursor=pointer]:
+                      - /url: /collections/clothing
+                      - text: CLOTHING
+                  - menuitem "link" [ref=e60]:
+                    - link "link" [ref=e61] [cursor=pointer]:
+                      - /url: https://camicissima.sa/pages/bundle-products
+                      - text: BUNDLES
+                  - menuitem "link" [ref=e62]:
+                    - link "link" [ref=e63] [cursor=pointer]:
+                      - /url: /collections/women-shirts
+                      - text: WOMEN'S SHIRTS
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - heading "Color" [level=2] [ref=e70] [cursor=pointer]
+                  - list [ref=e73]:
+                    - listitem [ref=e74]:
+                      - generic [ref=e75]:
+                        - generic [ref=e76]:
+                          - checkbox [ref=e77] [cursor=pointer]
+                          - generic "BLUE" [ref=e78]
+                        - generic [ref=e80]: BLUE
+                        - generic [ref=e81]: BLUE (1 products)
+                - generic [ref=e82]:
+                  - heading "Size" [level=2] [ref=e84] [cursor=pointer]
+                  - list [ref=e87]:
+                    - listitem [ref=e88]:
+                      - generic [ref=e90] [cursor=pointer]: "38"
+                    - listitem [ref=e91]:
+                      - generic [ref=e93] [cursor=pointer]: "39"
+                    - listitem [ref=e94]:
+                      - generic [ref=e96] [cursor=pointer]: "40"
+                    - listitem [ref=e97]:
+                      - generic [ref=e99] [cursor=pointer]: "41"
+                    - listitem [ref=e100]:
+                      - generic [ref=e102] [cursor=pointer]: "42"
+                    - listitem [ref=e103]:
+                      - generic [ref=e105] [cursor=pointer]: "43"
+          - generic [ref=e106]:
+            - list [ref=e111]:
+              - listitem [ref=e112]:
+                - generic [ref=e114]:
+                  - generic [ref=e116]:
+                    - generic [ref=e117]:
+                      - img "Customization-letter" [ref=e118] [cursor=pointer]
+                      - img "Customization-letter" [ref=e119] [cursor=pointer]
+                      - link "Customization-letter" [ref=e120] [cursor=pointer]:
+                        - /url: /products/customization-letter?_pos=1&_sid=0c3767b87&_ss=r
+                    - button "Add to wishlist" [ref=e123] [cursor=pointer]:
+                      - img [ref=e124]
+                  - generic [ref=e129]:
+                    - heading "Customization-letter" [level=3] [ref=e130]:
+                      - link "Customization-letter" [ref=e131] [cursor=pointer]:
+                        - /url: /products/customization-letter?_pos=1&_sid=0c3767b87&_ss=r
+                    - definition [ref=e136]:
+                      - text: 1x
+                      - generic [ref=e137]:
+                        - generic [ref=e138]: From
+                        - img [ref=e140]
+                        - text: "25.00"
+              - listitem [ref=e143]:
+                - generic [ref=e145]:
+                  - generic [ref=e147]:
+                    - generic [ref=e148]:
+                      - img "AGRIGENTO002790AZURE" [ref=e149] [cursor=pointer]
+                      - img "AGRIGENTO002790AZURE" [ref=e150] [cursor=pointer]
+                      - link "*******Test Item-not for purchase*****" [ref=e151] [cursor=pointer]:
+                        - /url: /products/test-item-not-for-purchase?_pos=4&_sid=0c3767b87&_ss=r
+                    - button "Add to wishlist" [ref=e154] [cursor=pointer]:
+                      - img [ref=e155]
+                  - generic [ref=e160]:
+                    - heading "*******Test Item-not for purchase*****" [level=3] [ref=e161]:
+                      - link "*******Test Item-not for purchase*****" [ref=e162] [cursor=pointer]:
+                        - /url: /products/test-item-not-for-purchase?_pos=4&_sid=0c3767b87&_ss=r
+                    - definition [ref=e167]:
+                      - text: 1x
+                      - generic [ref=e168]:
+                        - img [ref=e170]
+                        - text: "1.00"
+            - generic [ref=e173]:
+              - heading "There are 2 Page(s) and article(s) for 'bag'" [level=4] [ref=e175]:
+                - generic [ref=e176]: There are 2 Page(s) and article(s) for 'bag'
+              - list [ref=e178]:
+                - listitem [ref=e179]:
+                  - generic [ref=e180]:
+                    - heading "Shipping and returns" [level=6] [ref=e181]:
+                      - link "Shipping and returns" [ref=e182] [cursor=pointer]:
+                        - /url: /pages/shipping-and-returns?_pos=1&_sid=5c6ef3f8c&_ss=r
+                    - generic [ref=e183]: Shipping Costs and Times Timing may slightly change in certain periods of the year or due to causes of force majeure....
+                    - link "View page" [ref=e184] [cursor=pointer]:
+                      - /url: /pages/shipping-and-returns?_pos=1&_sid=5c6ef3f8c&_ss=r
+                - listitem [ref=e185]:
+                  - generic [ref=e186]:
+                    - heading "CONDITIONS OF USE" [level=6] [ref=e187]:
+                      - link "CONDITIONS OF USE" [ref=e188] [cursor=pointer]:
+                        - /url: /pages/conditions-of-use?_pos=2&_sid=5c6ef3f8c&_ss=r
+                    - generic [ref=e189]: Welcome to camicissima.sa (the "Website", hereinafter referred to as “Camicissima” or “we”), administered by ALMOALLIM UNITED COMPANY SAUDI ARABIA, the(an authorized...
+                    - link "View page" [ref=e190] [cursor=pointer]:
+                      - /url: /pages/conditions-of-use?_pos=2&_sid=5c6ef3f8c&_ss=r
+    - generic [ref=e191]:
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - heading "Top Seller" [level=2] [ref=e196]
+          - button "Toggle Menu" [ref=e197] [cursor=pointer]:
+            - img "Toggle Arrow" [ref=e198]
+        - list [ref=e199]:
+          - listitem [ref=e200]:
+            - link "Accessories" [ref=e201] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e202]:
+            - link "ALL" [ref=e203] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e204]:
+            - link "Autumn Shirts" [ref=e205] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e206]:
+            - link "Basic Polo" [ref=e207] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e208]:
+            - link "Bowling" [ref=e209] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e210]:
+            - link "BUNDLE - PERMANENT COTTON SH.-0P" [ref=e211] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e212]:
+            - link "BUNDLE-CACH. BLEND SWEATERS-SM" [ref=e213] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e214]:
+            - link "BUNDLE-COTTON CLASSIC SH.-CL" [ref=e215] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e216]:
+            - link "BUNDLE-COTTON SWEATERS-SW" [ref=e217] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e221]:
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - img "EASY RETURN" [ref=e224]
+            - heading "EASY RETURN" [level=3] [ref=e225]
+            - paragraph [ref=e226]: Return your items quickly and easily.
+          - generic [ref=e227]:
+            - img "FAST SHIPPING" [ref=e228]
+            - heading "FAST SHIPPING" [level=3] [ref=e229]
+            - paragraph [ref=e230]: Enjoy fast shipping on all orders !
+          - generic [ref=e231]:
+            - img "SECURE PAYMENTS" [ref=e232]
+            - heading "SECURE PAYMENTS" [level=3] [ref=e233]
+            - paragraph [ref=e234]: Shopping is safe with Camicissima. We accept payments via credit card, PayPal, Klarna .
+          - generic [ref=e235]:
+            - img "CUSTOMER SERVICE" [ref=e236]
+            - heading "CUSTOMER SERVICE" [level=3] [ref=e237]
+            - paragraph [ref=e238]: Contact our Customer Service
+        - button "❮" [ref=e239] [cursor=pointer]
+        - button "❯" [ref=e240] [cursor=pointer]
+      - generic [ref=e242]:
+        - img "Welcome!" [ref=e245]
+        - generic [ref=e246]:
+          - heading "Welcome!" [level=2] [ref=e247]
+          - paragraph [ref=e248]: Sign up to our newsletter to receive a 10% discount on your next purchase and stay updated on news,information, trends and promotions.
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - textbox "Enter your email address" [ref=e251]
+              - button "Sign up" [ref=e252] [cursor=pointer]
+            - generic [ref=e253]:
+              - checkbox "I consent to the processing of my personal data for the purposes of the newsletter information." [ref=e254]
+              - text: I consent to the processing of my personal data for the purposes of the newsletter information.
+      - contentinfo [ref=e256]:
+        - generic [ref=e259]:
+          - generic [ref=e260]:
+            - heading "The Company" [level=2] [ref=e263]
+            - heading "Personal profile" [level=2] [ref=e266]
+            - heading "Services" [level=2] [ref=e269]
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - heading "Terms of payment" [level=2] [ref=e272]
+              - generic [ref=e273]:
+                - img "visa" [ref=e274]
+                - img "master" [ref=e275]
+                - img "mada" [ref=e276]
+                - img "stc_pay" [ref=e277]
+                - img "apple_pay" [ref=e278]
+                - img "tabby" [ref=e279]
+            - generic [ref=e280]:
+              - heading "Tranquility" [level=2] [ref=e281]
+              - text: 30 days for returns online
+            - generic [ref=e282]:
+              - heading "Social" [level=2] [ref=e283]
+              - generic [ref=e284]:
+                - link [ref=e285] [cursor=pointer]:
+                  - /url: https://www.instagram.com/camicissima.ksa/
+                  - img [ref=e286]
+                - link "Tiktok" [ref=e288] [cursor=pointer]:
+                  - /url: http://www.tiktok.com/@camicissima.ksa
+                  - img [ref=e289]
+                - link "Snapchat" [ref=e291] [cursor=pointer]:
+                  - /url: https://www.snapchat.com/@camicissimaksa
+                  - img [ref=e292]
+                - link "Facebook" [ref=e294] [cursor=pointer]:
+                  - /url: https://www.facebook.com/profile.php?id=61572241232089
+                  - img [ref=e295]
+      - paragraph [ref=e299]:
+        - text: © 2026 Camicissima | Al Moallim United Co, KSA
+        - text: "CR: 4030031627 , VAT# 301329371900003"
+  - generic [ref=e301]:
+    - button "Close":
+      - generic: Close
+      - img
+    - list [ref=e302]:
+      - listitem [ref=e303]:
+        - link "MENS ITALIAN SHIRTS" [ref=e304] [cursor=pointer]:
+          - /url: /collections/mens-shirts
+          - text: MENS ITALIAN SHIRTS
+          - img [ref=e306]
+        - generic [ref=e309]:
+          - button [ref=e310] [cursor=pointer]:
+            - img [ref=e311]
+          - list [ref=e314]:
+            - generic [ref=e315]:
+              - listitem [ref=e316]:
+                - link "Shirts" [ref=e317] [cursor=pointer]:
+                  - /url: /collections/mens-shirts
+                - list [ref=e318]:
+                  - listitem [ref=e319]:
+                    - link "Permanent" [ref=e320] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-permanent
+                  - listitem [ref=e321]:
+                    - link "Fancy" [ref=e322] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-fancy
+                    - list [ref=e323]:
+                      - listitem [ref=e324]:
+                        - link "Long Sleeve" [ref=e325] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-fancy-longsleeve
+                      - listitem [ref=e326]:
+                        - link "Short Sleeve" [ref=e327] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-fancy-shortsleeve
+                  - listitem [ref=e328]:
+                    - link "Trendy" [ref=e329] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-trendy
+                    - list [ref=e330]:
+                      - listitem [ref=e331]:
+                        - link "Cotton" [ref=e332] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-cotton
+                      - listitem [ref=e333]:
+                        - link "English Tour" [ref=e334] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-englishtour
+                      - listitem [ref=e335]:
+                        - link "Jeans Shirt" [ref=e336] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-jeansshirt
+                      - listitem [ref=e337]:
+                        - link "Bowling" [ref=e338] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-bowling
+                  - listitem [ref=e339]:
+                    - link "Classic" [ref=e340] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-classic
+                  - listitem [ref=e341]:
+                    - link "Non Iron" [ref=e342] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-noniron
+                  - listitem [ref=e343]:
+                    - link "Linen" [ref=e344] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-linen
+                    - list [ref=e345]:
+                      - listitem [ref=e346]:
+                        - link "Trendy" [ref=e347] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-linen-trendy
+                      - listitem [ref=e348]:
+                        - link "Fancy" [ref=e349] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-linen-fancy
+                      - listitem [ref=e350]:
+                        - link "Trendy Linen Serafino" [ref=e351] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-linen-trendylinenserafino
+                  - listitem [ref=e352]:
+                    - link "Details" [ref=e353] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-details
+              - listitem [ref=e354]:
+                - link "Neck" [ref=e355] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-neck
+                - list [ref=e356]:
+                  - listitem [ref=e357]:
+                    - link "Italian" [ref=e358] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-italian
+                  - listitem [ref=e359]:
+                    - link "Button Down" [ref=e360] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-buttondown
+                  - listitem [ref=e361]:
+                    - link "French" [ref=e362] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-french
+                  - listitem [ref=e363]:
+                    - link "Korean" [ref=e364] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-korean
+              - listitem [ref=e365]:
+                - link "Shop By Fit" [ref=e366] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-shopbyfit
+                - list [ref=e367]:
+                  - listitem [ref=e368]:
+                    - link "Extra Slim Fit" [ref=e369] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-shopbyfit-extraslimfit
+                  - listitem [ref=e370]:
+                    - link "Slim Fit" [ref=e371] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-shopbyfit-slimfit
+                  - listitem [ref=e372]:
+                    - link "Regular Fit" [ref=e373] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-shopbyfit-regularfit
+              - listitem [ref=e374]:
+                - link "Collections" [ref=e375] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-collections
+                - list [ref=e376]:
+                  - listitem [ref=e377]:
+                    - link "Autumn Shirts" [ref=e378] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-autumn
+                  - listitem [ref=e379]:
+                    - link "Spring Shirts" [ref=e380] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-spring
+                  - listitem [ref=e381]:
+                    - link "Summer Shirts" [ref=e382] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-summer
+                  - listitem [ref=e383]:
+                    - link "Winter Shirts" [ref=e384] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-winter
+              - listitem [ref=e385]:
+                - link "Pattern" [ref=e386] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-pattern
+                - list [ref=e387]:
+                  - listitem [ref=e388]:
+                    - link "Paintings" [ref=e389] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-paintings
+                  - listitem [ref=e390]:
+                    - link "Lines" [ref=e391] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-lines
+                  - listitem [ref=e392]:
+                    - link "Solid Color" [ref=e393] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-solidcolor
+                  - listitem [ref=e394]:
+                    - link "Dobby" [ref=e395] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-dobby
+              - listitem [ref=e396]:
+                - link "Color" [ref=e397] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-color
+                - list [ref=e398]:
+                  - listitem [ref=e399]:
+                    - link "White" [ref=e400] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-white
+                  - listitem [ref=e401]:
+                    - link "Black" [ref=e402] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-black
+                  - listitem [ref=e403]:
+                    - link "Blue" [ref=e404] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-blue
+                  - listitem [ref=e405]:
+                    - link "Sky Blue" [ref=e406] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-skyblue
+    - list [ref=e407]:
+      - listitem [ref=e408]:
+        - link "CLOTHING" [ref=e409] [cursor=pointer]:
+          - /url: /collections/clothing
+          - text: CLOTHING
+          - img [ref=e411]
+        - generic [ref=e414]:
+          - button [ref=e415] [cursor=pointer]:
+            - img [ref=e416]
+          - list [ref=e419]:
+            - generic [ref=e420]:
+              - listitem [ref=e421]:
+                - link "Men's Sweater" [ref=e422] [cursor=pointer]:
+                  - /url: /collections/mens-sweater
+                - list [ref=e423]:
+                  - listitem [ref=e424]:
+                    - link "Crewneck Sweater" [ref=e425] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-crewneck
+                    - list [ref=e426]:
+                      - listitem [ref=e427]:
+                        - link "Cotton" [ref=e428] [cursor=pointer]:
+                          - /url: /collections/mens-sweater-crewneck-cotton
+                      - listitem [ref=e429]:
+                        - link "Cashmere" [ref=e430] [cursor=pointer]:
+                          - /url: /collections/mens-sweater-crewneck-cashmere
+                  - listitem [ref=e431]:
+                    - link "V-Neck Sweater" [ref=e432] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-vneck
+                  - listitem [ref=e433]:
+                    - link "Zip Up Sweater" [ref=e434] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-zipup
+                  - listitem [ref=e435]:
+                    - link "High Neck Sweater" [ref=e436] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-highneck
+                  - listitem [ref=e437]:
+                    - link "Luxury Sweater" [ref=e438] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-luxury
+              - listitem [ref=e439]:
+                - link "Polo" [ref=e440] [cursor=pointer]:
+                  - /url: /collections/polo
+                - list [ref=e441]:
+                  - listitem [ref=e442]:
+                    - link "Basic Polo" [ref=e443] [cursor=pointer]:
+                      - /url: /collections/polo-basic
+              - listitem [ref=e444]:
+                - link "Pants" [ref=e445] [cursor=pointer]:
+                  - /url: /collections/pants
+                - list [ref=e446]:
+                  - listitem [ref=e447]:
+                    - link "Bermuda" [ref=e448] [cursor=pointer]:
+                      - /url: /collections/pants-bermuda
+                  - listitem [ref=e449]:
+                    - link "Chinos" [ref=e450] [cursor=pointer]:
+                      - /url: /collections/pants-chinos
+                    - list [ref=e451]:
+                      - listitem [ref=e452]:
+                        - link "Cotton" [ref=e453] [cursor=pointer]:
+                          - /url: /collections/pants-chinos-cotton
+                      - listitem [ref=e454]:
+                        - link "Velvet" [ref=e455] [cursor=pointer]:
+                          - /url: /collections/pants-chinos-velvet
+                      - listitem [ref=e456]:
+                        - link "Linen" [ref=e457] [cursor=pointer]:
+                          - /url: /collections/pants-chinos-linen
+                  - listitem [ref=e458]:
+                    - link "Jeans" [ref=e459] [cursor=pointer]:
+                      - /url: /collections/pants-jeans
+                  - listitem [ref=e460]:
+                    - link "5 Pockets" [ref=e461] [cursor=pointer]:
+                      - /url: /collections/pants-5pockets
+                  - listitem [ref=e462]:
+                    - link "Cargo" [ref=e463] [cursor=pointer]:
+                      - /url: "#"
+              - listitem [ref=e464]:
+                - link "Vest" [ref=e465] [cursor=pointer]:
+                  - /url: /collections/vest
+                - list [ref=e466]:
+                  - listitem [ref=e467]:
+                    - link "Tailored Vest" [ref=e468] [cursor=pointer]:
+                      - /url: /collections/vest-tailored
+                  - listitem [ref=e469]:
+                    - link "Vest Sweater" [ref=e470] [cursor=pointer]:
+                      - /url: /collections/vest-sweater
+                    - list [ref=e471]:
+                      - listitem [ref=e472]:
+                        - link "Cotton" [ref=e473] [cursor=pointer]:
+                          - /url: /collections/vest-sweater-cotton
+                      - listitem [ref=e474]:
+                        - link "Cashmere" [ref=e475] [cursor=pointer]:
+                          - /url: /collections/vest-sweater-cashmere
+                  - listitem [ref=e476]:
+                    - link "Padded Vest" [ref=e477] [cursor=pointer]:
+                      - /url: /collections/vest-padded
+              - listitem [ref=e478]:
+                - link "Men's Outerwear" [ref=e479] [cursor=pointer]:
+                  - /url: /collections/mens-outerwear
+                - list [ref=e480]:
+                  - listitem [ref=e481]:
+                    - link "Bomber" [ref=e482] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-bomber
+                  - listitem [ref=e483]:
+                    - link "Jackets and Blazers" [ref=e484] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-jacketsandblazers
+                  - listitem [ref=e485]:
+                    - link "Parka" [ref=e486] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-parka
+                  - listitem [ref=e487]:
+                    - link "Field Jacket" [ref=e488] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-fieldjacket
+                  - listitem [ref=e489]:
+                    - link "Coat" [ref=e490] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-coat
+                  - listitem [ref=e491]:
+                    - link "Padded Jackets" [ref=e492] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-paddedjackets
+                  - listitem [ref=e493]:
+                    - link "Padded Shirt" [ref=e494] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-paddedshirt
+              - listitem [ref=e495]:
+                - link "T-Shirt" [ref=e496] [cursor=pointer]:
+                  - /url: /collections/tshirt
+              - listitem [ref=e497]:
+                - link "Accessories" [ref=e498] [cursor=pointer]:
+                  - /url: /collections/accessories
+                - list [ref=e499]:
+                  - listitem [ref=e500]:
+                    - link "Ties" [ref=e501] [cursor=pointer]:
+                      - /url: /collections/accessories-ties
+                  - listitem [ref=e502]:
+                    - link "Socks" [ref=e503] [cursor=pointer]:
+                      - /url: /collections/accessories-socks
+    - list [ref=e504]:
+      - listitem [ref=e505]:
+        - link "BUNDLES" [ref=e506] [cursor=pointer]:
+          - /url: /pages/bundle-products
+          - text: BUNDLES
+  - 'button "Selected language: English" [ref=e510] [cursor=pointer]':
+    - generic [ref=e512]: English
+    - img [ref=e514]
+  - dialog "POPUP Form" [ref=e516]:
+    - generic [ref=e521]:
+      - button "Close dialog" [ref=e522] [cursor=pointer]:
+        - img [ref=e523]
+      - generic [ref=e527]:
+        - img "Camicissima" [ref=e532]
+        - paragraph [ref=e536]: Get 10% off when you sign up with email.
+        - paragraph [ref=e540]:
+          - generic [ref=e541]:
+            - text: By submitting your email address, you agree to receive marketing email from Camicissima. We may use information collected about you on our site to suggest other products and offers. You can unsubscribe at any time. View
+            - link "Terms & Privacy" [ref=e542] [cursor=pointer]:
+              - /url: https://camicissima.sa/pages/privacy-and-cookie-policy
+        - generic [ref=e545]:
+          - generic [ref=e546]: Email
+          - textbox "Email" [active] [ref=e547]:
+            - /placeholder: Email Address
+        - paragraph [ref=e551]: Tell us your birthday so we can send you something on your big day.
+        - generic [ref=e554]:
+          - generic [ref=e555]: DOB
+          - textbox "DOB" [ref=e556]:
+            - /placeholder: MM/DD/YYYY
+        - generic [ref=e560]: "Help us tailor your Camicissima emails by checking the boxes below:"
+        - group "Gender" [ref=e564]:
+          - generic [ref=e565]: Gender
+          - radiogroup [ref=e566]:
+            - generic [ref=e567] [cursor=pointer]:
+              - img [ref=e568]
+              - generic [ref=e572]: Men
+            - generic [ref=e573] [cursor=pointer]:
+              - img [ref=e574]
+              - generic [ref=e578]: Women
+        - paragraph [ref=e582]: "We'd love to know your preferred language for communication:"
+        - group "Preferred Language" [ref=e586]:
+          - generic [ref=e587]: Preferred Language
+          - radiogroup [ref=e588]:
+            - generic [ref=e589] [cursor=pointer]:
+              - img [ref=e590]
+              - generic [ref=e594]: English
+            - generic [ref=e595] [cursor=pointer]:
+              - img [ref=e596]
+              - generic [ref=e600]: Arabic
+        - button "CONTINUE" [ref=e603] [cursor=pointer]
+        - paragraph [ref=e607]:
+          - text: By signing up I agree to receive e-mails from Camicissima and I accept the
+          - link "Privacy Policy." [ref=e608] [cursor=pointer]:
+            - /url: https://camicissima.sa/pages/privacy-and-cookie-policy
+```

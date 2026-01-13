@@ -1,0 +1,974 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "انتقل إلى المحتوى" [ref=e3] [cursor=pointer]:
+      - /url: "#MainContent"
+    - generic [ref=e4]:
+      - generic [ref=e7]:
+        - link "camicissima-ksa" [ref=e10] [cursor=pointer]:
+          - /url: /ar
+          - img "camicissima-ksa" [ref=e11]
+        - navigation [ref=e15]:
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - link "قمصان رجالية" [ref=e18] [cursor=pointer]:
+                - /url: /ar/collections/mens-shirts
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "ملابس" [ref=e21] [cursor=pointer]:
+                - /url: /ar/collections/CLOTHING
+          - list [ref=e22]:
+            - listitem [ref=e23]:
+              - link "مجموعات" [ref=e24] [cursor=pointer]:
+                - /url: /ar/pages/bundle-products
+        - generic [ref=e25]:
+          - 'menu "Selected language: العربية" [ref=e28]':
+            - menuitem "English" [ref=e29] [cursor=pointer]: English
+          - link "قوائم الأمنيات" [ref=e31] [cursor=pointer]:
+            - /url: /ar/pages/wishlist
+            - img [ref=e32]
+            - generic [ref=e36]: قوائم الأمنيات
+          - group [ref=e38]:
+            - generic "بحث" [ref=e39] [cursor=pointer]:
+              - img [ref=e40]
+          - generic [ref=e44]: .
+          - link "تسجيل الدخول" [ref=e45] [cursor=pointer]:
+            - /url: /ar/account/login
+            - img [ref=e46]
+            - generic [ref=e50]: تسجيل الدخول
+          - link "العربة 0 منتجات" [ref=e51] [cursor=pointer]:
+            - /url: /ar/cart
+            - img [ref=e52]
+            - generic [ref=e56]: العربة
+            - generic [ref=e57]:
+              - generic [ref=e58]: "0"
+              - generic [ref=e59]: 0 منتجات
+      - list [ref=e66]:
+        - listitem [ref=e67]:
+          - button "en" [ref=e68] [cursor=pointer]:
+            - generic [ref=e70]: en
+        - listitem [ref=e71]:
+          - button "ar" [ref=e72] [cursor=pointer]:
+            - generic [ref=e74]: ar
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img
+    - main [ref=e75]:
+      - generic [ref=e77]:
+        - heading "الكل" [level=1] [ref=e78]
+        - generic [ref=e81]:
+          - generic [ref=e86]:
+            - generic [ref=e88]:
+              - list
+            - generic [ref=e89]:
+              - heading "النوع" [level=2] [ref=e91] [cursor=pointer]
+              - heading "التصميم" [level=2] [ref=e93] [cursor=pointer]
+              - heading "الياقة" [level=2] [ref=e95] [cursor=pointer]
+              - heading "الكُم" [level=2] [ref=e97] [cursor=pointer]
+              - heading "اللون" [level=2] [ref=e99] [cursor=pointer]
+              - heading "المقاس" [level=2] [ref=e101] [cursor=pointer]
+          - generic [ref=e102]:
+            - list [ref=e103]:
+              - listitem [ref=e104]:
+                - generic [ref=e106]:
+                  - generic [ref=e108]:
+                    - generic [ref=e109]:
+                      - img "CNPSPKABG0P2157BEIGE" [ref=e110] [cursor=pointer]
+                      - img "CNPSPKABG0P2157BEIGE" [ref=e111] [cursor=pointer]
+                      - link "بنطال بني بخمسة جيوب" [ref=e112] [cursor=pointer]:
+                        - /url: /ar/products/cnpspkabg0p2157beige
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e115] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e116]
+                  - generic [ref=e121]:
+                    - heading "بنطال بني بخمسة جيوب" [level=3] [ref=e122]:
+                      - link "بنطال بني بخمسة جيوب" [ref=e123] [cursor=pointer]:
+                        - /url: /ar/products/cnpspkabg0p2157beige
+                    - definition [ref=e128]:
+                      - text: 1x
+                      - generic [ref=e129]:
+                        - img [ref=e131]
+                        - text: "399.00"
+              - listitem [ref=e134]:
+                - generic [ref=e136]:
+                  - generic [ref=e138]:
+                    - generic [ref=e139]:
+                      - img "CNPSPKABG0P2157BLUE NAVY" [ref=e140] [cursor=pointer]
+                      - img "CNPSPKABG0P2157BLUE NAVY" [ref=e141] [cursor=pointer]
+                      - link "بنطال أزرق بخمسة جيوب" [ref=e142] [cursor=pointer]:
+                        - /url: /ar/products/cnpspkabg0p2157blue-navy
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e145] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e146]
+                  - generic [ref=e151]:
+                    - heading "بنطال أزرق بخمسة جيوب" [level=3] [ref=e152]:
+                      - link "بنطال أزرق بخمسة جيوب" [ref=e153] [cursor=pointer]:
+                        - /url: /ar/products/cnpspkabg0p2157blue-navy
+                    - definition [ref=e158]:
+                      - text: 1x
+                      - generic [ref=e159]:
+                        - img [ref=e161]
+                        - text: "399.00"
+              - listitem [ref=e164]:
+                - generic [ref=e166]:
+                  - generic [ref=e168]:
+                    - generic [ref=e169]:
+                      - img "CNPSPKABG0P2157BROWN" [ref=e170] [cursor=pointer]
+                      - img "CNPSPKABG0P2157BROWN" [ref=e171] [cursor=pointer]
+                      - link "بنطال أزرق بخمسة جيوب" [ref=e172] [cursor=pointer]:
+                        - /url: /ar/products/cnpspkabg0p2157brown
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e175] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e176]
+                  - generic [ref=e181]:
+                    - heading "بنطال أزرق بخمسة جيوب" [level=3] [ref=e182]:
+                      - link "بنطال أزرق بخمسة جيوب" [ref=e183] [cursor=pointer]:
+                        - /url: /ar/products/cnpspkabg0p2157brown
+                    - definition [ref=e188]:
+                      - text: 1x
+                      - generic [ref=e189]:
+                        - img [ref=e191]
+                        - text: "399.00"
+              - listitem [ref=e194]:
+                - generic [ref=e196]:
+                  - generic [ref=e198]:
+                    - generic [ref=e199]:
+                      - img "AGRIGENTO002790AZURE" [ref=e200] [cursor=pointer]
+                      - img "AGRIGENTO002790AZURE" [ref=e201] [cursor=pointer]
+                      - link "قميص دائم أجريجينتو بقصّة على شكل الجسم بلون أزرق فاتح" [ref=e202] [cursor=pointer]:
+                        - /url: /ar/products/agrigento002790azure
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e205] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e206]
+                  - generic [ref=e211]:
+                    - heading "قميص دائم أجريجينتو بقصّة على شكل الجسم بلون أزرق فاتح" [level=3] [ref=e212]:
+                      - link "قميص دائم أجريجينتو بقصّة على شكل الجسم بلون أزرق فاتح" [ref=e213] [cursor=pointer]:
+                        - /url: /ar/products/agrigento002790azure
+                    - definition [ref=e218]:
+                      - text: 1x
+                      - generic [ref=e219]:
+                        - img [ref=e221]
+                        - text: "349.00"
+              - listitem [ref=e224]:
+                - generic [ref=e226]:
+                  - generic [ref=e228]:
+                    - generic [ref=e229]:
+                      - img "ANDORRA011754LIGHT BLUE" [ref=e230] [cursor=pointer]
+                      - img "ANDORRA011754LIGHT BLUE" [ref=e231] [cursor=pointer]
+                      - link "قميص مقاوم للتجاعيد أندورا بقصّة على شكل الجسم بلون أزرق" [ref=e232] [cursor=pointer]:
+                        - /url: /ar/products/andorra011754light-blue
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e235] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e236]
+                  - generic [ref=e241]:
+                    - heading "قميص مقاوم للتجاعيد أندورا بقصّة على شكل الجسم بلون أزرق" [level=3] [ref=e242]:
+                      - link "قميص مقاوم للتجاعيد أندورا بقصّة على شكل الجسم بلون أزرق" [ref=e243] [cursor=pointer]:
+                        - /url: /ar/products/andorra011754light-blue
+                    - definition [ref=e248]:
+                      - text: 1x
+                      - generic [ref=e249]:
+                        - img [ref=e251]
+                        - text: "499.00"
+              - listitem [ref=e254]:
+                - generic [ref=e256]:
+                  - generic [ref=e258]:
+                    - generic [ref=e259]:
+                      - img "ANVERSA012317LIGHT BLUE" [ref=e260] [cursor=pointer]
+                      - img "ANVERSA012317LIGHT BLUE" [ref=e261] [cursor=pointer]
+                      - link "قميص مقاوم للتجاعيد أنفيرسا بقصّة على شكل الجسم بلون أزرق مخطط" [ref=e262] [cursor=pointer]:
+                        - /url: /ar/products/anversa012317light-blue
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e265] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e266]
+                  - generic [ref=e271]:
+                    - heading "قميص مقاوم للتجاعيد أنفيرسا بقصّة على شكل الجسم بلون أزرق مخطط" [level=3] [ref=e272]:
+                      - link "قميص مقاوم للتجاعيد أنفيرسا بقصّة على شكل الجسم بلون أزرق مخطط" [ref=e273] [cursor=pointer]:
+                        - /url: /ar/products/anversa012317light-blue
+                    - definition [ref=e278]:
+                      - text: 1x
+                      - generic [ref=e279]:
+                        - img [ref=e281]
+                        - text: "499.00"
+              - listitem [ref=e284]:
+                - generic [ref=e286]:
+                  - generic [ref=e288]:
+                    - generic [ref=e289]:
+                      - img "CDPOLKPBG000P80BLACK" [ref=e290] [cursor=pointer]
+                      - img "CDPOLKPBG000P80BLACK" [ref=e291] [cursor=pointer]
+                      - link "قميص بولو أساسي باللون الأسود من القطن 100%" [ref=e292] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80black
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e295] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e296]
+                  - generic [ref=e301]:
+                    - heading "قميص بولو أساسي باللون الأسود من القطن 100%" [level=3] [ref=e302]:
+                      - link "قميص بولو أساسي باللون الأسود من القطن 100%" [ref=e303] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80black
+                    - definition [ref=e308]:
+                      - text: 1x
+                      - generic [ref=e309]:
+                        - img [ref=e311]
+                        - text: "249.00"
+              - listitem [ref=e314]:
+                - generic [ref=e316]:
+                  - generic [ref=e318]:
+                    - generic [ref=e319]:
+                      - img "CPMCGKPBG0SW139BROWN" [ref=e320] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139BROWN" [ref=e321] [cursor=pointer]
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون البني من القطن 100%" [ref=e322] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139brown
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e325] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e326]
+                  - generic [ref=e331]:
+                    - heading "كنزة أساسية بفتحة رقبة دائرية باللون البني من القطن 100%" [level=3] [ref=e332]:
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون البني من القطن 100%" [ref=e333] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139brown
+                    - definition [ref=e338]:
+                      - text: 1x
+                      - generic [ref=e339]:
+                        - img [ref=e341]
+                        - text: "399.00"
+              - listitem [ref=e344]:
+                - generic [ref=e346]:
+                  - generic [ref=e348]:
+                    - generic [ref=e349]:
+                      - img "CDPOLKPBG000P80BROWN" [ref=e350] [cursor=pointer]
+                      - img "CDPOLKPBG000P80BROWN" [ref=e351] [cursor=pointer]
+                      - link "قميص بولو أساسي باللون البني من القطن 100%" [ref=e352] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80brown
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e355] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e356]
+                  - generic [ref=e361]:
+                    - heading "قميص بولو أساسي باللون البني من القطن 100%" [level=3] [ref=e362]:
+                      - link "قميص بولو أساسي باللون البني من القطن 100%" [ref=e363] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80brown
+                    - definition [ref=e368]:
+                      - text: 1x
+                      - generic [ref=e369]:
+                        - img [ref=e371]
+                        - text: "249.00"
+              - listitem [ref=e374]:
+                - generic [ref=e376]:
+                  - generic [ref=e378]:
+                    - generic [ref=e379]:
+                      - img "CPMCGKPIG0SW139DARK BLUE" [ref=e380] [cursor=pointer]
+                      - img "CPMCGKPIG0SW139DARK BLUE" [ref=e381] [cursor=pointer]
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الداكن من القطن 100%" [ref=e382] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpig0sw139dark-blue
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e385] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e386]
+                  - generic [ref=e391]:
+                    - heading "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الداكن من القطن 100%" [level=3] [ref=e392]:
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الداكن من القطن 100%" [ref=e393] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpig0sw139dark-blue
+                    - definition [ref=e398]:
+                      - text: 1x
+                      - generic [ref=e399]:
+                        - img [ref=e401]
+                        - text: "399.00"
+              - listitem [ref=e404]:
+                - generic [ref=e406]:
+                  - generic [ref=e408]:
+                    - generic [ref=e409]:
+                      - img "CDPOLKPBG000P80DARK BLUE" [ref=e410] [cursor=pointer]
+                      - img "CDPOLKPBG000P80DARK BLUE" [ref=e411] [cursor=pointer]
+                      - link "قميص بولو أساسي باللون الأزرق الداكن من القطن100%" [ref=e412] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80dark-blue
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e415] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e416]
+                  - generic [ref=e421]:
+                    - heading "قميص بولو أساسي باللون الأزرق الداكن من القطن100%" [level=3] [ref=e422]:
+                      - link "قميص بولو أساسي باللون الأزرق الداكن من القطن100%" [ref=e423] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80dark-blue
+                    - definition [ref=e428]:
+                      - text: 1x
+                      - generic [ref=e429]:
+                        - img [ref=e431]
+                        - text: "249.00"
+              - listitem [ref=e434]:
+                - generic [ref=e436]:
+                  - generic [ref=e438]:
+                    - generic [ref=e439]:
+                      - img "CDPOLKPBG000P80DARK GREEN" [ref=e440] [cursor=pointer]
+                      - img "CDPOLKPBG000P80DARK GREEN" [ref=e441] [cursor=pointer]
+                      - link "قميص بولو أساسي باللون الأخضر الداكن من القطن 100%" [ref=e442] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80dark-green
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e445] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e446]
+                  - generic [ref=e451]:
+                    - heading "قميص بولو أساسي باللون الأخضر الداكن من القطن 100%" [level=3] [ref=e452]:
+                      - link "قميص بولو أساسي باللون الأخضر الداكن من القطن 100%" [ref=e453] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80dark-green
+                    - definition [ref=e458]:
+                      - text: 1x
+                      - generic [ref=e459]:
+                        - img [ref=e461]
+                        - text: "249.00"
+              - listitem [ref=e464]:
+                - generic [ref=e466]:
+                  - generic [ref=e468]:
+                    - generic [ref=e469]:
+                      - img "CDPOLKPBG000P80DENIM" [ref=e470] [cursor=pointer]
+                      - img "CDPOLKPBG000P80DENIM" [ref=e471] [cursor=pointer]
+                      - link "قميص بولو أساسي من الدنيم من القطن 100%" [ref=e472] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80denim
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e475] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e476]
+                  - generic [ref=e481]:
+                    - heading "قميص بولو أساسي من الدنيم من القطن 100%" [level=3] [ref=e482]:
+                      - link "قميص بولو أساسي من الدنيم من القطن 100%" [ref=e483] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80denim
+                    - definition [ref=e488]:
+                      - text: 1x
+                      - generic [ref=e489]:
+                        - img [ref=e491]
+                        - text: "249.00"
+              - listitem [ref=e494]:
+                - generic [ref=e496]:
+                  - generic [ref=e498]:
+                    - generic [ref=e499]:
+                      - img "CDPOLKPBG000P80GREY" [ref=e500] [cursor=pointer]
+                      - img "CDPOLKPBG000P80GREY" [ref=e501] [cursor=pointer]
+                      - link "قميص بولو أساسي باللون الرمادي من القطن 100%" [ref=e502] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80grey
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e505] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e506]
+                  - generic [ref=e511]:
+                    - heading "قميص بولو أساسي باللون الرمادي من القطن 100%" [level=3] [ref=e512]:
+                      - link "قميص بولو أساسي باللون الرمادي من القطن 100%" [ref=e513] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80grey
+                    - definition [ref=e518]:
+                      - text: 1x
+                      - generic [ref=e519]:
+                        - img [ref=e521]
+                        - text: "249.00"
+              - listitem [ref=e524]:
+                - generic [ref=e526]:
+                  - generic [ref=e528]:
+                    - generic [ref=e529]:
+                      - img "CPMCGKPBG0SW139GREEN" [ref=e530] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139GREEN" [ref=e531] [cursor=pointer]
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأخضر من القطن 100%" [ref=e532] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139green
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e535] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e536]
+                  - generic [ref=e541]:
+                    - heading "كنزة أساسية بفتحة رقبة دائرية باللون الأخضر من القطن 100%" [level=3] [ref=e542]:
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأخضر من القطن 100%" [ref=e543] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139green
+                    - definition [ref=e548]:
+                      - text: 1x
+                      - generic [ref=e549]:
+                        - img [ref=e551]
+                        - text: "399.00"
+              - listitem [ref=e554]:
+                - generic [ref=e556]:
+                  - generic [ref=e558]:
+                    - generic [ref=e559]:
+                      - img "CPMCGKPBG0SW139LIGHT BLUE" [ref=e560] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139LIGHT BLUE" [ref=e561] [cursor=pointer]
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الفاتح من القطن 100%" [ref=e562] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139light-blue
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e565] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e566]
+                  - generic [ref=e571]:
+                    - heading "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الفاتح من القطن 100%" [level=3] [ref=e572]:
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الفاتح من القطن 100%" [ref=e573] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139light-blue
+                    - definition [ref=e578]:
+                      - text: 1x
+                      - generic [ref=e579]:
+                        - img [ref=e581]
+                        - text: "399.00"
+              - listitem [ref=e584]:
+                - generic [ref=e586]:
+                  - generic [ref=e588]:
+                    - generic [ref=e589]:
+                      - img "CPMCGKPBG0SW139AZURE" [ref=e590] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139AZURE" [ref=e591] [cursor=pointer]
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الفاتح من القطن 100%" [ref=e592] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139azure
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e595] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e596]
+                  - generic [ref=e601]:
+                    - heading "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الفاتح من القطن 100%" [level=3] [ref=e602]:
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون الأزرق الفاتح من القطن 100%" [ref=e603] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139azure
+                    - definition [ref=e608]:
+                      - text: 1x
+                      - generic [ref=e609]:
+                        - img [ref=e611]
+                        - text: "399.00"
+              - listitem [ref=e614]:
+                - generic [ref=e616]:
+                  - generic [ref=e618]:
+                    - generic [ref=e619]:
+                      - img "CDPOLKPBG000P80LIGHT BLUE" [ref=e620] [cursor=pointer]
+                      - img "CDPOLKPBG000P80LIGHT BLUE" [ref=e621] [cursor=pointer]
+                      - link "قميص بولو أساسي باللون الأزرق الفاتح من القطن 100%" [ref=e622] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80light-blue
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e625] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e626]
+                  - generic [ref=e631]:
+                    - heading "قميص بولو أساسي باللون الأزرق الفاتح من القطن 100%" [level=3] [ref=e632]:
+                      - link "قميص بولو أساسي باللون الأزرق الفاتح من القطن 100%" [ref=e633] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80light-blue
+                    - definition [ref=e638]:
+                      - text: 1x
+                      - generic [ref=e639]:
+                        - img [ref=e641]
+                        - text: "249.00"
+              - listitem [ref=e644]:
+                - generic [ref=e646]:
+                  - generic [ref=e648]:
+                    - generic [ref=e649]:
+                      - img "CDPOLKPBG000P80AZURE" [ref=e650] [cursor=pointer]
+                      - img "CDPOLKPBG000P80AZURE" [ref=e651] [cursor=pointer]
+                      - link "قميص بولو أساسي باللون الأزرق الفاتح من القطن 100%" [ref=e652] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80azure
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e655] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e656]
+                  - generic [ref=e661]:
+                    - heading "قميص بولو أساسي باللون الأزرق الفاتح من القطن 100%" [level=3] [ref=e662]:
+                      - link "قميص بولو أساسي باللون الأزرق الفاتح من القطن 100%" [ref=e663] [cursor=pointer]:
+                        - /url: /ar/products/cdpolkpbg000p80azure
+                    - definition [ref=e668]:
+                      - text: 1x
+                      - generic [ref=e669]:
+                        - img [ref=e671]
+                        - text: "249.00"
+              - listitem [ref=e674]:
+                - generic [ref=e676]:
+                  - generic [ref=e678]:
+                    - generic [ref=e679]:
+                      - img "CPMCGKPBG0SW139LIGHTBROWN" [ref=e680] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139LIGHTBROWN" [ref=e681] [cursor=pointer]
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون البني الفاتح من القطن 100%" [ref=e682] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139lightbrown
+                    - button "إضافة إلى قائمة الأمنيات" [ref=e685] [cursor=pointer]:
+                      - generic: إضافة إلى قائمة الأمنيات
+                      - img [ref=e686]
+                  - generic [ref=e691]:
+                    - heading "كنزة أساسية بفتحة رقبة دائرية باللون البني الفاتح من القطن 100%" [level=3] [ref=e692]:
+                      - link "كنزة أساسية بفتحة رقبة دائرية باللون البني الفاتح من القطن 100%" [ref=e693] [cursor=pointer]:
+                        - /url: /ar/products/cpmcgkpbg0sw139lightbrown
+                    - definition [ref=e698]:
+                      - text: 1x
+                      - generic [ref=e699]:
+                        - img [ref=e701]
+                        - text: "399.00"
+            - navigation "Pagination" [ref=e705]:
+              - list [ref=e706]:
+                - listitem [ref=e707]:
+                  - generic "الصفحة 1" [ref=e708]: "1"
+                - listitem [ref=e709]:
+                  - link "الصفحة 2" [ref=e710] [cursor=pointer]:
+                    - /url: /ar/collections/all?page=2
+                    - text: "2"
+                - listitem [ref=e711]:
+                  - link "الصفحة 3" [ref=e712] [cursor=pointer]:
+                    - /url: /ar/collections/all?page=3
+                    - text: "3"
+                - listitem [ref=e713]:
+                  - generic [ref=e714]: …
+                - listitem [ref=e715]:
+                  - link "الصفحة 16" [ref=e716] [cursor=pointer]:
+                    - /url: /ar/collections/all?page=16
+                    - text: "16"
+                - listitem [ref=e717]:
+                  - link "التالي" [ref=e718] [cursor=pointer]:
+                    - /url: /ar/collections/all?page=2
+                    - img [ref=e719]
+    - generic [ref=e721]:
+      - generic [ref=e724]:
+        - heading "الأكثر مبيعاً" [level=2] [ref=e726]
+        - list [ref=e727]:
+          - listitem [ref=e728]:
+            - link "اكسسوارات" [ref=e729] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e730]:
+            - link "الكل" [ref=e731] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e732]:
+            - link "قمصان الخريف" [ref=e733] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e734]:
+            - link "قمصان بولو أساسية" [ref=e735] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e736]:
+            - link "بولينج" [ref=e737] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e738]:
+            - link "مجموعة قمصان دائمة من القطن" [ref=e739] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e740]:
+            - link "مجموعة كنزات كشمير" [ref=e741] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e742]:
+            - link "مجموعة قمصان كلاسيكية من القطن" [ref=e743] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e744]:
+            - link "مجموعة كنزات من القطن" [ref=e745] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e750]:
+        - generic [ref=e751]:
+          - img "استرجاع سهل" [ref=e752]
+          - heading "استرجاع سهل" [level=3] [ref=e753]
+          - paragraph [ref=e754]: قم باسترجاع المنتجات الخاصة بك بسرعة وسهولة.
+        - generic [ref=e755]:
+          - img "شحن سريع" [ref=e756]
+          - heading "شحن سريع" [level=3] [ref=e757]
+          - paragraph [ref=e758]: استمتع بشحن سريع على جميع الطلبات!
+        - generic [ref=e759]:
+          - img "مدفوعات آمنة" [ref=e760]
+          - heading "مدفوعات آمنة" [level=3] [ref=e761]
+          - paragraph [ref=e762]: تسوق آمن مع كميشيسِّما. نقبل الدفع عبر بطاقات الائتمان
+        - generic [ref=e763]:
+          - img "خدمة العملاء" [ref=e764]
+          - heading "خدمة العملاء" [level=3] [ref=e765]
+          - paragraph [ref=e766]: تواصل مع خدمة العملاء لدينا
+      - generic [ref=e768]:
+        - img "مرحباً!" [ref=e771]
+        - generic [ref=e772]:
+          - heading "مرحباً!" [level=2] [ref=e773]
+          - paragraph [ref=e774]: اشترك في النشرة الإخبارية لدينا للحصول على خصم 10% على عملية الشراء التالية وابق على اطلاع دائم بالأخبار والمعلومات والموضة والعروض.
+          - generic [ref=e775]:
+            - generic [ref=e776]:
+              - textbox "أدخل بريدك الالكتروني" [ref=e777]
+              - button "اشتراك" [ref=e778] [cursor=pointer]
+            - generic [ref=e779]:
+              - checkbox "أوافق على استخدام بياناتي الشخصية لاستلام التحديثات والاشتراك بالنشرة البريدية." [ref=e780]
+              - text: أوافق على استخدام بياناتي الشخصية لاستلام التحديثات والاشتراك بالنشرة البريدية.
+      - contentinfo [ref=e782]:
+        - generic [ref=e785]:
+          - generic [ref=e786]:
+            - generic [ref=e788]:
+              - heading "الشركة" [level=2] [ref=e789]
+              - list [ref=e791]:
+                - listitem [ref=e792]:
+                  - link "عن كميشيسِّما" [ref=e793] [cursor=pointer]:
+                    - /url: /ar/pages/history
+                - listitem [ref=e794]:
+                  - link "محدد المتاجر" [ref=e795] [cursor=pointer]:
+                    - /url: /ar/pages/location-store
+            - generic [ref=e797]:
+              - heading "الملف الشخصي" [level=2] [ref=e798]
+              - list [ref=e800]:
+                - listitem [ref=e801]:
+                  - link "طلبي" [ref=e802] [cursor=pointer]:
+                    - /url: https://www.aramex.com/sa/en/track/shipments
+                - listitem [ref=e803]:
+                  - link "شروط الاستخدام" [ref=e804] [cursor=pointer]:
+                    - /url: /ar/pages/conditions-of-use
+                - listitem [ref=e805]:
+                  - link "تواصل معنا" [ref=e806] [cursor=pointer]:
+                    - /url: /ar/pages/contact
+                - listitem [ref=e807]:
+                  - link "دليل المقاسات" [ref=e808] [cursor=pointer]:
+                    - /url: /ar/pages/size-guide
+            - generic [ref=e810]:
+              - heading "الخدمات" [level=2] [ref=e811]
+              - list [ref=e813]:
+                - listitem [ref=e814]:
+                  - link "سياسة الخصوصية وملفات تعريف الارتباط" [ref=e815] [cursor=pointer]:
+                    - /url: /ar/pages/privacy-and-cookie-policy
+                - listitem [ref=e816]:
+                  - link "الشحن والإرجاع" [ref=e817] [cursor=pointer]:
+                    - /url: /ar/pages/shipping-and-returns
+                - listitem [ref=e818]:
+                  - link "العروض" [ref=e819] [cursor=pointer]:
+                    - /url: /ar/pages/our-promos
+                - listitem [ref=e820]:
+                  - link "الأسئلة الشائعة" [ref=e821] [cursor=pointer]:
+                    - /url: /ar/pages/faq
+          - generic [ref=e822]:
+            - generic [ref=e823]:
+              - heading "شروط الدفع" [level=2] [ref=e824]
+              - generic [ref=e825]:
+                - img "visa"
+                - img "master"
+                - img "mada"
+                - img "stc_pay"
+                - img "apple_pay"
+                - img "tabby"
+            - generic [ref=e826]:
+              - heading "تجربة تسوّق مميزة" [level=2] [ref=e827]
+              - text: 30 يوم للإرجاع أونلاين
+            - generic [ref=e828]:
+              - heading "التواصل الاجتماعي" [level=2] [ref=e829]
+              - generic [ref=e830]:
+                - link [ref=e831] [cursor=pointer]:
+                  - /url: https://www.instagram.com/camicissima.ksa/
+                  - img [ref=e832]
+                - link "Tiktok" [ref=e834] [cursor=pointer]:
+                  - /url: http://www.tiktok.com/@camicissima.ksa
+                  - img [ref=e835]
+                - link "Snapchat" [ref=e837] [cursor=pointer]:
+                  - /url: https://www.snapchat.com/@camicissimaksa
+                  - img [ref=e838]
+                - link "Facebook" [ref=e840] [cursor=pointer]:
+                  - /url: https://www.facebook.com/profile.php?id=61572241232089
+                  - img [ref=e841]
+      - paragraph [ref=e845]:
+        - text: © 2026 Camicissima | Al Moallim United Co, KSA
+        - text: "CR: 4030031627 , VAT# 301329371900003"
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+  - generic [ref=e847]:
+    - button "Close" [ref=e848] [cursor=pointer]:
+      - generic [ref=e849]: Close
+      - img [ref=e850]
+    - list [ref=e852]:
+      - listitem [ref=e853]:
+        - link "قمصان إيطالية رجالية" [ref=e854] [cursor=pointer]:
+          - /url: /ar/collections/mens-shirts
+          - text: قمصان إيطالية رجالية
+          - img [ref=e856]
+        - generic [ref=e859]:
+          - button [ref=e860] [cursor=pointer]:
+            - img [ref=e861]
+          - list [ref=e864]:
+            - generic [ref=e865]:
+              - listitem [ref=e866]:
+                - link "قمصان" [ref=e867] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts
+                - list [ref=e868]:
+                  - listitem [ref=e869]:
+                    - link "دائمة" [ref=e870] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-permanent
+                  - listitem [ref=e871]:
+                    - link "فاخرة" [ref=e872] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-fancy
+                    - list [ref=e873]:
+                      - listitem [ref=e874]:
+                        - link "كم طويل" [ref=e875] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-fancy-longsleeve
+                      - listitem [ref=e876]:
+                        - link "كم قصير" [ref=e877] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-fancy-shortsleeve
+                  - listitem [ref=e878]:
+                    - link "عصرية" [ref=e879] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-trendy
+                    - list [ref=e880]:
+                      - listitem [ref=e881]:
+                        - link "قطن" [ref=e882] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-cotton
+                      - listitem [ref=e883]:
+                        - link "خط القمصان الإنجليزية" [ref=e884] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-englishtour
+                      - listitem [ref=e885]:
+                        - link "جينز" [ref=e886] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-jeansshirt
+                      - listitem [ref=e887]:
+                        - link "بولنغ" [ref=e888] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-trendy-bowling
+                  - listitem [ref=e889]:
+                    - link "كلاسيكية" [ref=e890] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-classic
+                  - listitem [ref=e891]:
+                    - link "غير قابلة للكي" [ref=e892] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-noniron
+                  - listitem [ref=e893]:
+                    - link "كتان" [ref=e894] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-linen
+                    - list [ref=e895]:
+                      - listitem [ref=e896]:
+                        - link "عصرية" [ref=e897] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-linen-trendy
+                      - listitem [ref=e898]:
+                        - link "فاخرة" [ref=e899] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-linen-fancy
+                      - listitem [ref=e900]:
+                        - link "سيرافينو كتان عصري" [ref=e901] [cursor=pointer]:
+                          - /url: /ar/collections/mens-shirts-linen-trendylinenserafino
+                  - listitem [ref=e902]:
+                    - link "قمصان بتفاصيل" [ref=e903] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-details
+              - listitem [ref=e904]:
+                - link "الياقة" [ref=e905] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-neck
+                - list [ref=e906]:
+                  - listitem [ref=e907]:
+                    - link "إيطالية" [ref=e908] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-italian
+                  - listitem [ref=e909]:
+                    - link "بأزرار" [ref=e910] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-buttondown
+                  - listitem [ref=e911]:
+                    - link "فرنسية" [ref=e912] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-french
+                  - listitem [ref=e913]:
+                    - link "كورية" [ref=e914] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-neck-korean
+              - listitem [ref=e915]:
+                - link "تسوق حسب المقاس" [ref=e916] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-shopbyfit
+                - list [ref=e917]:
+                  - listitem [ref=e918]:
+                    - link "قَصّة مفصلة على الجسم" [ref=e919] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-shopbyfit-extraslimfit
+                  - listitem [ref=e920]:
+                    - link "قَصّة ضيقة" [ref=e921] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-shopbyfit-slimfit
+                  - listitem [ref=e922]:
+                    - link "قَصّة عادية" [ref=e923] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-shopbyfit-regularfit
+              - listitem [ref=e924]:
+                - link "تشكيلات" [ref=e925] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-collections
+                - list [ref=e926]:
+                  - listitem [ref=e927]:
+                    - link "قمصان الخريف" [ref=e928] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-autumn
+                  - listitem [ref=e929]:
+                    - link "قمصان الربيع" [ref=e930] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-spring
+                  - listitem [ref=e931]:
+                    - link "قمصان الصيف" [ref=e932] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-summer
+                  - listitem [ref=e933]:
+                    - link "قمصان الشتاء" [ref=e934] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-collections-winter
+              - listitem [ref=e935]:
+                - link "النقشة" [ref=e936] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-pattern
+                - list [ref=e937]:
+                  - listitem [ref=e938]:
+                    - link "مطبوع" [ref=e939] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-paintings
+                  - listitem [ref=e940]:
+                    - link "مخطط" [ref=e941] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-lines
+                  - listitem [ref=e942]:
+                    - link "سادة" [ref=e943] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-solidcolor
+                  - listitem [ref=e944]:
+                    - link "نقشة ناعمة" [ref=e945] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-pattern-dobby
+              - listitem [ref=e946]:
+                - link "اللون" [ref=e947] [cursor=pointer]:
+                  - /url: /ar/collections/mens-shirts-color
+                - list [ref=e948]:
+                  - listitem [ref=e949]:
+                    - link "أبيض" [ref=e950] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-white
+                  - listitem [ref=e951]:
+                    - link "أسود" [ref=e952] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-black
+                  - listitem [ref=e953]:
+                    - link "أزرق" [ref=e954] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-blue
+                  - listitem [ref=e955]:
+                    - link "أزرق سماوي" [ref=e956] [cursor=pointer]:
+                      - /url: /ar/collections/mens-shirts-color-skyblue
+    - list [ref=e957]:
+      - listitem [ref=e958]:
+        - link "ملابس" [ref=e959] [cursor=pointer]:
+          - /url: /ar/collections/clothing
+          - text: ملابس
+          - img [ref=e961]
+        - generic [ref=e964]:
+          - button [ref=e965] [cursor=pointer]:
+            - img [ref=e966]
+          - list [ref=e969]:
+            - generic [ref=e970]:
+              - listitem [ref=e971]:
+                - link "سترات للرجال" [ref=e972] [cursor=pointer]:
+                  - /url: /ar/collections/mens-sweater
+                - list [ref=e973]:
+                  - listitem [ref=e974]:
+                    - link "سترة بفتحة رقبة دائرية" [ref=e975] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-crewneck
+                    - list [ref=e976]:
+                      - listitem [ref=e977]:
+                        - link "قطن" [ref=e978] [cursor=pointer]:
+                          - /url: /ar/collections/mens-sweater-crewneck-cotton
+                      - listitem [ref=e979]:
+                        - link "كشمير" [ref=e980] [cursor=pointer]:
+                          - /url: /ar/collections/mens-sweater-crewneck-cashmere
+                  - listitem [ref=e981]:
+                    - link "سترة بفتحة رقبة V" [ref=e982] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-vneck
+                  - listitem [ref=e983]:
+                    - link "سترة بسحاب" [ref=e984] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-zipup
+                  - listitem [ref=e985]:
+                    - link "سترة برقبة عالية" [ref=e986] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-highneck
+                  - listitem [ref=e987]:
+                    - link "سترة فاخرة" [ref=e988] [cursor=pointer]:
+                      - /url: /ar/collections/mens-sweater-luxury
+              - listitem [ref=e989]:
+                - link "بولو" [ref=e990] [cursor=pointer]:
+                  - /url: /ar/collections/polo
+                - list [ref=e991]:
+                  - listitem [ref=e992]:
+                    - link "بولو أساسي" [ref=e993] [cursor=pointer]:
+                      - /url: /ar/collections/polo-basic
+              - listitem [ref=e994]:
+                - link "بنطال" [ref=e995] [cursor=pointer]:
+                  - /url: /ar/collections/pants
+                - list [ref=e996]:
+                  - listitem [ref=e997]:
+                    - link "برمودا" [ref=e998] [cursor=pointer]:
+                      - /url: /ar/collections/pants-bermuda
+                  - listitem [ref=e999]:
+                    - link "شينو" [ref=e1000] [cursor=pointer]:
+                      - /url: /ar/collections/pants-chinos
+                    - list [ref=e1001]:
+                      - listitem [ref=e1002]:
+                        - link "قطن" [ref=e1003] [cursor=pointer]:
+                          - /url: /ar/collections/pants-chinos-cotton
+                      - listitem [ref=e1004]:
+                        - link "مخمل" [ref=e1005] [cursor=pointer]:
+                          - /url: /ar/collections/pants-chinos-velvet
+                      - listitem [ref=e1006]:
+                        - link "كتان" [ref=e1007] [cursor=pointer]:
+                          - /url: /ar/collections/pants-chinos-linen
+                  - listitem [ref=e1008]:
+                    - link "جينز" [ref=e1009] [cursor=pointer]:
+                      - /url: /ar/collections/pants-jeans
+                  - listitem [ref=e1010]:
+                    - link "5 جيوب" [ref=e1011] [cursor=pointer]:
+                      - /url: /ar/collections/pants-5pockets
+                  - listitem [ref=e1012]:
+                    - link "كارغو" [ref=e1013] [cursor=pointer]:
+                      - /url: /ar#
+              - listitem [ref=e1014]:
+                - link "فيست" [ref=e1015] [cursor=pointer]:
+                  - /url: /ar/collections/vest
+                - list [ref=e1016]:
+                  - listitem [ref=e1017]:
+                    - link "فيست مفصلة" [ref=e1018] [cursor=pointer]:
+                      - /url: /ar/collections/vest-tailored
+                  - listitem [ref=e1019]:
+                    - link "فيست صوفية" [ref=e1020] [cursor=pointer]:
+                      - /url: /ar/collections/vest-sweater
+                    - list [ref=e1021]:
+                      - listitem [ref=e1022]:
+                        - link "قطن" [ref=e1023] [cursor=pointer]:
+                          - /url: /ar/collections/vest-sweater-cotton
+                      - listitem [ref=e1024]:
+                        - link "كشمير" [ref=e1025] [cursor=pointer]:
+                          - /url: /ar/collections/vest-sweater-cashmere
+                  - listitem [ref=e1026]:
+                    - link "فيست مبطنة" [ref=e1027] [cursor=pointer]:
+                      - /url: /ar/collections/vest-padded
+              - listitem [ref=e1028]:
+                - link "ملابس خارجية للرجال" [ref=e1029] [cursor=pointer]:
+                  - /url: /ar/collections/mens-outerwear
+                - list [ref=e1030]:
+                  - listitem [ref=e1031]:
+                    - link "بومبر" [ref=e1032] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-bomber
+                  - listitem [ref=e1033]:
+                    - link "جاكيتات وبليزرات" [ref=e1034] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-jacketsandblazers
+                  - listitem [ref=e1035]:
+                    - link "باركا" [ref=e1036] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-parka
+                  - listitem [ref=e1037]:
+                    - link "جاكيت فيلد" [ref=e1038] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-fieldjacket
+                  - listitem [ref=e1039]:
+                    - link "معطف" [ref=e1040] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-coat
+                  - listitem [ref=e1041]:
+                    - link "جاكيتات مبطنة" [ref=e1042] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-paddedjackets
+                  - listitem [ref=e1043]:
+                    - link "قميص مبطن" [ref=e1044] [cursor=pointer]:
+                      - /url: /ar/collections/mens-outerwear-paddedshirt
+              - listitem [ref=e1045]:
+                - link "تي شيرت" [ref=e1046] [cursor=pointer]:
+                  - /url: /ar/collections/tshirt
+              - listitem [ref=e1047]:
+                - link "إكسسوارات" [ref=e1048] [cursor=pointer]:
+                  - /url: /ar/collections/accessories
+                - list [ref=e1049]:
+                  - listitem [ref=e1050]:
+                    - link "ربطات عنق" [ref=e1051] [cursor=pointer]:
+                      - /url: /ar/collections/accessories-ties
+                  - listitem [ref=e1052]:
+                    - link "جوارب" [ref=e1053] [cursor=pointer]:
+                      - /url: /ar/collections/accessories-socks
+    - list [ref=e1054]:
+      - listitem [ref=e1055]:
+        - link "مجموعات" [ref=e1056] [cursor=pointer]:
+          - /url: /ar/pages/bundle-products
+          - text: مجموعات
+  - dialog "POPUP Form" [ref=e1058]:
+    - generic [ref=e1063]:
+      - button "Close dialog" [ref=e1064] [cursor=pointer]:
+        - img [ref=e1065]
+      - generic [ref=e1069]:
+        - img "Camicissima" [ref=e1074]
+        - paragraph [ref=e1078]: احصل على خصم 10% عند التسجيل باستخدام بريدك الإلكتروني.
+        - paragraph [ref=e1082]:
+          - generic [ref=e1083]:
+            - text: من خلال إدخال عنوان بريدك الإلكتروني، فإنك توافق على استلام رسائل تسويقية من كميشيسِّما. قد نستخدم المعلومات التي نجمعها عنك على موقعنا لاقتراح منتجات وعروض أخرى. يمكنك إلغاء الاشتراك في أي وقت. عرض
+            - link "الشروط و سياسة الخصوصية" [ref=e1084] [cursor=pointer]:
+              - /url: /ar/pages/privacy-and-cookie-policy
+        - generic [ref=e1087]:
+          - generic [ref=e1088]: Email
+          - textbox "Email" [active] [ref=e1089]:
+            - /placeholder: البريد الالكتروني
+        - paragraph [ref=e1093]: أخبرنا بتاريخ ميلادك لنُرسل لك شيئًا مميزًا في يومك المميز
+        - generic [ref=e1096]:
+          - generic [ref=e1097]: DOB
+          - textbox "DOB" [ref=e1098]:
+            - /placeholder: شهر/يوم/سنة
+        - generic [ref=e1102]: "ساعدنا في تخصيص رسائل كميشيسِّما الإلكترونية لك من خلال اختيار الخيارات أدناه:"
+        - group "Gender" [ref=e1106]:
+          - generic [ref=e1107]: Gender
+          - radiogroup [ref=e1108]:
+            - generic [ref=e1109] [cursor=pointer]:
+              - img [ref=e1110]
+              - generic [ref=e1114]: الرجال
+            - generic [ref=e1115] [cursor=pointer]:
+              - img [ref=e1116]
+              - generic [ref=e1120]: النساء
+        - paragraph [ref=e1124]: "نود معرفة اللغة المفضّلة لديك للتواصل:"
+        - group "Preferred Language" [ref=e1128]:
+          - generic [ref=e1129]: Preferred Language
+          - radiogroup [ref=e1130]:
+            - generic [ref=e1131] [cursor=pointer]:
+              - img [ref=e1132]
+              - generic [ref=e1136]: English
+            - generic [ref=e1137] [cursor=pointer]:
+              - img [ref=e1138]
+              - generic [ref=e1142]: العربية
+        - button "استمرار" [ref=e1145] [cursor=pointer]
+        - paragraph [ref=e1149]:
+          - text: من خلال التسجيل، أوافق على استلام رسائل إلكترونية من كميشيسِّما وأوافق على
+          - link "سياسة الخصوصية." [ref=e1150] [cursor=pointer]:
+            - /url: /ar/pages/privacy-and-cookie-policy
+  - paragraph [ref=e1156]: Loading...
+```

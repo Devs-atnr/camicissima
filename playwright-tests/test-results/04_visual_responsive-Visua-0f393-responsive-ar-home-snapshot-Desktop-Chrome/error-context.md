@@ -1,0 +1,366 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "انتقل إلى المحتوى" [ref=e3] [cursor=pointer]:
+      - /url: "#MainContent"
+    - generic [ref=e4]:
+      - generic [ref=e7]:
+        - heading "camicissima-ksa" [level=1] [ref=e9]:
+          - link "camicissima-ksa" [ref=e10] [cursor=pointer]:
+            - /url: /ar
+            - img "camicissima-ksa" [ref=e11]
+        - navigation [ref=e15]:
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - link "قمصان رجالية" [ref=e18] [cursor=pointer]:
+                - /url: /ar/collections/mens-shirts
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "ملابس" [ref=e21] [cursor=pointer]:
+                - /url: /ar/collections/CLOTHING
+          - list [ref=e22]:
+            - listitem [ref=e23]:
+              - link "مجموعات" [ref=e24] [cursor=pointer]:
+                - /url: /ar/pages/bundle-products
+        - generic [ref=e25]:
+          - 'menu "Selected language: العربية" [ref=e28]':
+            - menuitem "English" [ref=e29] [cursor=pointer]: English
+          - link "قوائم الأمنيات" [ref=e31] [cursor=pointer]:
+            - /url: /ar/pages/wishlist
+            - img [ref=e32]
+            - generic [ref=e36]: قوائم الأمنيات
+          - group [ref=e38]:
+            - generic "بحث" [ref=e39] [cursor=pointer]:
+              - img [ref=e40]
+          - generic [ref=e44]: .
+          - link "تسجيل الدخول" [ref=e45] [cursor=pointer]:
+            - /url: /ar/account/login
+            - img [ref=e46]
+            - generic [ref=e50]: تسجيل الدخول
+          - link "العربة 0 منتجات" [ref=e51] [cursor=pointer]:
+            - /url: /ar/cart
+            - img [ref=e52]
+            - generic [ref=e56]: العربة
+            - generic [ref=e57]:
+              - generic [ref=e58]: "0"
+              - generic [ref=e59]: 0 منتجات
+      - list [ref=e66]:
+        - listitem [ref=e67]:
+          - button "en" [ref=e68] [cursor=pointer]:
+            - generic [ref=e70]: en
+        - listitem [ref=e71]:
+          - button "ar" [ref=e72] [cursor=pointer]:
+            - generic [ref=e74]: ar
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img
+    - main [ref=e75]:
+      - generic [ref=e82]:
+        - link "camicissima-ksa":
+          - /url: /ar/collections/white-friday-winter-sale-25
+      - generic [ref=e89]:
+        - link "camicissima-ksa":
+          - /url: /ar/collections/mens-sweater
+      - generic [ref=e95]:
+        - generic [ref=e103]:
+          - link "قميص دائم بأكمام طويلة" [ref=e104] [cursor=pointer]:
+            - /url: /ar/products/chietih07545white
+          - generic [ref=e107]:
+            - definition [ref=e109]:
+              - text: 1x
+              - generic [ref=e110]:
+                - img [ref=e112]
+                - text: "349.00"
+            - generic [ref=e115]:
+              - definition [ref=e116]:
+                - generic [ref=e117]:
+                  - img [ref=e119]
+                  - text: "349.00"
+              - definition [ref=e122]:
+                - generic [ref=e123]:
+                  - img [ref=e125]
+                  - text: "349.00"
+        - generic [ref=e135]:
+          - link "قميص دائم بأكمام طويلة" [ref=e136] [cursor=pointer]:
+            - /url: /ar/products/veronah00081pink
+          - generic [ref=e139]:
+            - definition [ref=e141]:
+              - text: 1x
+              - generic [ref=e142]:
+                - img [ref=e144]
+                - text: "349.00"
+            - generic [ref=e147]:
+              - definition [ref=e148]:
+                - generic [ref=e149]:
+                  - img [ref=e151]
+                  - text: "349.00"
+              - definition [ref=e154]:
+                - generic [ref=e155]:
+                  - img [ref=e157]
+                  - text: "349.00"
+        - generic [ref=e167]:
+          - link "قميص دائم بأكمام طويلة" [ref=e168] [cursor=pointer]:
+            - /url: /ar/products/cerviah07545white
+          - generic [ref=e171]:
+            - definition [ref=e173]:
+              - text: 1x
+              - generic [ref=e174]:
+                - img [ref=e176]
+                - text: "349.00"
+            - generic [ref=e179]:
+              - definition [ref=e180]:
+                - generic [ref=e181]:
+                  - img [ref=e183]
+                  - text: "349.00"
+              - definition [ref=e186]:
+                - generic [ref=e187]:
+                  - img [ref=e189]
+                  - text: "349.00"
+        - generic [ref=e199]:
+          - link "قميص دائم بأكمام طويلة" [ref=e200] [cursor=pointer]:
+            - /url: /ar/products/gardah01471blue
+          - generic [ref=e203]:
+            - definition [ref=e205]:
+              - text: 1x
+              - generic [ref=e206]:
+                - img [ref=e208]
+                - text: "349.00"
+            - generic [ref=e211]:
+              - definition [ref=e212]:
+                - generic [ref=e213]:
+                  - img [ref=e215]
+                  - text: "349.00"
+              - definition [ref=e218]:
+                - generic [ref=e219]:
+                  - img [ref=e221]
+                  - text: "349.00"
+      - generic [ref=e226]:
+        - generic [ref=e227]:
+          - link "قمصان رجالية" [ref=e228] [cursor=pointer]:
+            - /url: /ar/collections/mens-shirts
+          - generic [ref=e229]:
+            - link "قمصان" [ref=e230] [cursor=pointer]:
+              - /url: /ar/collections/mens-shirts
+            - link "الياقة" [ref=e231] [cursor=pointer]:
+              - /url: /ar/collections/mens-shirts-neck
+            - link "تسوق حسب المقاس" [ref=e232] [cursor=pointer]:
+              - /url: /ar/collections/mens-shirts-shopbyfit
+        - generic [ref=e233]:
+          - link "ملابس" [ref=e234] [cursor=pointer]:
+            - /url: /ar/collections/CLOTHING
+          - generic [ref=e235]:
+            - link "كنزات" [ref=e236] [cursor=pointer]:
+              - /url: /ar/collections/mens-sweater
+            - link "بولو" [ref=e237] [cursor=pointer]:
+              - /url: /ar/collections/polo
+            - link "بناطيل" [ref=e238] [cursor=pointer]:
+              - /url: /ar/collections/pants
+            - link "فيستات" [ref=e239] [cursor=pointer]:
+              - /url: /ar/collections/vest
+        - generic [ref=e240]:
+          - link "تاريخنا" [ref=e241] [cursor=pointer]:
+            - /url: /ar/pages/history
+          - link "سياسة الخصوصية" [ref=e243] [cursor=pointer]:
+            - /url: /ar/pages/privacy-and-cookie-policy
+        - generic [ref=e244]:
+          - link "قواعد أناقتنا" [ref=e245] [cursor=pointer]:
+            - /url: /ar/pages/our-promos
+          - link "موقع المتجر" [ref=e247] [cursor=pointer]:
+            - /url: ""
+    - generic [ref=e248]:
+      - generic [ref=e251]:
+        - heading "الأكثر مبيعاً" [level=2] [ref=e253]
+        - list [ref=e254]:
+          - listitem [ref=e255]:
+            - link "اكسسوارات" [ref=e256] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e257]:
+            - link "الكل" [ref=e258] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e259]:
+            - link "قمصان الخريف" [ref=e260] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e261]:
+            - link "قمصان بولو أساسية" [ref=e262] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e263]:
+            - link "بولينج" [ref=e264] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e265]:
+            - link "مجموعة قمصان دائمة من القطن" [ref=e266] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e267]:
+            - link "مجموعة كنزات كشمير" [ref=e268] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e269]:
+            - link "مجموعة قمصان كلاسيكية من القطن" [ref=e270] [cursor=pointer]:
+              - /url: "#"
+            - text: "|"
+          - listitem [ref=e271]:
+            - link "مجموعة كنزات من القطن" [ref=e272] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e277]:
+        - generic [ref=e278]:
+          - img "استرجاع سهل" [ref=e279]
+          - heading "استرجاع سهل" [level=3] [ref=e280]
+          - paragraph [ref=e281]: قم باسترجاع المنتجات الخاصة بك بسرعة وسهولة.
+        - generic [ref=e282]:
+          - img "شحن سريع" [ref=e283]
+          - heading "شحن سريع" [level=3] [ref=e284]
+          - paragraph [ref=e285]: استمتع بشحن سريع على جميع الطلبات!
+        - generic [ref=e286]:
+          - img "مدفوعات آمنة" [ref=e287]
+          - heading "مدفوعات آمنة" [level=3] [ref=e288]
+          - paragraph [ref=e289]: تسوق آمن مع كميشيسِّما. نقبل الدفع عبر بطاقات الائتمان
+        - generic [ref=e290]:
+          - img "خدمة العملاء" [ref=e291]
+          - heading "خدمة العملاء" [level=3] [ref=e292]
+          - paragraph [ref=e293]: تواصل مع خدمة العملاء لدينا
+      - generic [ref=e295]:
+        - img "مرحباً!" [ref=e298]
+        - generic [ref=e299]:
+          - heading "مرحباً!" [level=2] [ref=e300]
+          - paragraph [ref=e301]: اشترك في النشرة الإخبارية لدينا للحصول على خصم 10% على عملية الشراء التالية وابق على اطلاع دائم بالأخبار والمعلومات والموضة والعروض.
+          - generic [ref=e302]:
+            - generic [ref=e303]:
+              - textbox "أدخل بريدك الالكتروني" [ref=e304]
+              - button "اشتراك" [ref=e305] [cursor=pointer]
+            - generic [ref=e306]:
+              - checkbox "أوافق على استخدام بياناتي الشخصية لاستلام التحديثات والاشتراك بالنشرة البريدية." [ref=e307]
+              - text: أوافق على استخدام بياناتي الشخصية لاستلام التحديثات والاشتراك بالنشرة البريدية.
+      - contentinfo [ref=e309]:
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - generic [ref=e315]:
+              - heading "الشركة" [level=2] [ref=e316]
+              - list [ref=e318]:
+                - listitem [ref=e319]:
+                  - link "عن كميشيسِّما" [ref=e320] [cursor=pointer]:
+                    - /url: /ar/pages/history
+                - listitem [ref=e321]:
+                  - link "محدد المتاجر" [ref=e322] [cursor=pointer]:
+                    - /url: /ar/pages/location-store
+            - generic [ref=e324]:
+              - heading "الملف الشخصي" [level=2] [ref=e325]
+              - list [ref=e327]:
+                - listitem [ref=e328]:
+                  - link "طلبي" [ref=e329] [cursor=pointer]:
+                    - /url: https://www.aramex.com/sa/en/track/shipments
+                - listitem [ref=e330]:
+                  - link "شروط الاستخدام" [ref=e331] [cursor=pointer]:
+                    - /url: /ar/pages/conditions-of-use
+                - listitem [ref=e332]:
+                  - link "تواصل معنا" [ref=e333] [cursor=pointer]:
+                    - /url: /ar/pages/contact
+                - listitem [ref=e334]:
+                  - link "دليل المقاسات" [ref=e335] [cursor=pointer]:
+                    - /url: /ar/pages/size-guide
+            - generic [ref=e337]:
+              - heading "الخدمات" [level=2] [ref=e338]
+              - list [ref=e340]:
+                - listitem [ref=e341]:
+                  - link "سياسة الخصوصية وملفات تعريف الارتباط" [ref=e342] [cursor=pointer]:
+                    - /url: /ar/pages/privacy-and-cookie-policy
+                - listitem [ref=e343]:
+                  - link "الشحن والإرجاع" [ref=e344] [cursor=pointer]:
+                    - /url: /ar/pages/shipping-and-returns
+                - listitem [ref=e345]:
+                  - link "العروض" [ref=e346] [cursor=pointer]:
+                    - /url: /ar/pages/our-promos
+                - listitem [ref=e347]:
+                  - link "الأسئلة الشائعة" [ref=e348] [cursor=pointer]:
+                    - /url: /ar/pages/faq
+          - generic [ref=e349]:
+            - generic [ref=e350]:
+              - heading "شروط الدفع" [level=2] [ref=e351]
+              - generic [ref=e352]:
+                - img "visa" [ref=e353]
+                - img "master" [ref=e354]
+                - img "mada" [ref=e355]
+                - img "stc_pay" [ref=e356]
+                - img "apple_pay" [ref=e357]
+                - img "tabby" [ref=e358]
+            - generic [ref=e359]:
+              - heading "تجربة تسوّق مميزة" [level=2] [ref=e360]
+              - text: 30 يوم للإرجاع أونلاين
+            - generic [ref=e361]:
+              - heading "التواصل الاجتماعي" [level=2] [ref=e362]
+              - generic [ref=e363]:
+                - link [ref=e364] [cursor=pointer]:
+                  - /url: https://www.instagram.com/camicissima.ksa/
+                  - img [ref=e365]
+                - link "Tiktok" [ref=e367] [cursor=pointer]:
+                  - /url: http://www.tiktok.com/@camicissima.ksa
+                  - img [ref=e368]
+                - link "Snapchat" [ref=e370] [cursor=pointer]:
+                  - /url: https://www.snapchat.com/@camicissimaksa
+                  - img [ref=e371]
+                - link "Facebook" [ref=e373] [cursor=pointer]:
+                  - /url: https://www.facebook.com/profile.php?id=61572241232089
+                  - img [ref=e374]
+      - paragraph [ref=e378]:
+        - text: © 2026 Camicissima | Al Moallim United Co, KSA
+        - text: "CR: 4030031627 , VAT# 301329371900003"
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+  - dialog "POPUP Form" [ref=e379]:
+    - generic [ref=e384]:
+      - button "Close dialog" [ref=e385] [cursor=pointer]:
+        - img [ref=e386]
+      - generic [ref=e390]:
+        - img "Camicissima" [ref=e395]
+        - paragraph [ref=e399]: احصل على خصم 10% عند التسجيل باستخدام بريدك الإلكتروني.
+        - paragraph [ref=e403]:
+          - generic [ref=e404]:
+            - text: من خلال إدخال عنوان بريدك الإلكتروني، فإنك توافق على استلام رسائل تسويقية من كميشيسِّما. قد نستخدم المعلومات التي نجمعها عنك على موقعنا لاقتراح منتجات وعروض أخرى. يمكنك إلغاء الاشتراك في أي وقت. عرض
+            - link "الشروط و سياسة الخصوصية" [ref=e405] [cursor=pointer]:
+              - /url: /ar/pages/privacy-and-cookie-policy
+        - generic [ref=e408]:
+          - generic [ref=e409]: Email
+          - textbox "Email" [active] [ref=e410]:
+            - /placeholder: البريد الالكتروني
+        - paragraph [ref=e414]: أخبرنا بتاريخ ميلادك لنُرسل لك شيئًا مميزًا في يومك المميز
+        - generic [ref=e417]:
+          - generic [ref=e418]: DOB
+          - textbox "DOB" [ref=e419]:
+            - /placeholder: شهر/يوم/سنة
+        - generic [ref=e423]: "ساعدنا في تخصيص رسائل كميشيسِّما الإلكترونية لك من خلال اختيار الخيارات أدناه:"
+        - group "Gender" [ref=e427]:
+          - generic [ref=e428]: Gender
+          - radiogroup [ref=e429]:
+            - generic [ref=e430] [cursor=pointer]:
+              - img [ref=e431]
+              - generic [ref=e435]: الرجال
+            - generic [ref=e436] [cursor=pointer]:
+              - img [ref=e437]
+              - generic [ref=e441]: النساء
+        - paragraph [ref=e445]: "نود معرفة اللغة المفضّلة لديك للتواصل:"
+        - group "Preferred Language" [ref=e449]:
+          - generic [ref=e450]: Preferred Language
+          - radiogroup [ref=e451]:
+            - generic [ref=e452] [cursor=pointer]:
+              - img [ref=e453]
+              - generic [ref=e457]: English
+            - generic [ref=e458] [cursor=pointer]:
+              - img [ref=e459]
+              - generic [ref=e463]: العربية
+        - button "استمرار" [ref=e466] [cursor=pointer]
+        - paragraph [ref=e470]:
+          - text: من خلال التسجيل، أوافق على استلام رسائل إلكترونية من كميشيسِّما وأوافق على
+          - link "سياسة الخصوصية." [ref=e471] [cursor=pointer]:
+            - /url: /ar/pages/privacy-and-cookie-policy
+```

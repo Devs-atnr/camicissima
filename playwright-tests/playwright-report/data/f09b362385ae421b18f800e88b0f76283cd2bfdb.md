@@ -1,0 +1,1315 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#MainContent"
+    - generic [ref=e7]:
+      - group [ref=e10]:
+        - generic "Search" [ref=e11] [cursor=pointer]:
+          - img [ref=e13]
+      - link "My Wish List" [ref=e17] [cursor=pointer]:
+        - /url: /pages/wishlist
+        - img [ref=e18]
+        - generic [ref=e22]: My Wish List
+      - link "camicissima-ksa" [ref=e25] [cursor=pointer]:
+        - /url: /
+        - img "camicissima-ksa" [ref=e26]
+      - link "Cart 0 items" [ref=e29] [cursor=pointer]:
+        - /url: /cart
+        - img [ref=e30]
+        - generic [ref=e33]: Cart
+        - generic [ref=e34]:
+          - generic [ref=e35]: "0"
+          - generic [ref=e36]: 0 items
+      - button "menu" [ref=e39] [cursor=pointer]
+    - main [ref=e41]:
+      - generic [ref=e43]:
+        - link "Accessories" [ref=e44] [cursor=pointer]:
+          - /url: /collections/accessories
+        - link "ALL" [ref=e45] [cursor=pointer]:
+          - /url: /collections/all
+        - link "Autumn Shirts" [ref=e46] [cursor=pointer]:
+          - /url: /collections/mens-shirts-collections-autumn
+        - link "Basic Polo" [ref=e47] [cursor=pointer]:
+          - /url: /collections/polo-basic
+        - link "Bowling" [ref=e48] [cursor=pointer]:
+          - /url: /collections/mens-shirts-trendy-bowling
+        - link "BUNDLE - PERMANENT COTTON SH.-0P" [ref=e49] [cursor=pointer]:
+          - /url: /collections/permanent-cotton-sh-0p
+        - link "BUNDLE-CACH. BLEND SWEATERS-SM" [ref=e50] [cursor=pointer]:
+          - /url: /collections/bundle-cach-blend-sweaters-sm
+        - link "BUNDLE-COTTON CLASSIC SH.-CL" [ref=e51] [cursor=pointer]:
+          - /url: /collections/bundle-cotton-classic-sh-cl
+        - link "BUNDLE-COTTON SWEATERS-SW" [ref=e52] [cursor=pointer]:
+          - /url: /collections/bundle-cotton-sweaters-sw
+        - link "BUNDLE-FANCY COTTON SHIRTS-CF" [ref=e53] [cursor=pointer]:
+          - /url: /collections/bundle-fancy-cotton-shirts-cf
+        - link "BUNDLE-FANCY LINEN SHIRTS-LF" [ref=e54] [cursor=pointer]:
+          - /url: /collections/bundle-fancy-linen-shirts-lf
+        - link "BUNDLE-FANCY N-IRON SHIRTS-NF" [ref=e55] [cursor=pointer]:
+          - /url: /collections/bundle-fancy-n-iron-shirts-nf
+        - link "BUNDLE-FANCY SHIRT SH/SLEEV-CM" [ref=e56] [cursor=pointer]:
+          - /url: /collections/bundle-fancy-shirt-sh-sleev-cm
+        - link "BUNDLE-LINEN TRENDY SHIRTS-LT" [ref=e57] [cursor=pointer]:
+          - /url: /collections/bundle-linen-trendy-shirts-lt
+        - link "BUNDLE-NON-I PERM. SHIRTS-NP" [ref=e58] [cursor=pointer]:
+          - /url: /collections/bundle-non-i-perm-shirts-np
+        - link "BUNDLE-POLO SHIRTS-PL" [ref=e59] [cursor=pointer]:
+          - /url: /collections/bundle-polo-shirts-pl
+        - link "BUNDLE-SHIRT DETAILS DR-DR" [ref=e60] [cursor=pointer]:
+          - /url: /collections/bundle-shirt-details-dr-dr
+        - link "BUNDLE-SOCKS-CZ" [ref=e61] [cursor=pointer]:
+          - /url: /collections/bundle-socks-cz
+        - link "BUNDLE-SPORT JACKETS -SJ" [ref=e62] [cursor=pointer]:
+          - /url: /collections/bundle-sport-jackets-sj
+        - link "BUNDLE-TIES-CR" [ref=e63] [cursor=pointer]:
+          - /url: /collections/bundle-ties-cr
+        - link "BUNDLE-TIES-CR" [ref=e64] [cursor=pointer]:
+          - /url: /collections/bundle-ties-cr-1
+        - link "BUNDLE-TRENDY COTTON SHIRTS-CT" [ref=e65] [cursor=pointer]:
+          - /url: /collections/bundle-trendy-cotton-shirts-ct
+        - link "BUNDLE-TRENDY FASHION-TF" [ref=e66] [cursor=pointer]:
+          - /url: /collections/bundle-trendy-fashion-tf
+        - link "BUNDLE-TRENDY LENO SHIRTS-TL" [ref=e67] [cursor=pointer]:
+          - /url: /collections/bundle-trendy-leno-shirts-tl
+        - link "BUNDLE-TRENDY PARACHUTE-C3" [ref=e68] [cursor=pointer]:
+          - /url: /collections/bundle-trendy-parachute-c3
+        - link "BUNDLE-TROUSERS-PA" [ref=e69] [cursor=pointer]:
+          - /url: /collections/bundle-trousers-pa
+        - link "Button Down" [ref=e70] [cursor=pointer]:
+          - /url: /collections/mens-shirts-neck-buttondown
+        - link "Classic" [ref=e71] [cursor=pointer]:
+          - /url: /collections/mens-shirts-classic
+        - link "CLOTHING" [ref=e72] [cursor=pointer]:
+          - /url: /collections/clothing
+        - link "Collections" [ref=e73] [cursor=pointer]:
+          - /url: /collections/mens-shirts-collections
+        - link "Color" [ref=e74] [cursor=pointer]:
+          - /url: /collections/mens-shirts-color
+        - link "Cotton" [ref=e75] [cursor=pointer]:
+          - /url: /collections/mens-shirts-trendy-cotton
+        - link "Crewneck Sweater" [ref=e76] [cursor=pointer]:
+          - /url: /collections/mens-sweater-crewneck
+        - link "Crewneck Sweater Cashmere" [ref=e77] [cursor=pointer]:
+          - /url: /collections/mens-sweater-crewneck-cashmere
+        - link "Crewneck Sweater Cotton" [ref=e78] [cursor=pointer]:
+          - /url: /collections/mens-sweater-crewneck-cotton
+        - link "Details" [ref=e79] [cursor=pointer]:
+          - /url: /collections/mens-shirts-details
+        - link "Dobby" [ref=e80] [cursor=pointer]:
+          - /url: /collections/mens-shirts-pattern-dobby
+        - link "English Tour" [ref=e81] [cursor=pointer]:
+          - /url: /collections/mens-shirts-trendy-englishtour
+        - link "Extra Slim Fit" [ref=e82] [cursor=pointer]:
+          - /url: /collections/mens-shirts-shopbyfit-extraslimfit
+        - link "Fall-Winter 2024-2025" [ref=e83] [cursor=pointer]:
+          - /url: /collections/fall-winter-2024-2025
+        - link "Fancy" [ref=e84] [cursor=pointer]:
+          - /url: /collections/mens-shirts-fancy
+        - link "High Neck Sweater" [ref=e85] [cursor=pointer]:
+          - /url: /collections/mens-sweater-highneck
+        - link "Home page" [ref=e86] [cursor=pointer]:
+          - /url: /collections/frontpage
+        - link "Jackets and Blazers" [ref=e87] [cursor=pointer]:
+          - /url: /collections/mens-outerwear-jacketsandblazers
+        - link "Jeans Shirt" [ref=e88] [cursor=pointer]:
+          - /url: /collections/mens-shirts-trendy-jeansshirt
+        - link "Knitwear Cachemere Blend" [ref=e89] [cursor=pointer]:
+          - /url: /collections/knitwear-cachemere-blend
+        - link "Linen" [ref=e90] [cursor=pointer]:
+          - /url: /collections/mens-shirts-linen
+        - link "Linen-Fancy" [ref=e91] [cursor=pointer]:
+          - /url: /collections/mens-shirts-linen-fancy
+        - link "Linen-Trendy" [ref=e92] [cursor=pointer]:
+          - /url: /collections/mens-shirts-linen-trendy
+        - link "Lines" [ref=e93] [cursor=pointer]:
+          - /url: /collections/mens-shirts-pattern-lines
+        - link "Long Sleeve" [ref=e94] [cursor=pointer]:
+          - /url: /collections/mens-shirts-fancy-longsleeve
+        - link "Luxury Sweater" [ref=e95] [cursor=pointer]:
+          - /url: /collections/mens-sweater-luxury
+        - link "Men's Coat" [ref=e96] [cursor=pointer]:
+          - /url: /collections/mens-outerwear-coat
+        - link "Men's Field Jacket" [ref=e97] [cursor=pointer]:
+          - /url: /collections/mens-outerwear-fieldjacket
+        - link "Men's Outerwear" [ref=e98] [cursor=pointer]:
+          - /url: /collections/mens-outerwear
+        - link "Men's Outerwear Bomber" [ref=e99] [cursor=pointer]:
+          - /url: /collections/mens-outerwear-bomber
+        - link "Men's Outerwear Parka" [ref=e100] [cursor=pointer]:
+          - /url: /collections/mens-outerwear-parka
+        - link "Men's Padded Jackets" [ref=e101] [cursor=pointer]:
+          - /url: /collections/mens-outerwear-paddedjackets
+        - link "Men's Padded Shirt" [ref=e102] [cursor=pointer]:
+          - /url: /collections/mens-outerwear-paddedshirt
+        - link "MEN'S SHIRTS" [ref=e103] [cursor=pointer]:
+          - /url: /collections/mens-shirts
+        - link "Men's Shirts Black" [ref=e104] [cursor=pointer]:
+          - /url: /collections/mens-shirts-color-black
+        - link "Men's Shirts Blue" [ref=e105] [cursor=pointer]:
+          - /url: /collections/mens-shirts-color-blue
+        - link "Men's Shirts Sky Blue" [ref=e106] [cursor=pointer]:
+          - /url: /collections/mens-shirts-color-skyblue
+        - link "Men's Shirts White" [ref=e107] [cursor=pointer]:
+          - /url: /collections/mens-shirts-color-white
+        - link "Men's Sweater" [ref=e108] [cursor=pointer]:
+          - /url: /collections/mens-sweater
+        - link "Neck" [ref=e109] [cursor=pointer]:
+          - /url: /collections/mens-shirts-neck
+        - link "Neck-French" [ref=e110] [cursor=pointer]:
+          - /url: /collections/mens-shirts-neck-french
+        - link "Neck-Italian" [ref=e111] [cursor=pointer]:
+          - /url: /collections/mens-shirts-neck-italian
+        - link "Neck-Korean" [ref=e112] [cursor=pointer]:
+          - /url: /collections/mens-shirts-neck-korean
+        - link "Non Iron" [ref=e113] [cursor=pointer]:
+          - /url: /collections/mens-shirts-noniron
+        - link "Padded Vest" [ref=e114] [cursor=pointer]:
+          - /url: /collections/vest-padded
+        - link "Paintings" [ref=e115] [cursor=pointer]:
+          - /url: /collections/mens-shirts-pattern-paintings
+        - link "Pants" [ref=e116] [cursor=pointer]:
+          - /url: /collections/pants
+        - link "Pants 5 Pockets" [ref=e117] [cursor=pointer]:
+          - /url: /collections/pants-5pockets
+        - link "Pants Bermuda" [ref=e118] [cursor=pointer]:
+          - /url: /collections/pants-bermuda
+        - link "Pants Cargo" [ref=e119] [cursor=pointer]:
+          - /url: /collections/pants-cargo
+        - link "Pants Chinos" [ref=e120] [cursor=pointer]:
+          - /url: /collections/pants-chinos
+        - link "Pants Chinos Cotton" [ref=e121] [cursor=pointer]:
+          - /url: /collections/pants-chinos-cotton
+        - link "Pants Chinos Linen" [ref=e122] [cursor=pointer]:
+          - /url: /collections/pants-chinos-linen
+        - link "Pants Chinos Velvet" [ref=e123] [cursor=pointer]:
+          - /url: /collections/pants-chinos-velvet
+        - link "Pants Jeans" [ref=e124] [cursor=pointer]:
+          - /url: /collections/pants-jeans
+        - link "Pattern" [ref=e125] [cursor=pointer]:
+          - /url: /collections/mens-shirts-pattern
+        - link "Patterned Ties" [ref=e126] [cursor=pointer]:
+          - /url: /collections/accessories-ties-patterned
+        - link "Permanent" [ref=e127] [cursor=pointer]:
+          - /url: /collections/mens-shirts-permanent
+        - link "Plain Ties" [ref=e128] [cursor=pointer]:
+          - /url: /collections/accessories-ties-plain
+        - link "Polo" [ref=e129] [cursor=pointer]:
+          - /url: /collections/polo
+        - link "Regimental Ties" [ref=e130] [cursor=pointer]:
+          - /url: /collections/accessories-ties-regimental
+        - link "Regular Fit" [ref=e131] [cursor=pointer]:
+          - /url: /collections/mens-shirts-shopbyfit-regularfit
+        - link "Shop By Fit" [ref=e132] [cursor=pointer]:
+          - /url: /collections/mens-shirts-shopbyfit
+        - link "Short Sleeve" [ref=e133] [cursor=pointer]:
+          - /url: /collections/mens-shirts-fancy-shortsleeve
+        - link "Slim Fit" [ref=e134] [cursor=pointer]:
+          - /url: /collections/mens-shirts-shopbyfit-slimfit
+        - link "Socks" [ref=e135] [cursor=pointer]:
+          - /url: /collections/accessories-socks
+        - link "Solid Color" [ref=e136] [cursor=pointer]:
+          - /url: /collections/mens-shirts-pattern-solidcolor
+        - link "Spring Shirts" [ref=e137] [cursor=pointer]:
+          - /url: /collections/mens-shirts-collections-spring
+        - link "Summer Shirts" [ref=e138] [cursor=pointer]:
+          - /url: /collections/mens-shirts-collections-summer
+        - link "T-Shirt" [ref=e139] [cursor=pointer]:
+          - /url: /collections/tshirt
+        - link "Tailored Vest" [ref=e140] [cursor=pointer]:
+          - /url: /collections/vest-tailored
+        - link "Test" [ref=e141] [cursor=pointer]:
+          - /url: /collections/test
+        - link "Ties" [ref=e142] [cursor=pointer]:
+          - /url: /collections/accessories-ties
+        - link "Trendy" [ref=e143] [cursor=pointer]:
+          - /url: /collections/mens-shirts-trendy
+        - link "Trendy Linen Serafino" [ref=e144] [cursor=pointer]:
+          - /url: /collections/mens-shirts-linen-trendylinenserafino
+        - link "V-Neck Sweater" [ref=e145] [cursor=pointer]:
+          - /url: /collections/mens-sweater-vneck
+        - link "Vest" [ref=e146] [cursor=pointer]:
+          - /url: /collections/vest
+        - link "Vest Sweater" [ref=e147] [cursor=pointer]:
+          - /url: /collections/vest-sweater
+        - link "Vest Sweater Cashmere" [ref=e148] [cursor=pointer]:
+          - /url: /collections/vest-sweater-cashmere
+        - link "Vest Sweater Cotton" [ref=e149] [cursor=pointer]:
+          - /url: /collections/vest-sweater-cotton
+        - link "WINTER SALE 25" [ref=e150] [cursor=pointer]:
+          - /url: /collections/white-friday-winter-sale-25
+        - link "Winter Shirts" [ref=e151] [cursor=pointer]:
+          - /url: /collections/mens-shirts-collections-winter
+        - link "WOMEN'S SHIRTS" [ref=e152] [cursor=pointer]:
+          - /url: /collections/women-shirts
+        - link "Zip Up Sweater" [ref=e153] [cursor=pointer]:
+          - /url: /collections/mens-sweater-zipup
+      - generic [ref=e155]:
+        - heading "ALL" [level=1] [ref=e156]
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - button "Close":
+              - generic: Close
+              - img
+            - generic [ref=e162]: FILTER
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - heading "Refined By" [level=2] [ref=e168]:
+                  - generic [ref=e169]: Refined By
+                - link "Clear all" [ref=e171] [cursor=pointer]:
+                  - /url: /collections/all
+              - generic [ref=e172]:
+                - generic [ref=e173]:
+                  - heading "Type" [level=2] [ref=e174]
+                  - list [ref=e176]:
+                    - listitem [ref=e177]:
+                      - generic [ref=e178] [cursor=pointer]: 0(1)
+                    - listitem [ref=e179]:
+                      - generic [ref=e180] [cursor=pointer]: CACH. BLEND SWEATERS(4)
+                    - listitem [ref=e181]:
+                      - generic [ref=e182] [cursor=pointer]: COTTON CLASSIC SH.(33)
+                    - listitem [ref=e183]:
+                      - generic [ref=e184] [cursor=pointer]: COTTON SWEATERS(11)
+                    - listitem [ref=e185]:
+                      - generic [ref=e186] [cursor=pointer]: FANCY COTTON SHIRTS(26)
+                    - listitem [ref=e187]:
+                      - generic [ref=e188] [cursor=pointer]: FANCY LINEN SHIRTS(2)
+                    - listitem [ref=e189]:
+                      - generic [ref=e190] [cursor=pointer]: FANCY N-IRON SHIRTS(13)
+                    - listitem [ref=e191]:
+                      - generic [ref=e192] [cursor=pointer]: FANCY SHIRT SH/SLEEV(1)
+                    - listitem [ref=e193]:
+                      - generic [ref=e194] [cursor=pointer]: JACKETS(1)
+                    - listitem [ref=e195]:
+                      - generic [ref=e196] [cursor=pointer]: LINEN TRENDY SHIRTS(10)
+                    - listitem [ref=e197]:
+                      - generic [ref=e198] [cursor=pointer]: NON-I PERM. SHIRTS(21)
+                    - listitem [ref=e199]:
+                      - generic [ref=e200] [cursor=pointer]: PERMANENT COTTON SH.(36)
+                    - listitem [ref=e201]:
+                      - generic [ref=e202] [cursor=pointer]: POLO SHIRTS(21)
+                    - listitem [ref=e203]:
+                      - generic [ref=e204] [cursor=pointer]: SHIRT DETAILS DR(15)
+                    - listitem [ref=e205]:
+                      - generic [ref=e206] [cursor=pointer]: SPORT JACKETS(6)
+                    - listitem [ref=e207]:
+                      - generic [ref=e208] [cursor=pointer]: TIES(21)
+                    - listitem [ref=e209]:
+                      - generic [ref=e210] [cursor=pointer]: TRENDY COTTON SHIRTS(44)
+                    - listitem [ref=e211]:
+                      - generic [ref=e212] [cursor=pointer]: TRENDY FASHION(2)
+                    - listitem [ref=e213]:
+                      - generic [ref=e214] [cursor=pointer]: TRENDY LENO SHIRTS(1)
+                    - listitem [ref=e215]:
+                      - generic [ref=e216] [cursor=pointer]: TRENDY PARACHUTE(2)
+                    - listitem [ref=e217]:
+                      - generic [ref=e218] [cursor=pointer]: TROUSERS(32)
+                    - listitem [ref=e219]:
+                      - generic [ref=e220] [cursor=pointer]: VEST(3)
+                - generic [ref=e221]:
+                  - heading "FIT" [level=2] [ref=e222]
+                  - list [ref=e224]:
+                    - listitem [ref=e225]:
+                      - generic [ref=e226] [cursor=pointer]: REGULAR(22)
+                    - listitem [ref=e227]:
+                      - generic [ref=e228] [cursor=pointer]: SLIM(141)
+                - generic [ref=e229]:
+                  - heading "COLLAR" [level=2] [ref=e230]
+                  - list [ref=e232]:
+                    - listitem [ref=e233]:
+                      - generic [ref=e234] [cursor=pointer]: BUTTON DOWN(21)
+                    - listitem [ref=e235]:
+                      - generic [ref=e236] [cursor=pointer]: COREAN(6)
+                    - listitem [ref=e237]:
+                      - generic [ref=e238] [cursor=pointer]: FRENCH(173)
+                    - listitem [ref=e239]:
+                      - generic [ref=e240] [cursor=pointer]: ITALIAN(2)
+                    - listitem [ref=e241]:
+                      - generic [ref=e242] [cursor=pointer]: OTHER(1)
+                - generic [ref=e243]:
+                  - heading "SLEEVE" [level=2] [ref=e244]
+                  - list [ref=e246]:
+                    - listitem [ref=e247]:
+                      - generic [ref=e248] [cursor=pointer]: LONG SLEEVE(204)
+                    - listitem [ref=e249]:
+                      - generic [ref=e250] [cursor=pointer]: SHORT SLEEVE(1)
+                - generic [ref=e251]:
+                  - heading "Color" [level=2] [ref=e252]
+                  - list [ref=e254]:
+                    - listitem [ref=e255]:
+                      - generic [ref=e256]:
+                        - generic [ref=e257]:
+                          - checkbox [ref=e258] [cursor=pointer]
+                          - generic "BEIGE" [ref=e259]
+                        - generic [ref=e261]: BEIGE
+                        - generic [ref=e262]: BEIGE (10 products)
+                    - listitem [ref=e263]:
+                      - generic [ref=e264]:
+                        - generic [ref=e265]:
+                          - checkbox [ref=e266] [cursor=pointer]
+                          - generic "BLACK" [ref=e267]
+                        - generic [ref=e269]: BLACK
+                        - generic [ref=e270]: BLACK (6 products)
+                    - listitem [ref=e271]:
+                      - generic [ref=e272]:
+                        - generic [ref=e273]:
+                          - checkbox [ref=e274] [cursor=pointer]
+                          - generic "BLUE" [ref=e275]
+                        - generic [ref=e277]: BLUE
+                        - generic [ref=e278]: BLUE (174 products)
+                    - listitem [ref=e279]:
+                      - generic [ref=e280]:
+                        - generic [ref=e281]:
+                          - checkbox [ref=e282] [cursor=pointer]
+                          - generic "BROWN" [ref=e283]
+                        - generic [ref=e285]: BROWN
+                        - generic [ref=e286]: BROWN (14 products)
+                    - listitem [ref=e287]:
+                      - generic [ref=e288]:
+                        - generic [ref=e289]:
+                          - checkbox [ref=e290] [cursor=pointer]
+                          - generic "GREEN" [ref=e291]
+                        - generic [ref=e293]: GREEN
+                        - generic [ref=e294]: GREEN (17 products)
+                    - listitem [ref=e295]:
+                      - generic [ref=e296]:
+                        - generic [ref=e297]:
+                          - checkbox [ref=e298] [cursor=pointer]
+                          - generic "GREY" [ref=e299]
+                        - generic [ref=e301]: GREY
+                        - generic [ref=e302]: GREY (4 products)
+                    - listitem [ref=e303]:
+                      - generic [ref=e304]:
+                        - generic [ref=e305]:
+                          - checkbox [ref=e306] [cursor=pointer]
+                          - generic "MULTICOLOR" [ref=e307]
+                        - generic [ref=e309]: MULTICOLOR
+                        - generic [ref=e310]: MULTICOLOR (1 products)
+                    - listitem [ref=e311]:
+                      - generic [ref=e312]:
+                        - generic [ref=e313]:
+                          - checkbox [ref=e314] [cursor=pointer]
+                          - generic "ORANGE" [ref=e315]
+                        - generic [ref=e317]: ORANGE
+                        - generic [ref=e318]: ORANGE (3 products)
+                    - listitem [ref=e319]:
+                      - generic [ref=e320]:
+                        - generic [ref=e321]:
+                          - checkbox [ref=e322] [cursor=pointer]
+                          - generic "PINK" [ref=e323]
+                        - generic [ref=e325]: PINK
+                        - generic [ref=e326]: PINK (11 products)
+                    - listitem [ref=e327]:
+                      - generic [ref=e328]:
+                        - generic [ref=e329]:
+                          - checkbox [ref=e330] [cursor=pointer]
+                          - generic "PURPLE" [ref=e331]
+                        - generic [ref=e333]: PURPLE
+                        - generic [ref=e334]: PURPLE (2 products)
+                    - listitem [ref=e335]:
+                      - generic [ref=e336]:
+                        - generic [ref=e337]:
+                          - checkbox [ref=e338] [cursor=pointer]
+                          - generic "RED" [ref=e339]
+                        - generic [ref=e341]: RED
+                        - generic [ref=e342]: RED (12 products)
+                    - listitem [ref=e343]:
+                      - generic [ref=e344]:
+                        - generic [ref=e345]:
+                          - checkbox [ref=e346] [cursor=pointer]
+                          - generic "TURQUOISE" [ref=e347]
+                        - generic [ref=e349]: TURQUOISE
+                        - generic [ref=e350]: TURQUOISE (1 products)
+                    - listitem [ref=e351]:
+                      - generic [ref=e352]:
+                        - generic [ref=e353]:
+                          - checkbox [ref=e354] [cursor=pointer]
+                          - generic "VIOLET" [ref=e355]
+                        - generic [ref=e357]: VIOLET
+                        - generic [ref=e358]: VIOLET (6 products)
+                    - listitem [ref=e359]:
+                      - generic [ref=e360]:
+                        - generic [ref=e361]:
+                          - checkbox [ref=e362] [cursor=pointer]
+                          - generic "WHITE" [ref=e363]
+                        - generic [ref=e365]: WHITE
+                        - generic [ref=e366]: WHITE (42 products)
+                    - listitem [ref=e367]:
+                      - generic [ref=e368]:
+                        - generic [ref=e369]:
+                          - checkbox [ref=e370] [cursor=pointer]
+                          - generic "YELLOW" [ref=e371]
+                        - generic [ref=e373]: YELLOW
+                        - generic [ref=e374]: YELLOW (3 products)
+                - generic [ref=e375]:
+                  - heading "Size" [level=2] [ref=e376]
+                  - list [ref=e378]:
+                    - listitem [ref=e379]:
+                      - generic [ref=e381] [cursor=pointer]: XS
+                    - listitem [ref=e382]:
+                      - generic [ref=e384] [cursor=pointer]: S
+                    - listitem [ref=e385]:
+                      - generic [ref=e387] [cursor=pointer]: M
+                    - listitem [ref=e388]:
+                      - generic [ref=e390] [cursor=pointer]: L
+                    - listitem [ref=e391]:
+                      - generic [ref=e393] [cursor=pointer]: XL
+                    - listitem [ref=e394]:
+                      - generic [ref=e396] [cursor=pointer]: XXL
+                    - listitem [ref=e397]:
+                      - generic [ref=e399] [cursor=pointer]: 3XL
+                    - listitem [ref=e400]:
+                      - generic [ref=e402] [cursor=pointer]: "37"
+                    - listitem [ref=e403]:
+                      - generic [ref=e405] [cursor=pointer]: "38"
+                    - listitem [ref=e406]:
+                      - generic [ref=e408] [cursor=pointer]: "39"
+                    - listitem [ref=e409]:
+                      - generic [ref=e411] [cursor=pointer]: "40"
+                    - listitem [ref=e412]:
+                      - generic [ref=e414] [cursor=pointer]: "41"
+                    - listitem [ref=e415]:
+                      - generic [ref=e417] [cursor=pointer]: "42"
+                    - listitem [ref=e418]:
+                      - generic [ref=e420] [cursor=pointer]: "43"
+                    - listitem [ref=e421]:
+                      - generic [ref=e423] [cursor=pointer]: "44"
+                    - listitem [ref=e424]:
+                      - generic [ref=e426] [cursor=pointer]: "45"
+                    - listitem [ref=e427]:
+                      - generic [ref=e429] [cursor=pointer]: "46"
+                    - listitem [ref=e430]:
+                      - generic [ref=e432] [cursor=pointer]: "47"
+                    - listitem [ref=e433]:
+                      - generic [ref=e435] [cursor=pointer]: "48"
+                    - listitem [ref=e436]:
+                      - generic [ref=e438] [cursor=pointer]: "49"
+                    - listitem [ref=e439]:
+                      - generic [ref=e441] [cursor=pointer]: "50"
+                    - listitem [ref=e442]:
+                      - generic [ref=e444] [cursor=pointer]: "52"
+                    - listitem [ref=e445]:
+                      - generic [ref=e447] [cursor=pointer]: "54"
+                    - listitem [ref=e448]:
+                      - generic [ref=e450] [cursor=pointer]: "56"
+                    - listitem [ref=e451]:
+                      - generic [ref=e453] [cursor=pointer]: U
+          - generic [ref=e454]:
+            - generic [ref=e458]:
+              - text: Filter
+              - img [ref=e459]
+            - generic [ref=e462]:
+              - generic [ref=e463]:
+                - heading "Sort by:" [level=2] [ref=e464]
+                - img [ref=e466]
+              - list [ref=e469]:
+                - listitem [ref=e470]: Featured
+                - listitem [ref=e471]: Best selling
+                - listitem [ref=e472]: Alphabetically, A-Z
+                - listitem [ref=e473]: Alphabetically, Z-A
+                - listitem [ref=e474]: Price, low to high
+                - listitem [ref=e475]: Price, high to low
+                - listitem [ref=e476]: Date, old to new
+                - listitem [ref=e477]: Date, new to old
+          - generic [ref=e478]:
+            - list [ref=e479]:
+              - listitem [ref=e480]:
+                - generic [ref=e482]:
+                  - generic [ref=e484]:
+                    - generic [ref=e485]:
+                      - img "CNPSPKABG0P2157BEIGE" [ref=e486] [cursor=pointer]
+                      - img "CNPSPKABG0P2157BEIGE" [ref=e487] [cursor=pointer]
+                      - link "5-Pocket Beige Trousers" [ref=e488] [cursor=pointer]:
+                        - /url: /products/cnpspkabg0p2157beige
+                    - button "Add to wishlist" [ref=e491] [cursor=pointer]:
+                      - img [ref=e492]
+                  - generic [ref=e497]:
+                    - heading "5-Pocket Beige Trousers" [level=3] [ref=e498]:
+                      - link "5-Pocket Beige Trousers" [ref=e499] [cursor=pointer]:
+                        - /url: /products/cnpspkabg0p2157beige
+                    - definition [ref=e504]:
+                      - text: 1x
+                      - generic [ref=e505]:
+                        - img [ref=e507]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e510]:
+                - generic [ref=e512]:
+                  - generic [ref=e514]:
+                    - generic [ref=e515]:
+                      - img "CNPSPKABG0P2157BLUE NAVY" [ref=e516] [cursor=pointer]
+                      - img "CNPSPKABG0P2157BLUE NAVY" [ref=e517] [cursor=pointer]
+                      - link "5-Pocket Blue Trousers" [ref=e518] [cursor=pointer]:
+                        - /url: /products/cnpspkabg0p2157blue-navy
+                    - button "Add to wishlist" [ref=e521] [cursor=pointer]:
+                      - img [ref=e522]
+                  - generic [ref=e527]:
+                    - heading "5-Pocket Blue Trousers" [level=3] [ref=e528]:
+                      - link "5-Pocket Blue Trousers" [ref=e529] [cursor=pointer]:
+                        - /url: /products/cnpspkabg0p2157blue-navy
+                    - definition [ref=e534]:
+                      - text: 1x
+                      - generic [ref=e535]:
+                        - img [ref=e537]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e540]:
+                - generic [ref=e542]:
+                  - generic [ref=e544]:
+                    - generic [ref=e545]:
+                      - img "CNPSPKABG0P2157BROWN" [ref=e546] [cursor=pointer]
+                      - img "CNPSPKABG0P2157BROWN" [ref=e547] [cursor=pointer]
+                      - link "5-Pocket Brown Trousers" [ref=e548] [cursor=pointer]:
+                        - /url: /products/cnpspkabg0p2157brown
+                    - button "Add to wishlist" [ref=e551] [cursor=pointer]:
+                      - img [ref=e552]
+                  - generic [ref=e557]:
+                    - heading "5-Pocket Brown Trousers" [level=3] [ref=e558]:
+                      - link "5-Pocket Brown Trousers" [ref=e559] [cursor=pointer]:
+                        - /url: /products/cnpspkabg0p2157brown
+                    - definition [ref=e564]:
+                      - text: 1x
+                      - generic [ref=e565]:
+                        - img [ref=e567]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e570]:
+                - generic [ref=e572]:
+                  - generic [ref=e574]:
+                    - generic [ref=e575]:
+                      - img "AGRIGENTO002790AZURE" [ref=e576] [cursor=pointer]
+                      - img "AGRIGENTO002790AZURE" [ref=e577] [cursor=pointer]
+                      - link "Agrigento Permanent Light Blue Fitted Shirt" [ref=e578] [cursor=pointer]:
+                        - /url: /products/agrigento002790azure
+                    - button "Add to wishlist" [ref=e581] [cursor=pointer]:
+                      - img [ref=e582]
+                  - generic [ref=e587]:
+                    - heading "Agrigento Permanent Light Blue Fitted Shirt" [level=3] [ref=e588]:
+                      - link "Agrigento Permanent Light Blue Fitted Shirt" [ref=e589] [cursor=pointer]:
+                        - /url: /products/agrigento002790azure
+                    - definition [ref=e594]:
+                      - text: 1x
+                      - generic [ref=e595]:
+                        - img [ref=e597]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "349.00"
+              - listitem [ref=e600]:
+                - generic [ref=e602]:
+                  - generic [ref=e604]:
+                    - generic [ref=e605]:
+                      - img "ANDORRA011754LIGHT BLUE" [ref=e606] [cursor=pointer]
+                      - img "ANDORRA011754LIGHT BLUE" [ref=e607] [cursor=pointer]
+                      - link "Andorra Non-Iron Blue Fitted Shirt" [ref=e608] [cursor=pointer]:
+                        - /url: /products/andorra011754light-blue
+                    - button "Add to wishlist" [ref=e611] [cursor=pointer]:
+                      - img [ref=e612]
+                  - generic [ref=e617]:
+                    - heading "Andorra Non-Iron Blue Fitted Shirt" [level=3] [ref=e618]:
+                      - link "Andorra Non-Iron Blue Fitted Shirt" [ref=e619] [cursor=pointer]:
+                        - /url: /products/andorra011754light-blue
+                    - definition [ref=e624]:
+                      - text: 1x
+                      - generic [ref=e625]:
+                        - img [ref=e627]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "499.00"
+              - listitem [ref=e630]:
+                - generic [ref=e632]:
+                  - generic [ref=e634]:
+                    - generic [ref=e635]:
+                      - img "ANVERSA012317LIGHT BLUE" [ref=e636] [cursor=pointer]
+                      - img "ANVERSA012317LIGHT BLUE" [ref=e637] [cursor=pointer]
+                      - link "Anversa Non-Iron Blue Thin-Striped Fitted Shirt" [ref=e638] [cursor=pointer]:
+                        - /url: /products/anversa012317light-blue
+                    - button "Add to wishlist" [ref=e641] [cursor=pointer]:
+                      - img [ref=e642]
+                  - generic [ref=e647]:
+                    - heading "Anversa Non-Iron Blue Thin-Striped Fitted Shirt" [level=3] [ref=e648]:
+                      - link "Anversa Non-Iron Blue Thin-Striped Fitted Shirt" [ref=e649] [cursor=pointer]:
+                        - /url: /products/anversa012317light-blue
+                    - definition [ref=e654]:
+                      - text: 1x
+                      - generic [ref=e655]:
+                        - img [ref=e657]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "499.00"
+              - listitem [ref=e660]:
+                - generic [ref=e662]:
+                  - generic [ref=e664]:
+                    - generic [ref=e665]:
+                      - img "CDPOLKPBG000P80BLACK" [ref=e666] [cursor=pointer]
+                      - img "CDPOLKPBG000P80BLACK" [ref=e667] [cursor=pointer]
+                      - link "Basic Black Polo Shirt In 100% Cotton" [ref=e668] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80black
+                    - button "Add to wishlist" [ref=e671] [cursor=pointer]:
+                      - img [ref=e672]
+                  - generic [ref=e677]:
+                    - heading "Basic Black Polo Shirt In 100% Cotton" [level=3] [ref=e678]:
+                      - link "Basic Black Polo Shirt In 100% Cotton" [ref=e679] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80black
+                    - definition [ref=e684]:
+                      - text: 1x
+                      - generic [ref=e685]:
+                        - img [ref=e687]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e690]:
+                - generic [ref=e692]:
+                  - generic [ref=e694]:
+                    - generic [ref=e695]:
+                      - img "CPMCGKPBG0SW139BROWN" [ref=e696] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139BROWN" [ref=e697] [cursor=pointer]
+                      - link "Basic Brown Crew Neck In 100% Cotton" [ref=e698] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139brown
+                    - button "Add to wishlist" [ref=e701] [cursor=pointer]:
+                      - img [ref=e702]
+                  - generic [ref=e707]:
+                    - heading "Basic Brown Crew Neck In 100% Cotton" [level=3] [ref=e708]:
+                      - link "Basic Brown Crew Neck In 100% Cotton" [ref=e709] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139brown
+                    - definition [ref=e714]:
+                      - text: 1x
+                      - generic [ref=e715]:
+                        - img [ref=e717]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e720]:
+                - generic [ref=e722]:
+                  - generic [ref=e724]:
+                    - generic [ref=e725]:
+                      - img "CDPOLKPBG000P80BROWN" [ref=e726] [cursor=pointer]
+                      - img "CDPOLKPBG000P80BROWN" [ref=e727] [cursor=pointer]
+                      - link "Basic Brown Polo Shirt In 100% Cotton" [ref=e728] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80brown
+                    - button "Add to wishlist" [ref=e731] [cursor=pointer]:
+                      - img [ref=e732]
+                  - generic [ref=e737]:
+                    - heading "Basic Brown Polo Shirt In 100% Cotton" [level=3] [ref=e738]:
+                      - link "Basic Brown Polo Shirt In 100% Cotton" [ref=e739] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80brown
+                    - definition [ref=e744]:
+                      - text: 1x
+                      - generic [ref=e745]:
+                        - img [ref=e747]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e750]:
+                - generic [ref=e752]:
+                  - generic [ref=e754]:
+                    - generic [ref=e755]:
+                      - img "CPMCGKPIG0SW139DARK BLUE" [ref=e756] [cursor=pointer]
+                      - img "CPMCGKPIG0SW139DARK BLUE" [ref=e757] [cursor=pointer]
+                      - link "Basic Dark Blue Crew Neck In 100% Cotton" [ref=e758] [cursor=pointer]:
+                        - /url: /products/cpmcgkpig0sw139dark-blue
+                    - button "Add to wishlist" [ref=e761] [cursor=pointer]:
+                      - img [ref=e762]
+                  - generic [ref=e767]:
+                    - heading "Basic Dark Blue Crew Neck In 100% Cotton" [level=3] [ref=e768]:
+                      - link "Basic Dark Blue Crew Neck In 100% Cotton" [ref=e769] [cursor=pointer]:
+                        - /url: /products/cpmcgkpig0sw139dark-blue
+                    - definition [ref=e774]:
+                      - text: 1x
+                      - generic [ref=e775]:
+                        - img [ref=e777]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e780]:
+                - generic [ref=e782]:
+                  - generic [ref=e784]:
+                    - generic [ref=e785]:
+                      - img "CDPOLKPBG000P80DARK BLUE" [ref=e786] [cursor=pointer]
+                      - img "CDPOLKPBG000P80DARK BLUE" [ref=e787] [cursor=pointer]
+                      - link "Basic Dark Blue Polo Shirt In 100% Cotton" [ref=e788] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80dark-blue
+                    - button "Add to wishlist" [ref=e791] [cursor=pointer]:
+                      - img [ref=e792]
+                  - generic [ref=e797]:
+                    - heading "Basic Dark Blue Polo Shirt In 100% Cotton" [level=3] [ref=e798]:
+                      - link "Basic Dark Blue Polo Shirt In 100% Cotton" [ref=e799] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80dark-blue
+                    - definition [ref=e804]:
+                      - text: 1x
+                      - generic [ref=e805]:
+                        - img [ref=e807]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e810]:
+                - generic [ref=e812]:
+                  - generic [ref=e814]:
+                    - generic [ref=e815]:
+                      - img "CDPOLKPBG000P80DARK GREEN" [ref=e816] [cursor=pointer]
+                      - img "CDPOLKPBG000P80DARK GREEN" [ref=e817] [cursor=pointer]
+                      - link "Basic Dark Green Polo Shirt In 100% Cotton" [ref=e818] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80dark-green
+                    - button "Add to wishlist" [ref=e821] [cursor=pointer]:
+                      - img [ref=e822]
+                  - generic [ref=e827]:
+                    - heading "Basic Dark Green Polo Shirt In 100% Cotton" [level=3] [ref=e828]:
+                      - link "Basic Dark Green Polo Shirt In 100% Cotton" [ref=e829] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80dark-green
+                    - definition [ref=e834]:
+                      - text: 1x
+                      - generic [ref=e835]:
+                        - img [ref=e837]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e840]:
+                - generic [ref=e842]:
+                  - generic [ref=e844]:
+                    - generic [ref=e845]:
+                      - img "CDPOLKPBG000P80DENIM" [ref=e846] [cursor=pointer]
+                      - img "CDPOLKPBG000P80DENIM" [ref=e847] [cursor=pointer]
+                      - link "Basic Denim Polo Shirt In 100% Cotton" [ref=e848] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80denim
+                    - button "Add to wishlist" [ref=e851] [cursor=pointer]:
+                      - img [ref=e852]
+                  - generic [ref=e857]:
+                    - heading "Basic Denim Polo Shirt In 100% Cotton" [level=3] [ref=e858]:
+                      - link "Basic Denim Polo Shirt In 100% Cotton" [ref=e859] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80denim
+                    - definition [ref=e864]:
+                      - text: 1x
+                      - generic [ref=e865]:
+                        - img [ref=e867]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e870]:
+                - generic [ref=e872]:
+                  - generic [ref=e874]:
+                    - generic [ref=e875]:
+                      - img "CDPOLKPBG000P80GREY" [ref=e876] [cursor=pointer]
+                      - img "CDPOLKPBG000P80GREY" [ref=e877] [cursor=pointer]
+                      - link "Basic Gray Polo Shirt In 100% Cotton" [ref=e878] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80grey
+                    - button "Add to wishlist" [ref=e881] [cursor=pointer]:
+                      - img [ref=e882]
+                  - generic [ref=e887]:
+                    - heading "Basic Gray Polo Shirt In 100% Cotton" [level=3] [ref=e888]:
+                      - link "Basic Gray Polo Shirt In 100% Cotton" [ref=e889] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80grey
+                    - definition [ref=e894]:
+                      - text: 1x
+                      - generic [ref=e895]:
+                        - img [ref=e897]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e900]:
+                - generic [ref=e902]:
+                  - generic [ref=e904]:
+                    - generic [ref=e905]:
+                      - img "CPMCGKPBG0SW139GREEN" [ref=e906] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139GREEN" [ref=e907] [cursor=pointer]
+                      - link "Basic Green Crew Neck In 100% Cotton" [ref=e908] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139green
+                    - button "Add to wishlist" [ref=e911] [cursor=pointer]:
+                      - img [ref=e912]
+                  - generic [ref=e917]:
+                    - heading "Basic Green Crew Neck In 100% Cotton" [level=3] [ref=e918]:
+                      - link "Basic Green Crew Neck In 100% Cotton" [ref=e919] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139green
+                    - definition [ref=e924]:
+                      - text: 1x
+                      - generic [ref=e925]:
+                        - img [ref=e927]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e930]:
+                - generic [ref=e932]:
+                  - generic [ref=e934]:
+                    - generic [ref=e935]:
+                      - img "CPMCGKPBG0SW139LIGHT BLUE" [ref=e936] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139LIGHT BLUE" [ref=e937] [cursor=pointer]
+                      - link "Basic Light Blue Crew Neck In 100% Cotton" [ref=e938] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139light-blue
+                    - button "Add to wishlist" [ref=e941] [cursor=pointer]:
+                      - img [ref=e942]
+                  - generic [ref=e947]:
+                    - heading "Basic Light Blue Crew Neck In 100% Cotton" [level=3] [ref=e948]:
+                      - link "Basic Light Blue Crew Neck In 100% Cotton" [ref=e949] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139light-blue
+                    - definition [ref=e954]:
+                      - text: 1x
+                      - generic [ref=e955]:
+                        - img [ref=e957]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e960]:
+                - generic [ref=e962]:
+                  - generic [ref=e964]:
+                    - generic [ref=e965]:
+                      - img "CPMCGKPBG0SW139AZURE" [ref=e966] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139AZURE" [ref=e967] [cursor=pointer]
+                      - link "Basic Light Blue Crew Neck In 100% Cotton" [ref=e968] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139azure
+                    - button "Add to wishlist" [ref=e971] [cursor=pointer]:
+                      - img [ref=e972]
+                  - generic [ref=e977]:
+                    - heading "Basic Light Blue Crew Neck In 100% Cotton" [level=3] [ref=e978]:
+                      - link "Basic Light Blue Crew Neck In 100% Cotton" [ref=e979] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139azure
+                    - definition [ref=e984]:
+                      - text: 1x
+                      - generic [ref=e985]:
+                        - img [ref=e987]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+              - listitem [ref=e990]:
+                - generic [ref=e992]:
+                  - generic [ref=e994]:
+                    - generic [ref=e995]:
+                      - img "CDPOLKPBG000P80LIGHT BLUE" [ref=e996] [cursor=pointer]
+                      - img "CDPOLKPBG000P80LIGHT BLUE" [ref=e997] [cursor=pointer]
+                      - link "Basic Light Blue Polo Shirt In 100% Cotton" [ref=e998] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80light-blue
+                    - button "Add to wishlist" [ref=e1001] [cursor=pointer]:
+                      - img [ref=e1002]
+                  - generic [ref=e1007]:
+                    - heading "Basic Light Blue Polo Shirt In 100% Cotton" [level=3] [ref=e1008]:
+                      - link "Basic Light Blue Polo Shirt In 100% Cotton" [ref=e1009] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80light-blue
+                    - definition [ref=e1014]:
+                      - text: 1x
+                      - generic [ref=e1015]:
+                        - img [ref=e1017]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e1020]:
+                - generic [ref=e1022]:
+                  - generic [ref=e1024]:
+                    - generic [ref=e1025]:
+                      - img "CDPOLKPBG000P80AZURE" [ref=e1026] [cursor=pointer]
+                      - img "CDPOLKPBG000P80AZURE" [ref=e1027] [cursor=pointer]
+                      - link "Basic Light Blue Polo Shirt In 100% Cotton" [ref=e1028] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80azure
+                    - button "Add to wishlist" [ref=e1031] [cursor=pointer]:
+                      - img [ref=e1032]
+                  - generic [ref=e1037]:
+                    - heading "Basic Light Blue Polo Shirt In 100% Cotton" [level=3] [ref=e1038]:
+                      - link "Basic Light Blue Polo Shirt In 100% Cotton" [ref=e1039] [cursor=pointer]:
+                        - /url: /products/cdpolkpbg000p80azure
+                    - definition [ref=e1044]:
+                      - text: 1x
+                      - generic [ref=e1045]:
+                        - img [ref=e1047]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "249.00"
+              - listitem [ref=e1050]:
+                - generic [ref=e1052]:
+                  - generic [ref=e1054]:
+                    - generic [ref=e1055]:
+                      - img "CPMCGKPBG0SW139LIGHTBROWN" [ref=e1056] [cursor=pointer]
+                      - img "CPMCGKPBG0SW139LIGHTBROWN" [ref=e1057] [cursor=pointer]
+                      - link "Basic Light Brown Crew Neck In 100% Cotton" [ref=e1058] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139lightbrown
+                    - button "Add to wishlist" [ref=e1061] [cursor=pointer]:
+                      - img [ref=e1062]
+                  - generic [ref=e1067]:
+                    - heading "Basic Light Brown Crew Neck In 100% Cotton" [level=3] [ref=e1068]:
+                      - link "Basic Light Brown Crew Neck In 100% Cotton" [ref=e1069] [cursor=pointer]:
+                        - /url: /products/cpmcgkpbg0sw139lightbrown
+                    - definition [ref=e1074]:
+                      - text: 1x
+                      - generic [ref=e1075]:
+                        - img [ref=e1077]: Typecta Saudi Currency Symbol for Shopify | https://typecta.com
+                        - text: "399.00"
+            - navigation "Pagination" [ref=e1081]:
+              - list [ref=e1082]:
+                - listitem [ref=e1083]:
+                  - generic "Page 1" [ref=e1084]: "1"
+                - listitem [ref=e1085]:
+                  - link "Page 2" [ref=e1086] [cursor=pointer]:
+                    - /url: /collections/all?page=2
+                    - text: "2"
+                - listitem [ref=e1087]:
+                  - link "Page 3" [ref=e1088] [cursor=pointer]:
+                    - /url: /collections/all?page=3
+                    - text: "3"
+                - listitem [ref=e1089]:
+                  - generic [ref=e1090]: …
+                - listitem [ref=e1091]:
+                  - link "Page 16" [ref=e1092] [cursor=pointer]:
+                    - /url: /collections/all?page=16
+                    - text: "16"
+                - listitem [ref=e1093]:
+                  - link "Next" [ref=e1094] [cursor=pointer]:
+                    - /url: /collections/all?page=2
+                    - img [ref=e1095]
+    - generic [ref=e1098]:
+      - generic [ref=e1101]:
+        - generic [ref=e1102]:
+          - heading "Top Seller" [level=2] [ref=e1103]
+          - button "Toggle Menu" [ref=e1104] [cursor=pointer]:
+            - img "Toggle Arrow" [ref=e1105]
+        - list [ref=e1106]:
+          - listitem [ref=e1107]:
+            - link "Accessories" [ref=e1108] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1109]:
+            - link "ALL" [ref=e1110] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1111]:
+            - link "Autumn Shirts" [ref=e1112] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1113]:
+            - link "Basic Polo" [ref=e1114] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1115]:
+            - link "Bowling" [ref=e1116] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1117]:
+            - link "BUNDLE - PERMANENT COTTON SH.-0P" [ref=e1118] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1119]:
+            - link "BUNDLE-CACH. BLEND SWEATERS-SM" [ref=e1120] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1121]:
+            - link "BUNDLE-COTTON CLASSIC SH.-CL" [ref=e1122] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1123]:
+            - link "BUNDLE-COTTON SWEATERS-SW" [ref=e1124] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e1128]:
+        - generic [ref=e1129]:
+          - generic [ref=e1130]:
+            - img "EASY RETURN"
+            - heading "EASY RETURN" [level=3] [ref=e1131]
+            - paragraph [ref=e1132]: Return your items quickly and easily.
+          - generic [ref=e1133]:
+            - img "FAST SHIPPING"
+            - heading "FAST SHIPPING" [level=3] [ref=e1134]
+            - paragraph [ref=e1135]: Enjoy fast shipping on all orders !
+          - generic [ref=e1136]:
+            - img "SECURE PAYMENTS"
+            - heading "SECURE PAYMENTS" [level=3] [ref=e1137]
+            - paragraph [ref=e1138]: Shopping is safe with Camicissima. We accept payments via credit card, PayPal, Klarna .
+          - generic [ref=e1139]:
+            - img "CUSTOMER SERVICE"
+            - heading "CUSTOMER SERVICE" [level=3] [ref=e1140]
+            - paragraph [ref=e1141]: Contact our Customer Service
+        - button "❮" [ref=e1142] [cursor=pointer]
+        - button "❯" [ref=e1143] [cursor=pointer]
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "Welcome!"
+          - generic [ref=e1144]:
+            - heading "Welcome!" [level=2] [ref=e1145]
+            - paragraph [ref=e1146]: Sign up to our newsletter to receive a 10% discount on your next purchase and stay updated on news,information, trends and promotions.
+            - generic [ref=e1147]:
+              - generic: customer
+              - generic: ✓
+              - generic [ref=e1148]:
+                - textbox "Enter your email address" [ref=e1149]
+                - button "Sign up" [ref=e1150] [cursor=pointer]
+              - generic [ref=e1151]:
+                - checkbox "I consent to the processing of my personal data for the purposes of the newsletter information." [ref=e1152]
+                - text: I consent to the processing of my personal data for the purposes of the newsletter information.
+              - generic: newsletter
+      - contentinfo [ref=e1154]:
+        - generic [ref=e1157]:
+          - generic [ref=e1158]:
+            - heading "The Company" [level=2] [ref=e1161]
+            - heading "Personal profile" [level=2] [ref=e1164]
+            - heading "Services" [level=2] [ref=e1167]
+          - generic [ref=e1168]:
+            - generic [ref=e1169]:
+              - heading "Terms of payment" [level=2] [ref=e1170]
+              - generic [ref=e1171]:
+                - img "visa"
+                - img "master"
+                - img "mada"
+                - img "stc_pay"
+                - img "apple_pay"
+                - img "tabby"
+            - generic [ref=e1172]:
+              - heading "Tranquility" [level=2] [ref=e1173]
+              - text: 30 days for returns online
+            - generic [ref=e1174]:
+              - heading "Social" [level=2] [ref=e1175]
+              - generic [ref=e1176]:
+                - link [ref=e1177] [cursor=pointer]:
+                  - /url: https://www.instagram.com/camicissima.ksa/
+                  - img [ref=e1178]
+                - link "Tiktok" [ref=e1180] [cursor=pointer]:
+                  - /url: http://www.tiktok.com/@camicissima.ksa
+                  - img [ref=e1181]
+                - link "Snapchat" [ref=e1183] [cursor=pointer]:
+                  - /url: https://www.snapchat.com/@camicissimaksa
+                  - img [ref=e1184]
+                - link "Facebook" [ref=e1186] [cursor=pointer]:
+                  - /url: https://www.facebook.com/profile.php?id=61572241232089
+                  - img [ref=e1187]
+      - paragraph [ref=e1191]:
+        - text: © 2026 Camicissima | Al Moallim United Co, KSA
+        - text: "CR: 4030031627 , VAT# 301329371900003"
+  - generic [ref=e1193]:
+    - button "Close":
+      - generic: Close
+      - img
+    - list [ref=e1194]:
+      - listitem [ref=e1195]:
+        - link "MENS ITALIAN SHIRTS" [ref=e1196] [cursor=pointer]:
+          - /url: /collections/mens-shirts
+          - text: MENS ITALIAN SHIRTS
+          - img [ref=e1198]
+        - generic [ref=e1201]:
+          - button [ref=e1202] [cursor=pointer]:
+            - img [ref=e1203]
+          - list [ref=e1206]:
+            - generic [ref=e1207]:
+              - listitem [ref=e1208]:
+                - link "Shirts" [ref=e1209] [cursor=pointer]:
+                  - /url: /collections/mens-shirts
+                - list [ref=e1210]:
+                  - listitem [ref=e1211]:
+                    - link "Permanent" [ref=e1212] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-permanent
+                  - listitem [ref=e1213]:
+                    - link "Fancy" [ref=e1214] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-fancy
+                    - list [ref=e1215]:
+                      - listitem [ref=e1216]:
+                        - link "Long Sleeve" [ref=e1217] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-fancy-longsleeve
+                      - listitem [ref=e1218]:
+                        - link "Short Sleeve" [ref=e1219] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-fancy-shortsleeve
+                  - listitem [ref=e1220]:
+                    - link "Trendy" [ref=e1221] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-trendy
+                    - list [ref=e1222]:
+                      - listitem [ref=e1223]:
+                        - link "Cotton" [ref=e1224] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-cotton
+                      - listitem [ref=e1225]:
+                        - link "English Tour" [ref=e1226] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-englishtour
+                      - listitem [ref=e1227]:
+                        - link "Jeans Shirt" [ref=e1228] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-jeansshirt
+                      - listitem [ref=e1229]:
+                        - link "Bowling" [ref=e1230] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-trendy-bowling
+                  - listitem [ref=e1231]:
+                    - link "Classic" [ref=e1232] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-classic
+                  - listitem [ref=e1233]:
+                    - link "Non Iron" [ref=e1234] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-noniron
+                  - listitem [ref=e1235]:
+                    - link "Linen" [ref=e1236] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-linen
+                    - list [ref=e1237]:
+                      - listitem [ref=e1238]:
+                        - link "Trendy" [ref=e1239] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-linen-trendy
+                      - listitem [ref=e1240]:
+                        - link "Fancy" [ref=e1241] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-linen-fancy
+                      - listitem [ref=e1242]:
+                        - link "Trendy Linen Serafino" [ref=e1243] [cursor=pointer]:
+                          - /url: /collections/mens-shirts-linen-trendylinenserafino
+                  - listitem [ref=e1244]:
+                    - link "Details" [ref=e1245] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-details
+              - listitem [ref=e1246]:
+                - link "Neck" [ref=e1247] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-neck
+                - list [ref=e1248]:
+                  - listitem [ref=e1249]:
+                    - link "Italian" [ref=e1250] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-italian
+                  - listitem [ref=e1251]:
+                    - link "Button Down" [ref=e1252] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-buttondown
+                  - listitem [ref=e1253]:
+                    - link "French" [ref=e1254] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-french
+                  - listitem [ref=e1255]:
+                    - link "Korean" [ref=e1256] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-neck-korean
+              - listitem [ref=e1257]:
+                - link "Shop By Fit" [ref=e1258] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-shopbyfit
+                - list [ref=e1259]:
+                  - listitem [ref=e1260]:
+                    - link "Extra Slim Fit" [ref=e1261] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-shopbyfit-extraslimfit
+                  - listitem [ref=e1262]:
+                    - link "Slim Fit" [ref=e1263] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-shopbyfit-slimfit
+                  - listitem [ref=e1264]:
+                    - link "Regular Fit" [ref=e1265] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-shopbyfit-regularfit
+              - listitem [ref=e1266]:
+                - link "Collections" [ref=e1267] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-collections
+                - list [ref=e1268]:
+                  - listitem [ref=e1269]:
+                    - link "Autumn Shirts" [ref=e1270] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-autumn
+                  - listitem [ref=e1271]:
+                    - link "Spring Shirts" [ref=e1272] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-spring
+                  - listitem [ref=e1273]:
+                    - link "Summer Shirts" [ref=e1274] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-summer
+                  - listitem [ref=e1275]:
+                    - link "Winter Shirts" [ref=e1276] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-collections-winter
+              - listitem [ref=e1277]:
+                - link "Pattern" [ref=e1278] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-pattern
+                - list [ref=e1279]:
+                  - listitem [ref=e1280]:
+                    - link "Paintings" [ref=e1281] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-paintings
+                  - listitem [ref=e1282]:
+                    - link "Lines" [ref=e1283] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-lines
+                  - listitem [ref=e1284]:
+                    - link "Solid Color" [ref=e1285] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-solidcolor
+                  - listitem [ref=e1286]:
+                    - link "Dobby" [ref=e1287] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-pattern-dobby
+              - listitem [ref=e1288]:
+                - link "Color" [ref=e1289] [cursor=pointer]:
+                  - /url: /collections/mens-shirts-color
+                - list [ref=e1290]:
+                  - listitem [ref=e1291]:
+                    - link "White" [ref=e1292] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-white
+                  - listitem [ref=e1293]:
+                    - link "Black" [ref=e1294] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-black
+                  - listitem [ref=e1295]:
+                    - link "Blue" [ref=e1296] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-blue
+                  - listitem [ref=e1297]:
+                    - link "Sky Blue" [ref=e1298] [cursor=pointer]:
+                      - /url: /collections/mens-shirts-color-skyblue
+    - list [ref=e1299]:
+      - listitem [ref=e1300]:
+        - link "CLOTHING" [ref=e1301] [cursor=pointer]:
+          - /url: /collections/clothing
+          - text: CLOTHING
+          - img [ref=e1303]
+        - generic [ref=e1306]:
+          - button [ref=e1307] [cursor=pointer]:
+            - img [ref=e1308]
+          - list [ref=e1311]:
+            - generic [ref=e1312]:
+              - listitem [ref=e1313]:
+                - link "Men's Sweater" [ref=e1314] [cursor=pointer]:
+                  - /url: /collections/mens-sweater
+                - list [ref=e1315]:
+                  - listitem [ref=e1316]:
+                    - link "Crewneck Sweater" [ref=e1317] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-crewneck
+                    - list [ref=e1318]:
+                      - listitem [ref=e1319]:
+                        - link "Cotton" [ref=e1320] [cursor=pointer]:
+                          - /url: /collections/mens-sweater-crewneck-cotton
+                      - listitem [ref=e1321]:
+                        - link "Cashmere" [ref=e1322] [cursor=pointer]:
+                          - /url: /collections/mens-sweater-crewneck-cashmere
+                  - listitem [ref=e1323]:
+                    - link "V-Neck Sweater" [ref=e1324] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-vneck
+                  - listitem [ref=e1325]:
+                    - link "Zip Up Sweater" [ref=e1326] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-zipup
+                  - listitem [ref=e1327]:
+                    - link "High Neck Sweater" [ref=e1328] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-highneck
+                  - listitem [ref=e1329]:
+                    - link "Luxury Sweater" [ref=e1330] [cursor=pointer]:
+                      - /url: /collections/mens-sweater-luxury
+              - listitem [ref=e1331]:
+                - link "Polo" [ref=e1332] [cursor=pointer]:
+                  - /url: /collections/polo
+                - list [ref=e1333]:
+                  - listitem [ref=e1334]:
+                    - link "Basic Polo" [ref=e1335] [cursor=pointer]:
+                      - /url: /collections/polo-basic
+              - listitem [ref=e1336]:
+                - link "Pants" [ref=e1337] [cursor=pointer]:
+                  - /url: /collections/pants
+                - list [ref=e1338]:
+                  - listitem [ref=e1339]:
+                    - link "Bermuda" [ref=e1340] [cursor=pointer]:
+                      - /url: /collections/pants-bermuda
+                  - listitem [ref=e1341]:
+                    - link "Chinos" [ref=e1342] [cursor=pointer]:
+                      - /url: /collections/pants-chinos
+                    - list [ref=e1343]:
+                      - listitem [ref=e1344]:
+                        - link "Cotton" [ref=e1345] [cursor=pointer]:
+                          - /url: /collections/pants-chinos-cotton
+                      - listitem [ref=e1346]:
+                        - link "Velvet" [ref=e1347] [cursor=pointer]:
+                          - /url: /collections/pants-chinos-velvet
+                      - listitem [ref=e1348]:
+                        - link "Linen" [ref=e1349] [cursor=pointer]:
+                          - /url: /collections/pants-chinos-linen
+                  - listitem [ref=e1350]:
+                    - link "Jeans" [ref=e1351] [cursor=pointer]:
+                      - /url: /collections/pants-jeans
+                  - listitem [ref=e1352]:
+                    - link "5 Pockets" [ref=e1353] [cursor=pointer]:
+                      - /url: /collections/pants-5pockets
+                  - listitem [ref=e1354]:
+                    - link "Cargo" [ref=e1355] [cursor=pointer]:
+                      - /url: "#"
+              - listitem [ref=e1356]:
+                - link "Vest" [ref=e1357] [cursor=pointer]:
+                  - /url: /collections/vest
+                - list [ref=e1358]:
+                  - listitem [ref=e1359]:
+                    - link "Tailored Vest" [ref=e1360] [cursor=pointer]:
+                      - /url: /collections/vest-tailored
+                  - listitem [ref=e1361]:
+                    - link "Vest Sweater" [ref=e1362] [cursor=pointer]:
+                      - /url: /collections/vest-sweater
+                    - list [ref=e1363]:
+                      - listitem [ref=e1364]:
+                        - link "Cotton" [ref=e1365] [cursor=pointer]:
+                          - /url: /collections/vest-sweater-cotton
+                      - listitem [ref=e1366]:
+                        - link "Cashmere" [ref=e1367] [cursor=pointer]:
+                          - /url: /collections/vest-sweater-cashmere
+                  - listitem [ref=e1368]:
+                    - link "Padded Vest" [ref=e1369] [cursor=pointer]:
+                      - /url: /collections/vest-padded
+              - listitem [ref=e1370]:
+                - link "Men's Outerwear" [ref=e1371] [cursor=pointer]:
+                  - /url: /collections/mens-outerwear
+                - list [ref=e1372]:
+                  - listitem [ref=e1373]:
+                    - link "Bomber" [ref=e1374] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-bomber
+                  - listitem [ref=e1375]:
+                    - link "Jackets and Blazers" [ref=e1376] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-jacketsandblazers
+                  - listitem [ref=e1377]:
+                    - link "Parka" [ref=e1378] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-parka
+                  - listitem [ref=e1379]:
+                    - link "Field Jacket" [ref=e1380] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-fieldjacket
+                  - listitem [ref=e1381]:
+                    - link "Coat" [ref=e1382] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-coat
+                  - listitem [ref=e1383]:
+                    - link "Padded Jackets" [ref=e1384] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-paddedjackets
+                  - listitem [ref=e1385]:
+                    - link "Padded Shirt" [ref=e1386] [cursor=pointer]:
+                      - /url: /collections/mens-outerwear-paddedshirt
+              - listitem [ref=e1387]:
+                - link "T-Shirt" [ref=e1388] [cursor=pointer]:
+                  - /url: /collections/tshirt
+              - listitem [ref=e1389]:
+                - link "Accessories" [ref=e1390] [cursor=pointer]:
+                  - /url: /collections/accessories
+                - list [ref=e1391]:
+                  - listitem [ref=e1392]:
+                    - link "Ties" [ref=e1393] [cursor=pointer]:
+                      - /url: /collections/accessories-ties
+                  - listitem [ref=e1394]:
+                    - link "Socks" [ref=e1395] [cursor=pointer]:
+                      - /url: /collections/accessories-socks
+    - list [ref=e1396]:
+      - listitem [ref=e1397]:
+        - link "BUNDLES" [ref=e1398] [cursor=pointer]:
+          - /url: /pages/bundle-products
+          - text: BUNDLES
+  - 'button "Selected language: English" [ref=e1402] [cursor=pointer]':
+    - generic [ref=e1404]: English
+    - img [ref=e1406]
+```
